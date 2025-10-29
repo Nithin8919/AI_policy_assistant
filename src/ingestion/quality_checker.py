@@ -85,6 +85,58 @@ class QualityChecker:
         
         logger.info("QualityChecker initialized with intelligent thresholds")
     
+    def check_text_extraction_quality(self, text: str) -> Dict:
+        """
+        Check quality of extracted text.
+        
+        Args:
+            text: Extracted text to evaluate
+            
+        Returns:
+            Quality report with score and issues
+        """
+        if not text:
+            return {"score": 0, "issues": ["no_text"]}
+        
+        issues = []
+        score = 100  # Start with perfect score
+        
+        # Check text length
+        if len(text) < 100:
+            issues.append("text_too_short")
+            score -= 30
+        
+        # Check for extraction artifacts
+        if text.count('\n') / len(text) > 0.1:  # Too many line breaks
+            issues.append("excessive_line_breaks")
+            score -= 10
+        
+        # Check for garbled text (too many single characters)
+        single_chars = len([c for c in text.split() if len(c) == 1])
+        if single_chars / len(text.split()) > 0.3:
+            issues.append("garbled_text")
+            score -= 20
+        
+        # Check for reasonable word distribution
+        words = text.split()
+        if len(words) == 0:
+            return {"score": 0, "issues": ["no_words"]}
+        
+        avg_word_length = sum(len(word) for word in words) / len(words)
+        if avg_word_length < 2:
+            issues.append("suspicious_word_length")
+            score -= 15
+        
+        # Ensure score is non-negative
+        score = max(0, score)
+        
+        return {
+            "score": score,
+            "issues": issues,
+            "text_length": len(text),
+            "word_count": len(words)
+        }
+    
     def check_document_quality(
         self,
         text: str,

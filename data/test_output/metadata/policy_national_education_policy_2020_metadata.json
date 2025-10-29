@@ -1,0 +1,328 @@
+{
+  "doc_id": "policy_national_education_policy_2020",
+  "title": "National Education Policy 2020",
+  "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Policy/National Education Policy 2020.pdf",
+  "file_name": "National Education Policy 2020.pdf",
+  "file_format": ".pdf",
+  "doc_type": "framework",
+  "priority": "critical",
+  "parent_folders": [
+    "Documents",
+    "Critical Priority",
+    "Policy"
+  ],
+  "year": 2040,
+  "creation_timestamp": "2025-10-27T22:03:16.321284",
+  "modification_timestamp": "2025-10-24T01:42:34",
+  "processing_timestamp": "2025-10-29T15:42:20.621681",
+  "file_size": 1453912,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "framework",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.019319938176197836,
+      "rule": 0.017001545595054096,
+      "government_order": 0.10664605873261206,
+      "judicial": 0.0,
+      "data_report": 0.04559505409582689,
+      "budget_finance": 0.02472952086553323,
+      "framework": 1.0,
+      "circular": 0.05873261205564142
+    },
+    "structural_features": {
+      "has_sections": false,
+      "has_chapters": true,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": false,
+      "has_tables": true,
+      "has_financial_terms": true,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 40510,
+      "avg_sentence_length": 19.305699481865286,
+      "title_length": 4
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "relative_date",
+        "raw_text": "before Class 1),",
+        "normalized_date": "2025-10-01",
+        "position": [
+          23099,
+          23115
+        ],
+        "context": "o a \u201cPreparatory Class\u201d\nor \u201cBalavatika\u201d (that is, before Class 1), which has an ECCE-qualified teach",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [
+      {
+        "type": "academic_year",
+        "raw_text": " 2017-18",
+        "start_year": 2017,
+        "end_year": 2018,
+        "year_range": "2017-2018",
+        "position": [
+          33515,
+          33523
+        ],
+        "context": "As per the 75th round household survey by NSSO in 2017-18, the number of out of school children in",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2020-21",
+        "start_year": 2020,
+        "end_year": 2021,
+        "year_range": "2020-2021",
+        "position": [
+          60210,
+          60218
+        ],
+        "context": "priately designed by NCERT\nwhile framing the NCFSE 2020-21. All students will participate in a 10-da",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2020-21",
+        "start_year": 2020,
+        "end_year": 2021,
+        "year_range": "2020-2021",
+        "position": [
+          65056,
+          65064
+        ],
+        "context": "l Curricular Framework for School\nEducation, NCFSE 2020-21, will be undertaken by the NCERT - based",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2022-23",
+        "start_year": 2022,
+        "end_year": 2023,
+        "year_range": "2022-2023",
+        "position": [
+          72879,
+          72887
+        ],
+        "context": "r a transformation in the assessment system by the\n2022-23 academic session, to align with the NCFSE",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2020-21",
+        "start_year": 2020,
+        "end_year": 2021,
+        "year_range": "2020-2021",
+        "position": [
+          72929,
+          72937
+        ],
+        "context": "2022-23 academic session, to align with the NCFSE 2020-21.\n4.40. To track progress throughout the s",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2016-17",
+        "start_year": 2016,
+        "end_year": 2017,
+        "year_range": "2016-2017",
+        "position": [
+          100702,
+          100710
+        ],
+        "context": "l Education Policy 2020\n6.2.1. According to U-DISE 2016-17 data, about 19.6% of students belong to S",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2016-17",
+        "start_year": 2016,
+        "end_year": 2017,
+        "year_range": "2016-2017",
+        "position": [
+          118366,
+          118374
+        ],
+        "context": "f numerous very small schools. According to U-DISE 2016-17 data,\nnearly 28% of India\u2019s public primar",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2016-17",
+        "start_year": 2016,
+        "end_year": 2017,
+        "year_range": "2016-2017",
+        "position": [
+          118690,
+          118698
+        ],
+        "context": "notable proportion having below 6;\nduring the year 2016-17, there were 1,08,017 single-teacher schoo",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "1964-66",
+        "start_year": 1964,
+        "end_year": 1966,
+        "year_range": "1964-1966",
+        "position": [
+          121996,
+          122003
+        ],
+        "context": "stion was first made by the Education Commission (1964-66) but was left\nunimplemented. This Policy s",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2012-2017",
+        "start_year": 2012,
+        "end_year": 2017,
+        "year_range": "2012-2017",
+        "position": [
+          186096,
+          186105
+        ],
+        "context": "cational Education\n16.1. The 12th Five-Year Plan (2012-2017) estimated that only a very small percen",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 1991-2011",
+        "start_year": 1991,
+        "end_year": 2011,
+        "year_range": "1991-2011",
+        "position": [
+          222164,
+          222174
+        ],
+        "context": "ncreases in national literacy during the period of 1991-2011, including among women, and also\ninitia",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2017-18",
+        "start_year": 2017,
+        "end_year": 2018,
+        "year_range": "2017-2018",
+        "position": [
+          264396,
+          264404
+        ],
+        "context": "62 ---\nNational Education Policy 2020\nExpenditure 2017-18) and only around 10% of the total Govemme",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2017-18",
+        "start_year": 2017,
+        "end_year": 2018,
+        "year_range": "2017-2018",
+        "position": [
+          264492,
+          264500
+        ],
+        "context": "emment spending towards education\n(Economic Survey 2017-18). These numbers are far smaller than most",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2030-40",
+        "start_year": 2030,
+        "end_year": 2040,
+        "year_range": "2030-2040",
+        "position": [
+          271474,
+          271482
+        ],
+        "context": "reviews will be shared with CABE. In the\ndecade of 2030-40, the entire policy will be in an operatio",
+        "confidence": 0.9
+      }
+    ],
+    "date_ranges": [
+      {
+        "type": "date_range",
+        "raw_text": "from the Foundational Stage through Grade 12 to\nall children up to the age of 18,",
+        "start_date": "2025-10-12",
+        "end_date": "2025-10-18",
+        "position": [
+          35632,
+          35713
+        ],
+        "context": "ut. For providing equitable and quality education from the Foundational Stage through Grade 12 to\nal",
+        "confidence": 0.85
+      },
+      {
+        "type": "date_range",
+        "raw_text": "between the ages\nof 2 and 8 and that multilingualism has great cognitive benefits to young students,",
+        "start_date": "2025-10-02",
+        "end_date": "2025-10-08",
+        "position": [
+          49353,
+          49453
+        ],
+        "context": "that children pick up languages extremely quickly between the ages\nof 2 and 8 and that multilinguali",
+        "confidence": 0.85
+      },
+      {
+        "type": "date_range",
+        "raw_text": "from Grade 1 to Grade 12,",
+        "start_date": "2025-10-01",
+        "end_date": "2025-10-12",
+        "position": [
+          100281,
+          100306
+        ],
+        "context": "le overall enrolments in schools decline steadily from Grade 1 to Grade 12, this decline in\nenrolmen",
+        "confidence": 0.85
+      }
+    ],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 18,
+      "total_dates": 1,
+      "total_academic_years": 14,
+      "total_ranges": 3,
+      "total_periods": 0,
+      "earliest_date": "2025-10-01",
+      "latest_date": "2025-10-01",
+      "year_span": [
+        1964,
+        2040
+      ],
+      "primary_years": [
+        2040,
+        2030,
+        2025,
+        2023,
+        2022
+      ]
+    }
+  },
+  "academic_year": "2030-2040",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

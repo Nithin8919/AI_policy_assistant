@@ -1,11 +1,11 @@
 {
-  "test_timestamp": "2025-10-29T11:19:27.038847",
+  "test_timestamp": "2025-10-29T15:42:20.928189",
   "ingestion_success": true,
   "vertical_builders": {
     "legal": {
-      "success": false,
-      "entries_created": 0,
-      "error": "No database created"
+      "success": true,
+      "entries_created": 452,
+      "error": null
     },
     "go": {
       "success": false,
@@ -14,43 +14,42 @@
     }
   },
   "sample_data_analysis": {
-    "chunks_in_file": 957,
+    "chunks_in_file": 2412,
     "sample_chunks": [
       {
-        "chunk_id": "ncpr_guidelines_for_prevention_chunk_0000",
-        "doc_type": "framework",
-        "entity_count": 4,
-        "has_bridge_topics": true
+        "chunk_id": "statutory_constitutionofindia_chunk_0000",
+        "doc_type": "act",
+        "entity_count": 23,
+        "has_bridge_topics": false
       },
       {
-        "chunk_id": "ncpr_guidelines_for_prevention_chunk_0001",
-        "doc_type": "framework",
-        "entity_count": 8,
-        "has_bridge_topics": true
+        "chunk_id": "statutory_constitutionofindia_chunk_0001",
+        "doc_type": "act",
+        "entity_count": 20,
+        "has_bridge_topics": false
       },
       {
-        "chunk_id": "ncpr_guidelines_for_prevention_chunk_0002",
-        "doc_type": "framework",
-        "entity_count": 14,
-        "has_bridge_topics": true
+        "chunk_id": "statutory_constitutionofindia_chunk_0002",
+        "doc_type": "act",
+        "entity_count": 21,
+        "has_bridge_topics": false
       }
     ]
   },
   "recommendations": [
-    "No entities extracted - check entity extraction patterns and dictionaries",
-    "All vertical builders failed - check chunk format and data processing"
+    "No entities extracted - check entity extraction patterns and dictionaries"
   ],
   "ingestion": {
     "success_rate": 1.0,
     "documents_processed": 5,
-    "chunks_created": 957,
+    "chunks_created": 2412,
     "entities_extracted": 0,
     "relations_found": 0,
     "quality_distribution": {
       "excellent": 0,
       "good": 0,
-      "acceptable": 0,
-      "poor": 5,
+      "acceptable": 5,
+      "poor": 0,
       "critical": 0
     }
   }

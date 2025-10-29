@@ -1,0 +1,349 @@
+{
+  "doc_id": "statutory_right_of_children_to_free_&_compulsory_education_act_2009_(rte)",
+  "title": "Right Of Children To Free & Compulsory Education Act 2009 (Rte)",
+  "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/Right of Children to Free & Compulsory Education Act 2009 (RTE).pdf",
+  "file_name": "Right of Children to Free & Compulsory Education Act 2009 (RTE).pdf",
+  "file_format": ".pdf",
+  "doc_type": "act",
+  "priority": "critical",
+  "parent_folders": [
+    "Documents",
+    "Critical Priority",
+    "Statutory"
+  ],
+  "year": 2025,
+  "creation_timestamp": "2025-10-27T22:03:16.322127",
+  "modification_timestamp": "2025-10-24T01:40:06",
+  "processing_timestamp": "2025-10-29T15:42:11.265287",
+  "file_size": 200020,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "act",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 1.0,
+      "rule": 0.01098901098901099,
+      "government_order": 0.07692307692307693,
+      "judicial": 0.0,
+      "data_report": 0.01098901098901099,
+      "budget_finance": 0.1391941391941392,
+      "framework": 0.2454212454212454,
+      "circular": 0.04395604395604396
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": false,
+      "has_financial_terms": true,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 6989,
+      "avg_sentence_length": 19.887323943661972,
+      "title_length": 11
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "1/8/2012",
+        "normalized_date": "2012-08-01",
+        "position": [
+          5133,
+          5141
+        ],
+        "context": "w.e.f. 1-8- 2012).\n3. Ins. by s. 3, ibid. (w.e.f. 1/8/2012).\n3\n\n--- Page 4 ---\n(B) a child, being a",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "1/8/2012",
+        "normalized_date": "2012-08-01",
+        "position": [
+          8469,
+          8477
+        ],
+        "context": "Act 30 of 2012, s. 4, for sub-section (1) (w.e.f. 1/8/2012).\n4\n\n--- Page 5 ---\n1* * * * *\n2[(3) A ch",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "1/8/2012",
+        "normalized_date": "2012-08-01",
+        "position": [
+          12207,
+          12215
+        ],
+        "context": ". Proviso omitted by Act 30 of 2012, s. 4 (w.e.f. 1/8/2012).\n2. Ins. by s. 4, ibid. (w.e.f. 1/8/2012",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "1/8/2012",
+        "normalized_date": "2012-08-01",
+        "position": [
+          12249,
+          12257
+        ],
+        "context": "(w.e.f. 1/8/2012).\n2. Ins. by s. 4, ibid. (w.e.f. 1/8/2012).\n5\n\n--- Page 6 ---\n(3) The Central Govem",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "1/8/2012",
+        "normalized_date": "2012-08-01",
+        "position": [
+          29031,
+          29039
+        ],
+        "context": "m or her:\n1. Ins. by Act 30 of 2012, s. 5 (w.e.f. 1/8/2012).\n2. Subs. by s. 6, ibid., for \u201cSchool Ma",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "1/8/2012",
+        "normalized_date": "2012-08-01",
+        "position": [
+          29122,
+          29130
+        ],
+        "context": "School Management Committee, constituted\u201d (w.e.f. 1/8/2012).\n3. Ins. by Act 24 of 2017, s. 2 (w.e.f.",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "1/4/2015",
+        "normalized_date": "2015-04-01",
+        "position": [
+          29173,
+          29181
+        ],
+        "context": "/8/2012).\n3. Ins. by Act 24 of 2017, s. 2 (w.e.f. 1/4/2015).\n10\n\n--- Page 11 ---\nProvided that befor",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "1/8/2012",
+        "normalized_date": "2012-08-01",
+        "position": [
+          32206,
+          32214
+        ],
+        "context": "30 of 2012, s. 7, for \u201cWithin six months\u201d (w.e.f. 1/8/2012).\n11\n\n--- Page 12 ---\nCHAPTER VI\nPROTECTI",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "1/8/2012",
+        "normalized_date": "2012-08-01",
+        "position": [
+          41578,
+          41586
+        ],
+        "context": "liament.]\n1. Ins. by Act 30 of 2012, s. 8 (w.e.f. 1/8/2012).\n14\n\n--- Page 15 ---\nTHE SCHEDULE\n(See s",
+        "confidence": 0.9
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "w.e.f. 1-8- 2012).",
+        "normalized_date": "2012-01-01",
+        "position": [
+          5083,
+          5101
+        ],
+        "context": ",\nSection 3(ii).\n2. Ins. by Act 30 of 2012, s. 2 (w.e.f. 1-8- 2012).\n3. Ins. by s. 3, ibid. (w.e.f.",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "w.e.f. 1/8/2012).",
+        "normalized_date": "2012-08-01",
+        "position": [
+          5126,
+          5143
+        ],
+        "context": "s. 2 (w.e.f. 1-8- 2012).\n3. Ins. by s. 3, ibid. (w.e.f. 1/8/2012).\n3\n\n--- Page 4 ---\n(B) a child, b",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "With effect from the date of withdrawal of the recognition under sub-section (3),",
+        "normalized_date": "2025-10-03",
+        "position": [
+          22925,
+          23006
+        ],
+        "context": "school, in such manner, as may be prescribed.\n(4) With effect from the date of withdrawal of the rec",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "With effect from the date of withdrawal of recognition under sub-section (3),",
+        "normalized_date": "2025-10-03",
+        "position": [
+          24127,
+          24204
+        ],
+        "context": "nner specified under sub-section (3) thereof.\n(4) With effect from the date of withdrawal of recogni",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "w.e.f. 1/8/2012).",
+        "normalized_date": "2012-08-01",
+        "position": [
+          29024,
+          29041
+        ],
+        "context": "e to him or her:\n1. Ins. by Act 30 of 2012, s. 5 (w.e.f. 1/8/2012).\n2. Subs. by s. 6, ibid., for \u201cSc",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "w.e.f. 1/8/2012).",
+        "normalized_date": "2012-08-01",
+        "position": [
+          29115,
+          29132
+        ],
+        "context": ", for \u201cSchool Management Committee, constituted\u201d (w.e.f. 1/8/2012).\n3. Ins. by Act 24 of 2017, s. 2",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "w.e.f. 1/4/2015).",
+        "normalized_date": "2015-04-01",
+        "position": [
+          29166,
+          29183
+        ],
+        "context": ".e.f. 1/8/2012).\n3. Ins. by Act 24 of 2017, s. 2 (w.e.f. 1/4/2015).\n10\n\n--- Page 11 ---\nProvided tha",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "w.e.f. 1/8/2012).",
+        "normalized_date": "2012-08-01",
+        "position": [
+          32199,
+          32216
+        ],
+        "context": "by Act 30 of 2012, s. 7, for \u201cWithin six months\u201d (w.e.f. 1/8/2012).\n11\n\n--- Page 12 ---\nCHAPTER VI\nP",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "from the date of withdrawal of the recognition under sub-section (3),",
+        "normalized_date": "2025-10-03",
+        "position": [
+          22937,
+          23006
+        ],
+        "context": "uch manner, as may be prescribed.\n(4) With effect from the date of withdrawal of the recognition und",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "from the date of withdrawal of recognition under sub-section (3),",
+        "normalized_date": "2025-10-03",
+        "position": [
+          24139,
+          24204
+        ],
+        "context": "ed under sub-section (3) thereof.\n(4) With effect from the date of withdrawal of recognition under s",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on the 31st March,",
+        "normalized_date": "2025-03-31",
+        "position": [
+          27620,
+          27641
+        ],
+        "context": "rther that every teacher appointed or in position as on the 31st March, 2015, who does\nnot possess m",
+        "confidence": 0.85
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "dated 16th February,",
+        "normalized_date": "2025-02-16",
+        "position": [
+          4962,
+          4982
+        ],
+        "context": "t April, 2010, vide notification No. S.0. 428(E), dated 16th February, 2010, see Gazette of India, E",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date of withdrawal of the recognition under sub-section (3),",
+        "normalized_date": "2025-10-03",
+        "position": [
+          22946,
+          23006
+        ],
+        "context": "r, as may be prescribed.\n(4) With effect from the date of withdrawal of the recognition under sub-se",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date of withdrawal of recognition under sub-section (3),",
+        "normalized_date": "2025-10-03",
+        "position": [
+          24148,
+          24204
+        ],
+        "context": "sub-section (3) thereof.\n(4) With effect from the date of withdrawal of recognition under sub-sectio",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 23,
+      "total_dates": 23,
+      "total_academic_years": 0,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "2012-01-01",
+      "latest_date": "2025-10-03",
+      "year_span": [
+        2012,
+        2025
+      ],
+      "primary_years": [
+        2025,
+        2015,
+        2012
+      ]
+    }
+  },
+  "issue_date": "2025-02-16",
+  "effective_date": "2012-01-01",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

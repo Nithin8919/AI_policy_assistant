@@ -1,5 +1,65 @@
 [
   {
+    "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/ConstitutionOfIndia.pdf",
+    "file_name": "ConstitutionOfIndia.pdf",
+    "doc_id": "statutory_constitutionofindia",
+    "file_size": 2413611,
+    "parent_folders": [
+      "Statutory"
+    ],
+    "discovery_timestamp": "2025-10-29T15:41:45.831724"
+  },
+  {
+    "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/AP School Education Regulatory & Monitoring Commission Act 2019.pdf",
+    "file_name": "AP School Education Regulatory & Monitoring Commission Act 2019.pdf",
+    "doc_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019",
+    "file_size": 43213,
+    "parent_folders": [
+      "Statutory"
+    ],
+    "discovery_timestamp": "2025-10-29T15:41:45.831757"
+  },
+  {
+    "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/AP Education Act 1982 & amendments.pdf",
+    "file_name": "AP Education Act 1982 & amendments.pdf",
+    "doc_id": "statutory_ap_education_act_1982_&_amendments",
+    "file_size": 127257,
+    "parent_folders": [
+      "Statutory"
+    ],
+    "discovery_timestamp": "2025-10-29T15:41:45.831784"
+  },
+  {
+    "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/Right of Children to Free & Compulsory Education Act 2009 (RTE).pdf",
+    "file_name": "Right of Children to Free & Compulsory Education Act 2009 (RTE).pdf",
+    "doc_id": "statutory_right_of_children_to_free_&_compulsory_education_act_2009_(rte)",
+    "file_size": 200020,
+    "parent_folders": [
+      "Statutory"
+    ],
+    "discovery_timestamp": "2025-10-29T15:41:45.831810"
+  },
+  {
+    "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Policy/National Education Policy 2020.pdf",
+    "file_name": "National Education Policy 2020.pdf",
+    "doc_id": "policy_national_education_policy_2020",
+    "file_size": 1453912,
+    "parent_folders": [
+      "Policy"
+    ],
+    "discovery_timestamp": "2025-10-29T15:41:45.831834"
+  },
+  {
+    "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Executive/Finance Dept for Educational Strength.pdf",
+    "file_name": "Finance Dept for Educational Strength.pdf",
+    "doc_id": "executive_finance_dept_for_educational_strength",
+    "file_size": 260376,
+    "parent_folders": [
+      "Executive"
+    ],
+    "discovery_timestamp": "2025-10-29T15:41:45.831859"
+  },
+  {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/Guidelines for prevention.pdf",
     "file_name": "Guidelines for prevention.pdf",
     "doc_id": "ncpr_guidelines_for_prevention",
@@ -8,7 +68,7 @@
       "Judicial",
       "NCPR"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.628956"
+    "discovery_timestamp": "2025-10-29T15:41:45.831887"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/Guidelines for hostel education.pdf",
@@ -19,7 +79,7 @@
       "Judicial",
       "NCPR"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.628977"
+    "discovery_timestamp": "2025-10-29T15:41:45.831912"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/Regulatory Guidelines for Private Play Schools.pdf",
@@ -30,7 +90,7 @@
       "Judicial",
       "NCPR"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.628994"
+    "discovery_timestamp": "2025-10-29T15:41:45.831935"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/School Safety and Guidelines.pdf",
@@ -41,7 +101,7 @@
       "Judicial",
       "NCPR"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629008"
+    "discovery_timestamp": "2025-10-29T15:41:45.831959"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/Prevention of Bullying.pdf",
@@ -52,67 +112,7 @@
       "Judicial",
       "NCPR"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629022"
-  },
-  {
-    "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/ConstitutionOfIndia.pdf",
-    "file_name": "ConstitutionOfIndia.pdf",
-    "doc_id": "statutory_constitutionofindia",
-    "file_size": 2413611,
-    "parent_folders": [
-      "Statutory"
-    ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629035"
-  },
-  {
-    "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/AP School Education Regulatory & Monitoring Commission Act 2019.pdf",
-    "file_name": "AP School Education Regulatory & Monitoring Commission Act 2019.pdf",
-    "doc_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019",
-    "file_size": 43213,
-    "parent_folders": [
-      "Statutory"
-    ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629049"
-  },
-  {
-    "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/AP Education Act 1982 & amendments.pdf",
-    "file_name": "AP Education Act 1982 & amendments.pdf",
-    "doc_id": "statutory_ap_education_act_1982_&_amendments",
-    "file_size": 127257,
-    "parent_folders": [
-      "Statutory"
-    ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629072"
-  },
-  {
-    "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/Right of Children to Free & Compulsory Education Act 2009 (RTE).pdf",
-    "file_name": "Right of Children to Free & Compulsory Education Act 2009 (RTE).pdf",
-    "doc_id": "statutory_right_of_children_to_free_&_compulsory_education_act_2009_(rte)",
-    "file_size": 200020,
-    "parent_folders": [
-      "Statutory"
-    ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629087"
-  },
-  {
-    "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Policy/National Education Policy 2020.pdf",
-    "file_name": "National Education Policy 2020.pdf",
-    "doc_id": "policy_national_education_policy_2020",
-    "file_size": 1453912,
-    "parent_folders": [
-      "Policy"
-    ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629101"
-  },
-  {
-    "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Executive/Finance Dept for Educational Strength.pdf",
-    "file_name": "Finance Dept for Educational Strength.pdf",
-    "doc_id": "executive_finance_dept_for_educational_strength",
-    "file_size": 260376,
-    "parent_folders": [
-      "Executive"
-    ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629115"
+    "discovery_timestamp": "2025-10-29T15:41:45.831983"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Executive/GO/2025SE_36315_MS15_E-Dt.19.04.2025.pdf",
@@ -123,7 +123,7 @@
       "Executive",
       "GO"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629129"
+    "discovery_timestamp": "2025-10-29T15:41:45.832007"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Executive/GO/nadu-nedu-extension-2022-1.pdf",
@@ -134,7 +134,7 @@
       "Executive",
       "GO"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629142"
+    "discovery_timestamp": "2025-10-29T15:41:45.832031"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Executive/GO/GO-MS-129-Dt.15.07.2022.pdf",
@@ -145,7 +145,7 @@
       "Executive",
       "GO"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629155"
+    "discovery_timestamp": "2025-10-29T15:41:45.832054"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Executive/GO/Procs.Rc_.No_.1078085-MDM-2020-Dt.17.11.2022.pdf",
@@ -156,7 +156,7 @@
       "Executive",
       "GO"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629166"
+    "discovery_timestamp": "2025-10-29T15:41:45.832078"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Executive/GO/Amendments to AP RTE Rules,2010-SMC Formation GO.41 Dt.19-6-13.pdf",
@@ -167,7 +167,7 @@
       "Executive",
       "GO"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629179"
+    "discovery_timestamp": "2025-10-29T15:41:45.832102"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Executive/GO/Andhra_rte_rules2009.pdf",
@@ -178,7 +178,7 @@
       "Executive",
       "GO"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629191"
+    "discovery_timestamp": "2025-10-29T15:41:45.832125"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Executive/GO/G.O.MS.No. 30.pdf",
@@ -189,7 +189,7 @@
       "Executive",
       "GO"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629203"
+    "discovery_timestamp": "2025-10-29T15:41:45.832148"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Executive/GO/GO-Ms-No.56-Dt.20.06.2023.pdf",
@@ -200,7 +200,7 @@
       "Executive",
       "GO"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629216"
+    "discovery_timestamp": "2025-10-29T15:41:45.832170"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Executive/GO/JAGANANN AMMAVODI G O MS NO 54.pdf",
@@ -211,7 +211,7 @@
       "Executive",
       "GO"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629228"
+    "discovery_timestamp": "2025-10-29T15:41:45.832192"
   },
   {
     "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Executive/GO/2025SE_36317_MS16_E-Dt.19.04.2025.pdf",
@@ -222,6 +222,6 @@
       "Executive",
       "GO"
     ],
-    "discovery_timestamp": "2025-10-29T11:18:54.629240"
+    "discovery_timestamp": "2025-10-29T15:41:45.832216"
   }
 ]

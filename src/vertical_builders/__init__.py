@@ -18,11 +18,17 @@ enabling specialized agents to answer precise queries.
 from .base_builder import BaseVerticalBuilder
 from .legal_builder import LegalDatabaseBuilder
 from .go_builder import GODatabaseBuilder
+from .judicial_builder import JudicialDatabaseBuilder
+from .data_builder import DataDatabaseBuilder
+from .schema_builder import SchemeDatabaseBuilder
 
 __version__ = "1.0.0"
 
 __all__ = [
     "BaseVerticalBuilder",
     "LegalDatabaseBuilder", 
-    "GODatabaseBuilder"
+    "GODatabaseBuilder",
+    "JudicialDatabaseBuilder",
+    "DataDatabaseBuilder", 
+    "SchemeDatabaseBuilder"
 ]

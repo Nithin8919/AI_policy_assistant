@@ -3,121 +3,99 @@
     "documents_processed": 5,
     "documents_successful": 5,
     "documents_failed": 0,
-    "total_chunks": 957,
+    "total_chunks": 2412,
     "total_entities": 0,
     "total_relations": 0,
-    "total_topics_matched": 0,
+    "total_topics_matched": 15,
     "processing_errors": [],
     "quality_distribution": {
       "excellent": 0,
       "good": 0,
-      "acceptable": 0,
-      "poor": 5,
+      "acceptable": 5,
+      "poor": 0,
       "critical": 0
     }
   },
   "processing_results": [
     {
       "document_info": {
-        "doc_id": "ncpr_guidelines_for_prevention",
-        "title": "Guidelines For Prevention",
-        "doc_type": "framework",
+        "doc_id": "statutory_constitutionofindia",
+        "title": "Constitutionofindia",
+        "doc_type": "act",
         "classification_confidence": 1.0,
-        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/Guidelines for prevention.pdf",
-        "processing_timestamp": "2025-10-29T11:19:00.423615"
+        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/ConstitutionOfIndia.pdf",
+        "processing_timestamp": "2025-10-29T15:42:04.500561"
       },
       "processing_results": {
-        "text_length": 74146,
-        "chunk_count": 129,
+        "text_length": 883119,
+        "chunk_count": 1339,
         "entity_count": 0,
         "relation_count": 0,
         "topics_matched": 0,
-        "quality_score": 52,
-        "quality_level": "poor"
+        "quality_score": 51.5,
+        "quality_level": "acceptable"
       },
       "quality_report": {
         "overall": {
-          "overall_score": 52,
-          "quality_level": "poor",
-          "all_issues": [
-            "gibberish_detected",
-            "mostly_empty_categories",
-            "no_relations",
-            "low_entity_density"
-          ],
-          "critical_issues": [],
-          "issue_count": 4,
-          "needs_review": true,
-          "component_scores": {
-            "text_extraction": 60,
-            "metadata_completeness": 100,
-            "entity_extraction": 0,
-            "relation_extraction": 30,
-            "document_classification": 100
-          }
+          "overall_score": 51.5,
+          "quality_level": "acceptable",
+          "document_type": "act",
+          "is_production_ready": false
         },
-        "components": {
-          "text_extraction": {
-            "score": 60,
+        "component_scores": {
+          "text_quality": 90,
+          "entity_quality": 0,
+          "relation_quality": 50,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 90,
+            "text_length": 883119,
+            "word_count": 143731,
             "issues": [
-              "gibberish_detected"
-            ],
-            "metrics": {
-              "length": 74146,
-              "special_char_ratio": 0.033,
-              "word_ratio": 0.884,
-              "sentence_ratio": 0.842,
-              "english_score": 0.36,
-              "word_count": 11628
-            }
+              "Multiple dots (possible OCR error)"
+            ]
           },
-          "metadata_completeness": {
-            "score": 100,
-            "issues": [],
-            "completeness": 1.0,
-            "present_fields": 3,
-            "total_required": 3
-          },
-          "entity_extraction": {
+          "entities": {
             "score": 0,
             "issues": [
-              "low_entity_density",
-              "mostly_empty_categories"
+              "No entities extracted"
             ],
-            "entity_density": 0.0,
-            "total_entities": 0,
-            "entity_breakdown": {
-              "legal_refs": 0,
-              "go_refs": 0,
-              "schemes": 0,
-              "districts": 0,
-              "metrics": 0,
-              "social_categories": 0,
-              "school_types": 0,
-              "educational_levels": 0,
-              "spacy_entities": 0,
-              "keywords": 0
-            }
+            "entity_density": 0.0
           },
-          "relation_extraction": {
-            "score": 30,
+          "relations": {
+            "score": 50,
             "issues": [
-              "no_relations"
+              "No relations found"
             ],
             "relation_count": 0
           },
-          "document_classification": {
-            "score": 100,
-            "issues": [],
-            "consistency": true,
-            "method": "content_based"
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
           }
         },
+        "issues": [
+          "Multiple dots (possible OCR error)",
+          "No entities extracted",
+          "No relations found",
+          "Missing recommended metadata: source_url"
+        ],
         "recommendations": [
-          "OCR quality is poor - consider manual review or re-scanning",
-          "Review entity extraction patterns and dictionaries",
-          "Consider re-processing with different extraction settings"
-        ]
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 1000,
+          "min_entity_density": 5.0,
+          "min_section_count": 3,
+          "min_legal_refs": 5
+        }
       },
       "topic_results": {
         "topic_to_chunks": {},
@@ -126,105 +104,601 @@
     },
     {
       "document_info": {
-        "doc_id": "ncpr_guidelines_for_hostel_education",
-        "title": "Guidelines For Hostel Education",
-        "doc_type": "framework",
+        "doc_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019",
+        "title": "AP School Education Regulatory & Monitoring Commission Act 2019",
+        "doc_type": "act",
         "classification_confidence": 1.0,
-        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/Guidelines for hostel education.pdf",
-        "processing_timestamp": "2025-10-29T11:19:03.802464"
+        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/AP School Education Regulatory & Monitoring Commission Act 2019.pdf",
+        "processing_timestamp": "2025-10-29T15:42:04.859697"
       },
       "processing_results": {
-        "text_length": 67469,
-        "chunk_count": 115,
+        "text_length": 24234,
+        "chunk_count": 31,
         "entity_count": 0,
         "relation_count": 0,
-        "topics_matched": 0,
-        "quality_score": 52,
-        "quality_level": "poor"
+        "topics_matched": 15,
+        "quality_score": 54.0,
+        "quality_level": "acceptable"
       },
       "quality_report": {
         "overall": {
-          "overall_score": 52,
-          "quality_level": "poor",
-          "all_issues": [
-            "gibberish_detected",
-            "mostly_empty_categories",
-            "no_relations",
-            "low_entity_density"
-          ],
-          "critical_issues": [],
-          "issue_count": 4,
-          "needs_review": true,
-          "component_scores": {
-            "text_extraction": 60,
-            "metadata_completeness": 100,
-            "entity_extraction": 0,
-            "relation_extraction": 30,
-            "document_classification": 100
-          }
+          "overall_score": 54.0,
+          "quality_level": "acceptable",
+          "document_type": "act",
+          "is_production_ready": false
         },
-        "components": {
-          "text_extraction": {
-            "score": 60,
-            "issues": [
-              "gibberish_detected"
-            ],
-            "metrics": {
-              "length": 67469,
-              "special_char_ratio": 0.045,
-              "word_ratio": 0.868,
-              "sentence_ratio": 0.697,
-              "english_score": 0.335,
-              "word_count": 10024
-            }
-          },
-          "metadata_completeness": {
+        "component_scores": {
+          "text_quality": 100,
+          "entity_quality": 0,
+          "relation_quality": 50,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
             "score": 100,
-            "issues": [],
-            "completeness": 1.0,
-            "present_fields": 3,
-            "total_required": 3
+            "text_length": 24234,
+            "word_count": 3833,
+            "issues": []
           },
-          "entity_extraction": {
+          "entities": {
             "score": 0,
             "issues": [
-              "low_entity_density",
-              "mostly_empty_categories"
+              "No entities extracted"
             ],
-            "entity_density": 0.0,
-            "total_entities": 0,
-            "entity_breakdown": {
-              "legal_refs": 0,
-              "go_refs": 0,
-              "schemes": 0,
-              "districts": 0,
-              "metrics": 0,
-              "social_categories": 0,
-              "school_types": 0,
-              "educational_levels": 0,
-              "spacy_entities": 0,
-              "keywords": 0
-            }
+            "entity_density": 0.0
           },
-          "relation_extraction": {
-            "score": 30,
+          "relations": {
+            "score": 50,
             "issues": [
-              "no_relations"
+              "No relations found"
             ],
             "relation_count": 0
           },
-          "document_classification": {
-            "score": 100,
-            "issues": [],
-            "consistency": true,
-            "method": "content_based"
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
           }
         },
+        "issues": [
+          "No entities extracted",
+          "No relations found",
+          "Missing recommended metadata: source_url"
+        ],
         "recommendations": [
-          "OCR quality is poor - consider manual review or re-scanning",
-          "Review entity extraction patterns and dictionaries",
-          "Consider re-processing with different extraction settings"
-        ]
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 1000,
+          "min_entity_density": 5.0,
+          "min_section_count": 3,
+          "min_legal_refs": 5
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {
+          "data_management": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0004",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0005",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0006",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0008",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0010",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0011",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0012",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0013",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0014",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0016",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0017",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0018",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0019",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0020",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0021",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0022",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0001",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0003",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            }
+          ],
+          "rte_compliance": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0000",
+              "score": 1.58,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0000",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0001",
+              "score": 2.17,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0003",
+              "score": 1.92,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0005",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0010",
+              "score": 3.33,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0012",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0017",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0000",
+              "score": 1.58,
+              "confidence": "medium"
+            }
+          ],
+          "private_school_regulation": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0001",
+              "score": 5.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0008",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0009",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0014",
+              "score": 5.7,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0017",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0022",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0000",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0002",
+              "score": 3.7,
+              "confidence": "high"
+            }
+          ],
+          "jagananna_amma_vodi": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0001",
+              "score": 1.67,
+              "confidence": "medium"
+            }
+          ],
+          "rte_section_12_1_c": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0000",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0005",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0009",
+              "score": 5.2,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0010",
+              "score": 7.62,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0012",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0019",
+              "score": 2.0,
+              "confidence": "medium"
+            }
+          ],
+          "textbook_curriculum": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0000",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0009",
+              "score": 2.5,
+              "confidence": "medium"
+            }
+          ],
+          "ptr_norms": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0000",
+              "score": 1.83,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0010",
+              "score": 1.83,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0013",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0020",
+              "score": 2.0,
+              "confidence": "medium"
+            }
+          ],
+          "teacher_transfers": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0003",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0004",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0010",
+              "score": 3.0,
+              "confidence": "high"
+            }
+          ],
+          "inclusive_education": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0005",
+              "score": 1.5,
+              "confidence": "medium"
+            }
+          ],
+          "vocational_education": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0008",
+              "score": 1.5,
+              "confidence": "medium"
+            }
+          ],
+          "nadu_nedu_programme": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0009",
+              "score": 3.7,
+              "confidence": "high"
+            }
+          ],
+          "examination_system": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0009",
+              "score": 3.5,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0016",
+              "score": 2.0,
+              "confidence": "medium"
+            }
+          ],
+          "attendance_monitoring": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0016",
+              "score": 2.5,
+              "confidence": "medium"
+            }
+          ],
+          "education_finance": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0019",
+              "score": 1.67,
+              "confidence": "medium"
+            }
+          ],
+          "quality_monitoring": [
+            {
+              "chunk_id": "statutory_ap_school_education_regulatory_&_monitoring_commission_act_2019_chunk_0003",
+              "score": 3.2,
+              "confidence": "high"
+            }
+          ]
+        },
+        "statistics": {
+          "total_topics_matched": 15,
+          "total_topic_bridge_coverage": 50.0,
+          "top_topics": [
+            {
+              "topic_id": "data_management",
+              "topic_name": "Education Data Management Systems",
+              "chunk_count": 25
+            },
+            {
+              "topic_id": "rte_compliance",
+              "topic_name": "RTE Act Compliance and Implementation",
+              "chunk_count": 9
+            },
+            {
+              "topic_id": "private_school_regulation",
+              "topic_name": "Private School Recognition and Regulation",
+              "chunk_count": 8
+            },
+            {
+              "topic_id": "rte_section_12_1_c",
+              "topic_name": "RTE Section 12(1)(c) - 25% Reservation in Private Schools",
+              "chunk_count": 7
+            },
+            {
+              "topic_id": "ptr_norms",
+              "topic_name": "Pupil-Teacher Ratio Norms",
+              "chunk_count": 4
+            },
+            {
+              "topic_id": "teacher_transfers",
+              "topic_name": "Teacher Transfer Policy",
+              "chunk_count": 3
+            },
+            {
+              "topic_id": "textbook_curriculum",
+              "topic_name": "Textbooks and Curriculum Implementation",
+              "chunk_count": 2
+            },
+            {
+              "topic_id": "examination_system",
+              "topic_name": "Examination and Evaluation System",
+              "chunk_count": 2
+            },
+            {
+              "topic_id": "jagananna_amma_vodi",
+              "topic_name": "Jagananna Amma Vodi Scheme",
+              "chunk_count": 1
+            },
+            {
+              "topic_id": "inclusive_education",
+              "topic_name": "Inclusive Education for CWSN",
+              "chunk_count": 1
+            }
+          ],
+          "topic_chunk_counts": {
+            "data_management": 25,
+            "rte_compliance": 9,
+            "private_school_regulation": 8,
+            "jagananna_amma_vodi": 1,
+            "rte_section_12_1_c": 7,
+            "textbook_curriculum": 2,
+            "ptr_norms": 4,
+            "teacher_transfers": 3,
+            "inclusive_education": 1,
+            "vocational_education": 1,
+            "nadu_nedu_programme": 1,
+            "examination_system": 2,
+            "attendance_monitoring": 1,
+            "education_finance": 1,
+            "quality_monitoring": 1
+          },
+          "high_confidence_matches": 15,
+          "medium_confidence_matches": 52
+        }
+      }
+    },
+    {
+      "document_info": {
+        "doc_id": "statutory_ap_education_act_1982_&_amendments",
+        "title": "AP Education Act 1982 & Amendments",
+        "doc_type": "data_report",
+        "classification_confidence": 1.0,
+        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/AP Education Act 1982 & amendments.pdf",
+        "processing_timestamp": "2025-10-29T15:42:10.232661"
+      },
+      "processing_results": {
+        "text_length": 268489,
+        "chunk_count": 472,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 58.0,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 58.0,
+          "quality_level": "acceptable",
+          "document_type": "data_report",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 100,
+          "entity_quality": 0,
+          "relation_quality": 70,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 100,
+            "text_length": 268489,
+            "word_count": 44884,
+            "issues": []
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 70,
+            "issues": [
+              "No relations found (not critical for this doc type)"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "No entities extracted",
+          "No relations found (not critical for this doc type)",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 1000,
+          "min_entity_density": 10.0,
+          "min_metrics": 5
+        }
       },
       "topic_results": {
         "topic_to_chunks": {},
@@ -233,108 +707,80 @@
     },
     {
       "document_info": {
-        "doc_id": "ncpr_regulatory_guidelines_for_private_play_schools",
-        "title": "Regulatory Guidelines For Private Play Schools",
-        "doc_type": "framework",
+        "doc_id": "statutory_right_of_children_to_free_&_compulsory_education_act_2009_(rte)",
+        "title": "Right Of Children To Free & Compulsory Education Act 2009 (Rte)",
+        "doc_type": "act",
         "classification_confidence": 1.0,
-        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/Regulatory Guidelines for Private Play Schools.pdf",
-        "processing_timestamp": "2025-10-29T11:19:07.451596"
+        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/Right of Children to Free & Compulsory Education Act 2009 (RTE).pdf",
+        "processing_timestamp": "2025-10-29T15:42:11.293034"
       },
       "processing_results": {
-        "text_length": 72344,
-        "chunk_count": 122,
+        "text_length": 43843,
+        "chunk_count": 87,
         "entity_count": 0,
         "relation_count": 0,
         "topics_matched": 0,
-        "quality_score": 52,
-        "quality_level": "poor"
+        "quality_score": 54.0,
+        "quality_level": "acceptable"
       },
       "quality_report": {
         "overall": {
-          "overall_score": 52,
-          "quality_level": "poor",
-          "all_issues": [
-            "no_relations",
-            "gibberish_detected",
-            "mostly_empty_categories",
-            "invalid_year",
-            "low_entity_density"
-          ],
-          "critical_issues": [],
-          "issue_count": 5,
-          "needs_review": true,
-          "component_scores": {
-            "text_extraction": 60,
-            "metadata_completeness": 100,
-            "entity_extraction": 0,
-            "relation_extraction": 30,
-            "document_classification": 100
-          }
+          "overall_score": 54.0,
+          "quality_level": "acceptable",
+          "document_type": "act",
+          "is_production_ready": false
         },
-        "components": {
-          "text_extraction": {
-            "score": 60,
-            "issues": [
-              "gibberish_detected"
-            ],
-            "metrics": {
-              "length": 72344,
-              "special_char_ratio": 0.078,
-              "word_ratio": 0.807,
-              "sentence_ratio": 0.826,
-              "english_score": 0.343,
-              "word_count": 11584
-            }
-          },
-          "metadata_completeness": {
+        "component_scores": {
+          "text_quality": 100,
+          "entity_quality": 0,
+          "relation_quality": 50,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
             "score": 100,
-            "issues": [
-              "invalid_year"
-            ],
-            "completeness": 1.0,
-            "present_fields": 3,
-            "total_required": 3
+            "text_length": 43843,
+            "word_count": 6989,
+            "issues": []
           },
-          "entity_extraction": {
+          "entities": {
             "score": 0,
             "issues": [
-              "low_entity_density",
-              "mostly_empty_categories"
+              "No entities extracted"
             ],
-            "entity_density": 0.0,
-            "total_entities": 0,
-            "entity_breakdown": {
-              "legal_refs": 0,
-              "go_refs": 0,
-              "schemes": 0,
-              "districts": 0,
-              "metrics": 0,
-              "social_categories": 0,
-              "school_types": 0,
-              "educational_levels": 0,
-              "spacy_entities": 0,
-              "keywords": 0
-            }
+            "entity_density": 0.0
           },
-          "relation_extraction": {
-            "score": 30,
+          "relations": {
+            "score": 50,
             "issues": [
-              "no_relations"
+              "No relations found"
             ],
             "relation_count": 0
           },
-          "document_classification": {
-            "score": 100,
-            "issues": [],
-            "consistency": true,
-            "method": "content_based"
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
           }
         },
+        "issues": [
+          "No entities extracted",
+          "No relations found",
+          "Missing recommended metadata: source_url"
+        ],
         "recommendations": [
-          "OCR quality is poor - consider manual review or re-scanning",
-          "Review entity extraction patterns and dictionaries",
-          "Consider re-processing with different extraction settings"
-        ]
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 1000,
+          "min_entity_density": 5.0,
+          "min_section_count": 3,
+          "min_legal_refs": 5
+        }
       },
       "topic_results": {
         "topic_to_chunks": {},
@@ -343,215 +789,83 @@
     },
     {
       "document_info": {
-        "doc_id": "ncpr_school_safety_and_guidelines",
-        "title": "School Safety And Guidelines",
+        "doc_id": "policy_national_education_policy_2020",
+        "title": "National Education Policy 2020",
         "doc_type": "framework",
         "classification_confidence": 1.0,
-        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/School Safety and Guidelines.pdf",
-        "processing_timestamp": "2025-10-29T11:19:20.855087"
+        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Policy/National Education Policy 2020.pdf",
+        "processing_timestamp": "2025-10-29T15:42:20.815354"
       },
       "processing_results": {
-        "text_length": 272335,
-        "chunk_count": 462,
+        "text_length": 276516,
+        "chunk_count": 483,
         "entity_count": 0,
         "relation_count": 0,
         "topics_matched": 0,
-        "quality_score": 52,
-        "quality_level": "poor"
+        "quality_score": 55.5,
+        "quality_level": "acceptable"
       },
       "quality_report": {
         "overall": {
-          "overall_score": 52,
-          "quality_level": "poor",
-          "all_issues": [
-            "no_relations",
-            "gibberish_detected",
-            "mostly_empty_categories",
-            "invalid_year",
-            "low_entity_density"
-          ],
-          "critical_issues": [],
-          "issue_count": 5,
-          "needs_review": true,
-          "component_scores": {
-            "text_extraction": 60,
-            "metadata_completeness": 100,
-            "entity_extraction": 0,
-            "relation_extraction": 30,
-            "document_classification": 100
-          }
+          "overall_score": 55.5,
+          "quality_level": "acceptable",
+          "document_type": "framework",
+          "is_production_ready": false
         },
-        "components": {
-          "text_extraction": {
-            "score": 60,
+        "component_scores": {
+          "text_quality": 90,
+          "entity_quality": 0,
+          "relation_quality": 70,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 90,
+            "text_length": 276516,
+            "word_count": 40510,
             "issues": [
-              "gibberish_detected"
-            ],
-            "metrics": {
-              "length": 272335,
-              "special_char_ratio": 0.071,
-              "word_ratio": 0.853,
-              "sentence_ratio": 0.741,
-              "english_score": 0.365,
-              "word_count": 42314
-            }
+              "Multiple dots (possible OCR error)"
+            ]
           },
-          "metadata_completeness": {
-            "score": 100,
-            "issues": [
-              "invalid_year"
-            ],
-            "completeness": 1.0,
-            "present_fields": 3,
-            "total_required": 3
-          },
-          "entity_extraction": {
+          "entities": {
             "score": 0,
             "issues": [
-              "low_entity_density",
-              "mostly_empty_categories"
+              "No entities extracted"
             ],
-            "entity_density": 0.0,
-            "total_entities": 0,
-            "entity_breakdown": {
-              "legal_refs": 0,
-              "go_refs": 0,
-              "schemes": 0,
-              "districts": 0,
-              "metrics": 0,
-              "social_categories": 0,
-              "school_types": 0,
-              "educational_levels": 0,
-              "spacy_entities": 0,
-              "keywords": 0
-            }
+            "entity_density": 0.0
           },
-          "relation_extraction": {
-            "score": 30,
+          "relations": {
+            "score": 70,
             "issues": [
-              "no_relations"
+              "No relations found (not critical for this doc type)"
             ],
             "relation_count": 0
           },
-          "document_classification": {
-            "score": 100,
-            "issues": [],
-            "consistency": true,
-            "method": "content_based"
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
           }
         },
+        "issues": [
+          "Multiple dots (possible OCR error)",
+          "No entities extracted",
+          "No relations found (not critical for this doc type)",
+          "Missing recommended metadata: source_url"
+        ],
         "recommendations": [
-          "OCR quality is poor - consider manual review or re-scanning",
-          "Review entity extraction patterns and dictionaries",
-          "Consider re-processing with different extraction settings"
-        ]
-      },
-      "topic_results": {
-        "topic_to_chunks": {},
-        "statistics": {}
-      }
-    },
-    {
-      "document_info": {
-        "doc_id": "ncpr_prevention_of_bullying",
-        "title": "Prevention Of Bullying",
-        "doc_type": "framework",
-        "classification_confidence": 1.0,
-        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/Prevention of Bullying.pdf",
-        "processing_timestamp": "2025-10-29T11:19:26.683630"
-      },
-      "processing_results": {
-        "text_length": 74144,
-        "chunk_count": 129,
-        "entity_count": 0,
-        "relation_count": 0,
-        "topics_matched": 0,
-        "quality_score": 52,
-        "quality_level": "poor"
-      },
-      "quality_report": {
-        "overall": {
-          "overall_score": 52,
-          "quality_level": "poor",
-          "all_issues": [
-            "gibberish_detected",
-            "mostly_empty_categories",
-            "no_relations",
-            "low_entity_density"
-          ],
-          "critical_issues": [],
-          "issue_count": 4,
-          "needs_review": true,
-          "component_scores": {
-            "text_extraction": 60,
-            "metadata_completeness": 100,
-            "entity_extraction": 0,
-            "relation_extraction": 30,
-            "document_classification": 100
-          }
-        },
-        "components": {
-          "text_extraction": {
-            "score": 60,
-            "issues": [
-              "gibberish_detected"
-            ],
-            "metrics": {
-              "length": 74144,
-              "special_char_ratio": 0.033,
-              "word_ratio": 0.884,
-              "sentence_ratio": 0.842,
-              "english_score": 0.36,
-              "word_count": 11628
-            }
-          },
-          "metadata_completeness": {
-            "score": 100,
-            "issues": [],
-            "completeness": 1.0,
-            "present_fields": 3,
-            "total_required": 3
-          },
-          "entity_extraction": {
-            "score": 0,
-            "issues": [
-              "low_entity_density",
-              "mostly_empty_categories"
-            ],
-            "entity_density": 0.0,
-            "total_entities": 0,
-            "entity_breakdown": {
-              "legal_refs": 0,
-              "go_refs": 0,
-              "schemes": 0,
-              "districts": 0,
-              "metrics": 0,
-              "social_categories": 0,
-              "school_types": 0,
-              "educational_levels": 0,
-              "spacy_entities": 0,
-              "keywords": 0
-            }
-          },
-          "relation_extraction": {
-            "score": 30,
-            "issues": [
-              "no_relations"
-            ],
-            "relation_count": 0
-          },
-          "document_classification": {
-            "score": 100,
-            "issues": [],
-            "consistency": true,
-            "method": "content_based"
-          }
-        },
-        "recommendations": [
-          "OCR quality is poor - consider manual review or re-scanning",
-          "Review entity extraction patterns and dictionaries",
-          "Consider re-processing with different extraction settings"
-        ]
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 2000,
+          "min_entity_density": 8.0,
+          "min_section_count": 5,
+          "min_keywords": 10
+        }
       },
       "topic_results": {
         "topic_to_chunks": {},

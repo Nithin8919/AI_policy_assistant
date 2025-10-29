@@ -39,8 +39,18 @@ from .deduplicator import DocumentDeduplicator
 from .enhanced_metadata_builder import MetadataBuilder
 from .enhanced_pipeline import EnhancedIngestionPipeline
 
-# Legacy imports for compatibility
-from .metadata_builder import build_metadata, save_metadata
+# Legacy imports for compatibility - using enhanced metadata builder
+try:
+    from .metadata_builder import build_metadata, save_metadata
+except ImportError:
+    # Fallback to enhanced metadata builder
+    from .enhanced_metadata_builder import MetadataBuilder
+    def build_metadata(*args, **kwargs):
+        builder = MetadataBuilder()
+        return builder.build_metadata(*args, **kwargs)
+    def save_metadata(*args, **kwargs):
+        builder = MetadataBuilder()
+        return builder.save_metadata(*args, **kwargs)
 
 __version__ = "2.0.0"
 

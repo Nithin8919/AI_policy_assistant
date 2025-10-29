@@ -1,0 +1,25 @@
+{
+  "processing_stats": {
+    "chunks_processed": 2412,
+    "documents_processed": 0,
+    "entities_aggregated": 0,
+    "relations_processed": 0,
+    "database_entries_created": 3,
+    "processing_errors": []
+  },
+  "database_stats": {
+    "total_entries": 452,
+    "creation_timestamp": "2025-10-29T15:42:20.910385",
+    "builder_version": "1.0.0",
+    "metadata_count": 5,
+    "acts_count": 3,
+    "rules_count": 0,
+    "cross_reference_index_count": 0,
+    "legal_hierarchy_count": 3,
+    "amendment_timeline_count": 441
+  },
+  "output_files": {
+    "main_database": "/Users/nitin/Documents/AI policy Assistant/data/test_output/verticals/legal/legal_database.json",
+    "statistics": "/Users/nitin/Documents/AI policy Assistant/data/test_output/verticals/legal/legal_statistics.json"
+  }
+}

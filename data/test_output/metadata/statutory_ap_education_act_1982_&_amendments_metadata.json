@@ -1,0 +1,652 @@
+{
+  "doc_id": "statutory_ap_education_act_1982_&_amendments",
+  "title": "AP Education Act 1982 & Amendments",
+  "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Statutory/AP Education Act 1982 & amendments.pdf",
+  "file_name": "AP Education Act 1982 & amendments.pdf",
+  "file_format": ".pdf",
+  "doc_type": "data_report",
+  "priority": "critical",
+  "parent_folders": [
+    "Documents",
+    "Critical Priority",
+    "Statutory"
+  ],
+  "year": 2025,
+  "creation_timestamp": "2025-10-27T22:03:16.321518",
+  "modification_timestamp": "2025-10-24T01:40:44",
+  "processing_timestamp": "2025-10-29T15:42:10.035813",
+  "file_size": 127257,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "data_report",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.5108514190317195,
+      "rule": 0.02587646076794658,
+      "government_order": 0.44574290484140233,
+      "judicial": 0.021702838063439065,
+      "data_report": 1.0,
+      "budget_finance": 0.038397328881469114,
+      "framework": 0.08180300500834725,
+      "circular": 0.01335559265442404
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": true,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": true,
+      "has_financial_terms": true,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 44884,
+      "avg_sentence_length": 38.96020761245675,
+      "title_length": 6
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "09/08/2012",
+        "normalized_date": "2012-08-09",
+        "position": [
+          10845,
+          10855
+        ],
+        "context": "t.\n1. Omitted by the Act No.7 of 2013, S.2, w.e.f 09/08/2012.\n\n[Table 1 on Page 6]\nTHE ANDHRA PRADES",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "13/07/1993",
+        "normalized_date": "1993-07-13",
+        "position": [
+          239249,
+          239259
+        ],
+        "context": "B inserted by the Act No. 17 of 1993, S.2, w.e.f. 13/07/1993.\n2. Substituted by the Act No.1 of 2015",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "02/07/2014",
+        "normalized_date": "2014-07-02",
+        "position": [
+          239312,
+          239322
+        ],
+        "context": ". Substituted by the Act No.1 of 2015, S.2, w.e.f 02/07/2014.\n3. Substituted by the Act No.1 of 2015",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "02/07/2014",
+        "normalized_date": "2014-07-02",
+        "position": [
+          239375,
+          239385
+        ],
+        "context": ". Substituted by the Act No.1 of 2015, S.2, w.e.f 02/07/2014.\n4. Sections 78C and 78D inserted by th",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/01/1994",
+        "normalized_date": "1994-01-01",
+        "position": [
+          239459,
+          239469
+        ],
+        "context": "D inserted by the Act No. 40 of 2008, S.2, w.e.f. 01/01/1994.\n\n[Table 1 on Page 41]\n1[78A. Age of Su",
+        "confidence": 0.9
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "w.e.f 09/08/2012.",
+        "normalized_date": "2012-08-09",
+        "position": [
+          10839,
+          10856
+        ],
+        "context": "appoint.\n1. Omitted by the Act No.7 of 2013, S.2, w.e.f 09/08/2012.\n\n[Table 1 on Page 6]\nTHE ANDHRA",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "with effect from the date of\npublication of the said Act:\nProvided further that the said interregnum period from the 2nd June,",
+        "normalized_date": "2025-06-02",
+        "position": [
+          236812,
+          236938
+        ],
+        "context": "hall\nbe re-inducted into the service/post as such with effect from the date of\npublication of the sa",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "with effect from 1st November,",
+        "normalized_date": "2025-11-01",
+        "position": [
+          237980,
+          238010
+        ],
+        "context": "ified in section\n78A shall be entitled to pension with effect from 1st November, 1992 in\naccordance",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "with effect from 1st November,",
+        "normalized_date": "2025-11-01",
+        "position": [
+          238265,
+          238295
+        ],
+        "context": "years for any\nreason shall be entitled to pension with effect from 1st November, 1992 in\naccordance",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "w.e.f 02/07/2014.",
+        "normalized_date": "2014-07-02",
+        "position": [
+          239306,
+          239323
+        ],
+        "context": "993.\n2. Substituted by the Act No.1 of 2015, S.2, w.e.f 02/07/2014.\n3. Substituted by the Act No.1 o",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "w.e.f 02/07/2014.",
+        "normalized_date": "2014-07-02",
+        "position": [
+          239369,
+          239386
+        ],
+        "context": "014.\n3. Substituted by the Act No.1 of 2015, S.2, w.e.f 02/07/2014.\n4. Sections 78C and 78D inserted",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "with effect from the date of |\npublication of the said Act: |\n\n[Table 3 on Page 41]\n| Provided further that the said interregnum period from the 2nd June,",
+        "normalized_date": "2003-06-02",
+        "position": [
+          240181,
+          240335
+        ],
+        "context": "ll |\nbe re-inducted into the service/post as such with effect from the date of |\npublication of the",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "with effect from 1st November,",
+        "normalized_date": "2025-11-01",
+        "position": [
+          241463,
+          241493
+        ],
+        "context": "ified in section\n78A shall be entitled to pension with effect from 1st November, 1992 in\naccordance",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "with effect from 1st November,",
+        "normalized_date": "2025-11-01",
+        "position": [
+          241774,
+          241804
+        ],
+        "context": "ars for any |\nreason shall be entitled to pension with effect from 1st November, 1992 in |\naccordanc",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "from the date of\npublication of the said Act:\nProvided further that the said interregnum period from the 2nd June,",
+        "normalized_date": "2025-06-02",
+        "position": [
+          236824,
+          236938
+        ],
+        "context": "nducted into the service/post as such with effect from the date of\npublication of the said Act:\nProv",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "from the date of |\npublication of the said Act: |\n\n[Table 3 on Page 41]\n| Provided further that the said interregnum period from the 2nd June,",
+        "normalized_date": "2003-06-02",
+        "position": [
+          240193,
+          240335
+        ],
+        "context": "nducted into the service/post as such with effect from the date of |\npublication of the said Act: |",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date as the Govemment may,",
+        "normalized_date": "2025-05-29",
+        "position": [
+          10745,
+          10771
+        ],
+        "context": "2 of 1971).\n(4) It shall come into force on such date as the Govemment may, by\nnotification, appoin",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date as the Govemment may,",
+        "normalized_date": "2025-05-29",
+        "position": [
+          13159,
+          13185
+        ],
+        "context": "h other period of twelve months beginning on\nsuch date as the Govemment may, by notification specify",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date as the Govemment may,",
+        "normalized_date": "2025-05-29",
+        "position": [
+          16056,
+          16082
+        ],
+        "context": "her period of twelve months beginning on | |\nsuch date as the Govemment may, by notification specify",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date and to such authority as\nmay be prescribed an annual report relating to the administration\nof the local authority institution and an annual budget estimate\nrelating thereto.",
+        "normalized_date": "2025-05-29",
+        "position": [
+          91336,
+          91514
+        ],
+        "context": "urposes, and\n(b) to submit every year before such date and to such authority as\nmay be prescribed an",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date and to such authority as\nmay be prescribed an annual report relating to the administration\nof the local authority institution and an annual budget estimate\nrelating thereto.",
+        "normalized_date": "2025-05-29",
+        "position": [
+          94540,
+          94718
+        ],
+        "context": "urposes, and\n(b) to submit every year before such date and to such authority as\nmay be prescribed an",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date specified therein vest in the Govemment until the said\neducational institution is acquired:\n\n[Table 8 on Page 33]\n| Provided that no private institution under the management of a religious\ninstitution,",
+        "normalized_date": "2025-10-08",
+        "position": [
+          182716,
+          182922
+        ],
+        "context": "nal institution shall with effect on and\nfrom the date specified therein vest in the Govemment until",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date of taking over of the management under subsection (1) (hereinafter in this Chapter referred to as the date aforesaid) in the\nownership,",
+        "normalized_date": "2025-10-01",
+        "position": [
+          183474,
+          183614
+        ],
+        "context": "of such property as\nwere, immediately before the date of taking over of the management under subsec",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date of taking over of the management under subsection (1) (hereinafter in this Chapter referred to as the date aforesaid) in the\nownership,",
+        "normalized_date": "2025-10-01",
+        "position": [
+          187342,
+          187482
+        ],
+        "context": "of such property as\nwere, immediately before the date of taking over of the management under subsec",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date as may be specified in the notification;",
+        "normalized_date": "2025-05-29",
+        "position": [
+          220983,
+          221028
+        ],
+        "context": "dministered by the said local authority from\nsuch date as may be specified in the notification; and",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date as may be notified,",
+        "normalized_date": "2025-05-29",
+        "position": [
+          222930,
+          222954
+        ],
+        "context": ", the\nGovemment may, with effect on and from such date as may be notified,\ntransfer, with the prior",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date as may be specified in the notification;",
+        "normalized_date": "2025-05-29",
+        "position": [
+          224893,
+          224938
+        ],
+        "context": "dministered by the said local authority from\nsuch date as may be specified in the notification; and",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date as may be notified,",
+        "normalized_date": "2025-05-29",
+        "position": [
+          226942,
+          226966
+        ],
+        "context": ", the\nGovemment may, with effect on and from such date as may be notified,\ntransfer, with the prior",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date as may be notified,",
+        "normalized_date": "2025-05-29",
+        "position": [
+          229356,
+          229380
+        ],
+        "context": ",\nthe Govemment may, with effect on and from such date as may be notified,\ntransfer, with the prior",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date as may be notified,",
+        "normalized_date": "2025-05-29",
+        "position": [
+          233268,
+          233292
+        ],
+        "context": ",\nthe Govemment may, with effect on and from such date as may be notified,\ntransfer, with the prior",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date of\npublication of the said Act:\nProvided further that the said interregnum period from the 2nd June,",
+        "normalized_date": "2025-06-02",
+        "position": [
+          236833,
+          236938
+        ],
+        "context": "nto the service/post as such with effect from the date of\npublication of the said Act:\nProvided furt",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date of birth is the first day of a month shall retire from\nservice on the aftemoon of the last day of the preceding month on attaining the\nage of 3[sixty years].",
+        "normalized_date": "2025-10-03",
+        "position": [
+          237339,
+          237501
+        ],
+        "context": "bts, it is hereby declared that an\nemployee whose date of birth is the first day of a month shall re",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date of |\npublication of the said Act: |\n\n[Table 3 on Page 41]\n| Provided further that the said interregnum period from the 2nd June,",
+        "normalized_date": "2003-06-02",
+        "position": [
+          240202,
+          240335
+        ],
+        "context": "nto the service/post as such with effect from the date of |\npublication of the said Act: |\n\n[Table 3",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date of birth is the first day of a month shall retire from |\nservice on the aftemoon of the last day of the preceding month on attaining the |\nage of 3[sixty years].",
+        "normalized_date": "2025-10-03",
+        "position": [
+          240794,
+          240960
+        ],
+        "context": "bts, it is hereby declared that an\nemployee whose date of birth is the first day of a month shall re",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the\nfirst day of April of each year immediately preceding the academic year,",
+        "normalized_date": "2025-04-29",
+        "position": [
+          56317,
+          56400
+        ],
+        "context": "laration under sub-section (6) shall be published before the\nfirst day of April of each year immedia",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the\nfirst day of April of each year immediately preceding the academic year,",
+        "normalized_date": "2025-04-29",
+        "position": [
+          59910,
+          59993
+        ],
+        "context": "laration under sub-section (6) shall be published before the\nfirst day of April of each year immedia",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "not later than the first day\nof September each year,",
+        "normalized_date": "2025-09-29",
+        "position": [
+          70930,
+          70982
+        ],
+        "context": "(2) Where the birthday of a child falls on a day not later than the first day\nof September each yea",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "not later than the first day\nof September each year,",
+        "normalized_date": "2025-09-29",
+        "position": [
+          74475,
+          74527
+        ],
+        "context": "(2) Where the birthday of a child falls on a day not later than the first day\nof September each yea",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before such date and to such authority as\nmay be prescribed an annual report relating to the administration\nof the local authority institution and an annual budget estimate\nrelating thereto.",
+        "normalized_date": "2025-05-29",
+        "position": [
+          91324,
+          91514
+        ],
+        "context": "ducational purposes, and\n(b) to submit every year before such date and to such authority as\nmay be p",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before such date and to such authority as\nmay be prescribed an annual report relating to the administration\nof the local authority institution and an annual budget estimate\nrelating thereto.",
+        "normalized_date": "2025-05-29",
+        "position": [
+          94528,
+          94718
+        ],
+        "context": "ducational purposes, and\n(b) to submit every year before such date and to such authority as\nmay be p",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "Before the end of April in each year,",
+        "normalized_date": "2025-04-29",
+        "position": [
+          98750,
+          98787
+        ],
+        "context": "ed by the\ncompetent authority in this behalf.\n(4) Before the end of April in each year, the manager",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "Before the end of April in each year,",
+        "normalized_date": "2025-04-29",
+        "position": [
+          102081,
+          102118
+        ],
+        "context": "ity in this behalf. |\n\n[Table 8 on Page 21]\n| (4) Before the end of April in each year, the manager",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the date of taking over of the management under subsection (1) (hereinafter in this Chapter referred to as the date aforesaid) in the\nownership,",
+        "normalized_date": "2025-10-01",
+        "position": [
+          183463,
+          183614
+        ],
+        "context": "arising out of such property as\nwere, immediately before the date of taking over of the management u",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the date of taking over of the management under subsection (1) (hereinafter in this Chapter referred to as the date aforesaid) in the\nownership,",
+        "normalized_date": "2025-10-01",
+        "position": [
+          187331,
+          187482
+        ],
+        "context": "arising out of such property as\nwere, immediately before the date of taking over of the management u",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "Before requisitioning any property under sub-section (1) the\nGovemment,",
+        "normalized_date": "2025-10-01",
+        "position": [
+          194586,
+          194657
+        ],
+        "context": "expedient in connection with the requisition.\n(2) Before requisitioning any property under sub-secti",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before each House of the State\nLegislature if it is in session and if it is not in session in the session\nimmediately following for a total period of fourteen days which may be\ncomprised in one session or in two successive sessions and if,",
+        "normalized_date": "2025-05-29",
+        "position": [
+          266267,
+          266506
+        ],
+        "context": "l\nimmediately after it is issued or made, be laid before each House of the State\nLegislature if it i",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [],
+    "date_ranges": [
+      {
+        "type": "date_range",
+        "raw_text": "from an educational institution at any level of his studies therein;\n(5) \"Andhra Pradesh Residential Educational Institutions Society\" means the\nregistered society referred to in sub-section (2) of section 33;",
+        "start_date": "2025-10-05",
+        "end_date": "2033-02-28",
+        "position": [
+          13531,
+          13740
+        ],
+        "context": "before, or as the case may be, who is a\ndrop-out from an educational institution at any level of hi",
+        "confidence": 0.85
+      },
+      {
+        "type": "date_range",
+        "raw_text": "from an educational institution at any level of his studies therein; | |\n(5) \"Andhra Pradesh Residential Educational Institutions Society\" means the | |\nregistered society referred to in sub-section (2) of section 33;",
+        "start_date": "2025-10-05",
+        "end_date": "2033-02-28",
+        "position": [
+          16448,
+          16665
+        ],
+        "context": "ore, or as the case may be, who is a | |\ndrop-out from an educational institution at any level of hi",
+        "confidence": 0.85
+      },
+      {
+        "type": "date_range",
+        "raw_text": "from service\non the aftemoon of the last day of the month in which he attains the age of\nsixty years:\n\n[Table 2 on Page 41]\n| Provided that every teacher or member of the non-teaching staff\nemployed in any aided private educational institution, who retired from service |\non attaining the age of fifty eight years on and from 2nd June,",
+        "start_date": "2025-10-02",
+        "end_date": "2025-06-02",
+        "position": [
+          239703,
+          240038
+        ],
+        "context": "ded private educational institution, shall retire from service\non the aftemoon of the last day of th",
+        "confidence": 0.85
+      },
+      {
+        "type": "date_range",
+        "raw_text": "from entering\nany private educational institution in the exercise of any power conferred on it\nor him by or under this Act, he shall be punished with fine which may extend\nto 3[two thousand rupees].",
+        "start_date": "2025-05-29",
+        "end_date": "2025-10-03",
+        "position": [
+          251769,
+          251967
+        ],
+        "context": "person obstructs any authority, officer or person from entering\nany private educational institution",
+        "confidence": 0.85
+      }
+    ],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 50,
+      "total_dates": 46,
+      "total_academic_years": 0,
+      "total_ranges": 4,
+      "total_periods": 0,
+      "earliest_date": "1993-07-13",
+      "latest_date": "2025-11-01",
+      "year_span": [
+        1993,
+        2025
+      ],
+      "primary_years": [
+        2025,
+        2014,
+        2012,
+        2003,
+        1994
+      ]
+    }
+  },
+  "effective_date": "2012-08-09",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}
