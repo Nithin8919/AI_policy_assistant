@@ -1,0 +1,29 @@
+{
+  "legal_agent": {
+    "name": "Legal Agent",
+    "description": "Acts & Rules specialist",
+    "collection": "legal"
+  },
+  "go_agent": {
+    "name": "GO Agent",
+    "description": "Government Orders specialist",
+    "collection": "go"
+  },
+  "judicial_agent": {
+    "name": "Judicial Agent",
+    "description": "Case law specialist",
+    "collection": "judicial"
+  },
+  "data_agent": {
+    "name": "Data Agent",
+    "description": "Metrics & statistics specialist",
+    "collection": "data"
+  },
+  "internet_agent": {
+    "name": "Internet Agent",
+    "description": "Web search specialist",
+    "collection": "external"
+  }
+}
+
+

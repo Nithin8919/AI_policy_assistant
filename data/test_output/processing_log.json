@@ -1,0 +1,562 @@
+{
+  "pipeline_stats": {
+    "documents_processed": 5,
+    "documents_successful": 5,
+    "documents_failed": 0,
+    "total_chunks": 957,
+    "total_entities": 0,
+    "total_relations": 0,
+    "total_topics_matched": 0,
+    "processing_errors": [],
+    "quality_distribution": {
+      "excellent": 0,
+      "good": 0,
+      "acceptable": 0,
+      "poor": 5,
+      "critical": 0
+    }
+  },
+  "processing_results": [
+    {
+      "document_info": {
+        "doc_id": "ncpr_guidelines_for_prevention",
+        "title": "Guidelines For Prevention",
+        "doc_type": "framework",
+        "classification_confidence": 1.0,
+        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/Guidelines for prevention.pdf",
+        "processing_timestamp": "2025-10-29T11:19:00.423615"
+      },
+      "processing_results": {
+        "text_length": 74146,
+        "chunk_count": 129,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 52,
+        "quality_level": "poor"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 52,
+          "quality_level": "poor",
+          "all_issues": [
+            "gibberish_detected",
+            "mostly_empty_categories",
+            "no_relations",
+            "low_entity_density"
+          ],
+          "critical_issues": [],
+          "issue_count": 4,
+          "needs_review": true,
+          "component_scores": {
+            "text_extraction": 60,
+            "metadata_completeness": 100,
+            "entity_extraction": 0,
+            "relation_extraction": 30,
+            "document_classification": 100
+          }
+        },
+        "components": {
+          "text_extraction": {
+            "score": 60,
+            "issues": [
+              "gibberish_detected"
+            ],
+            "metrics": {
+              "length": 74146,
+              "special_char_ratio": 0.033,
+              "word_ratio": 0.884,
+              "sentence_ratio": 0.842,
+              "english_score": 0.36,
+              "word_count": 11628
+            }
+          },
+          "metadata_completeness": {
+            "score": 100,
+            "issues": [],
+            "completeness": 1.0,
+            "present_fields": 3,
+            "total_required": 3
+          },
+          "entity_extraction": {
+            "score": 0,
+            "issues": [
+              "low_entity_density",
+              "mostly_empty_categories"
+            ],
+            "entity_density": 0.0,
+            "total_entities": 0,
+            "entity_breakdown": {
+              "legal_refs": 0,
+              "go_refs": 0,
+              "schemes": 0,
+              "districts": 0,
+              "metrics": 0,
+              "social_categories": 0,
+              "school_types": 0,
+              "educational_levels": 0,
+              "spacy_entities": 0,
+              "keywords": 0
+            }
+          },
+          "relation_extraction": {
+            "score": 30,
+            "issues": [
+              "no_relations"
+            ],
+            "relation_count": 0
+          },
+          "document_classification": {
+            "score": 100,
+            "issues": [],
+            "consistency": true,
+            "method": "content_based"
+          }
+        },
+        "recommendations": [
+          "OCR quality is poor - consider manual review or re-scanning",
+          "Review entity extraction patterns and dictionaries",
+          "Consider re-processing with different extraction settings"
+        ]
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "document_info": {
+        "doc_id": "ncpr_guidelines_for_hostel_education",
+        "title": "Guidelines For Hostel Education",
+        "doc_type": "framework",
+        "classification_confidence": 1.0,
+        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/Guidelines for hostel education.pdf",
+        "processing_timestamp": "2025-10-29T11:19:03.802464"
+      },
+      "processing_results": {
+        "text_length": 67469,
+        "chunk_count": 115,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 52,
+        "quality_level": "poor"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 52,
+          "quality_level": "poor",
+          "all_issues": [
+            "gibberish_detected",
+            "mostly_empty_categories",
+            "no_relations",
+            "low_entity_density"
+          ],
+          "critical_issues": [],
+          "issue_count": 4,
+          "needs_review": true,
+          "component_scores": {
+            "text_extraction": 60,
+            "metadata_completeness": 100,
+            "entity_extraction": 0,
+            "relation_extraction": 30,
+            "document_classification": 100
+          }
+        },
+        "components": {
+          "text_extraction": {
+            "score": 60,
+            "issues": [
+              "gibberish_detected"
+            ],
+            "metrics": {
+              "length": 67469,
+              "special_char_ratio": 0.045,
+              "word_ratio": 0.868,
+              "sentence_ratio": 0.697,
+              "english_score": 0.335,
+              "word_count": 10024
+            }
+          },
+          "metadata_completeness": {
+            "score": 100,
+            "issues": [],
+            "completeness": 1.0,
+            "present_fields": 3,
+            "total_required": 3
+          },
+          "entity_extraction": {
+            "score": 0,
+            "issues": [
+              "low_entity_density",
+              "mostly_empty_categories"
+            ],
+            "entity_density": 0.0,
+            "total_entities": 0,
+            "entity_breakdown": {
+              "legal_refs": 0,
+              "go_refs": 0,
+              "schemes": 0,
+              "districts": 0,
+              "metrics": 0,
+              "social_categories": 0,
+              "school_types": 0,
+              "educational_levels": 0,
+              "spacy_entities": 0,
+              "keywords": 0
+            }
+          },
+          "relation_extraction": {
+            "score": 30,
+            "issues": [
+              "no_relations"
+            ],
+            "relation_count": 0
+          },
+          "document_classification": {
+            "score": 100,
+            "issues": [],
+            "consistency": true,
+            "method": "content_based"
+          }
+        },
+        "recommendations": [
+          "OCR quality is poor - consider manual review or re-scanning",
+          "Review entity extraction patterns and dictionaries",
+          "Consider re-processing with different extraction settings"
+        ]
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "document_info": {
+        "doc_id": "ncpr_regulatory_guidelines_for_private_play_schools",
+        "title": "Regulatory Guidelines For Private Play Schools",
+        "doc_type": "framework",
+        "classification_confidence": 1.0,
+        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/Regulatory Guidelines for Private Play Schools.pdf",
+        "processing_timestamp": "2025-10-29T11:19:07.451596"
+      },
+      "processing_results": {
+        "text_length": 72344,
+        "chunk_count": 122,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 52,
+        "quality_level": "poor"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 52,
+          "quality_level": "poor",
+          "all_issues": [
+            "no_relations",
+            "gibberish_detected",
+            "mostly_empty_categories",
+            "invalid_year",
+            "low_entity_density"
+          ],
+          "critical_issues": [],
+          "issue_count": 5,
+          "needs_review": true,
+          "component_scores": {
+            "text_extraction": 60,
+            "metadata_completeness": 100,
+            "entity_extraction": 0,
+            "relation_extraction": 30,
+            "document_classification": 100
+          }
+        },
+        "components": {
+          "text_extraction": {
+            "score": 60,
+            "issues": [
+              "gibberish_detected"
+            ],
+            "metrics": {
+              "length": 72344,
+              "special_char_ratio": 0.078,
+              "word_ratio": 0.807,
+              "sentence_ratio": 0.826,
+              "english_score": 0.343,
+              "word_count": 11584
+            }
+          },
+          "metadata_completeness": {
+            "score": 100,
+            "issues": [
+              "invalid_year"
+            ],
+            "completeness": 1.0,
+            "present_fields": 3,
+            "total_required": 3
+          },
+          "entity_extraction": {
+            "score": 0,
+            "issues": [
+              "low_entity_density",
+              "mostly_empty_categories"
+            ],
+            "entity_density": 0.0,
+            "total_entities": 0,
+            "entity_breakdown": {
+              "legal_refs": 0,
+              "go_refs": 0,
+              "schemes": 0,
+              "districts": 0,
+              "metrics": 0,
+              "social_categories": 0,
+              "school_types": 0,
+              "educational_levels": 0,
+              "spacy_entities": 0,
+              "keywords": 0
+            }
+          },
+          "relation_extraction": {
+            "score": 30,
+            "issues": [
+              "no_relations"
+            ],
+            "relation_count": 0
+          },
+          "document_classification": {
+            "score": 100,
+            "issues": [],
+            "consistency": true,
+            "method": "content_based"
+          }
+        },
+        "recommendations": [
+          "OCR quality is poor - consider manual review or re-scanning",
+          "Review entity extraction patterns and dictionaries",
+          "Consider re-processing with different extraction settings"
+        ]
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "document_info": {
+        "doc_id": "ncpr_school_safety_and_guidelines",
+        "title": "School Safety And Guidelines",
+        "doc_type": "framework",
+        "classification_confidence": 1.0,
+        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/School Safety and Guidelines.pdf",
+        "processing_timestamp": "2025-10-29T11:19:20.855087"
+      },
+      "processing_results": {
+        "text_length": 272335,
+        "chunk_count": 462,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 52,
+        "quality_level": "poor"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 52,
+          "quality_level": "poor",
+          "all_issues": [
+            "no_relations",
+            "gibberish_detected",
+            "mostly_empty_categories",
+            "invalid_year",
+            "low_entity_density"
+          ],
+          "critical_issues": [],
+          "issue_count": 5,
+          "needs_review": true,
+          "component_scores": {
+            "text_extraction": 60,
+            "metadata_completeness": 100,
+            "entity_extraction": 0,
+            "relation_extraction": 30,
+            "document_classification": 100
+          }
+        },
+        "components": {
+          "text_extraction": {
+            "score": 60,
+            "issues": [
+              "gibberish_detected"
+            ],
+            "metrics": {
+              "length": 272335,
+              "special_char_ratio": 0.071,
+              "word_ratio": 0.853,
+              "sentence_ratio": 0.741,
+              "english_score": 0.365,
+              "word_count": 42314
+            }
+          },
+          "metadata_completeness": {
+            "score": 100,
+            "issues": [
+              "invalid_year"
+            ],
+            "completeness": 1.0,
+            "present_fields": 3,
+            "total_required": 3
+          },
+          "entity_extraction": {
+            "score": 0,
+            "issues": [
+              "low_entity_density",
+              "mostly_empty_categories"
+            ],
+            "entity_density": 0.0,
+            "total_entities": 0,
+            "entity_breakdown": {
+              "legal_refs": 0,
+              "go_refs": 0,
+              "schemes": 0,
+              "districts": 0,
+              "metrics": 0,
+              "social_categories": 0,
+              "school_types": 0,
+              "educational_levels": 0,
+              "spacy_entities": 0,
+              "keywords": 0
+            }
+          },
+          "relation_extraction": {
+            "score": 30,
+            "issues": [
+              "no_relations"
+            ],
+            "relation_count": 0
+          },
+          "document_classification": {
+            "score": 100,
+            "issues": [],
+            "consistency": true,
+            "method": "content_based"
+          }
+        },
+        "recommendations": [
+          "OCR quality is poor - consider manual review or re-scanning",
+          "Review entity extraction patterns and dictionaries",
+          "Consider re-processing with different extraction settings"
+        ]
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "document_info": {
+        "doc_id": "ncpr_prevention_of_bullying",
+        "title": "Prevention Of Bullying",
+        "doc_type": "framework",
+        "classification_confidence": 1.0,
+        "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/Prevention of Bullying.pdf",
+        "processing_timestamp": "2025-10-29T11:19:26.683630"
+      },
+      "processing_results": {
+        "text_length": 74144,
+        "chunk_count": 129,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 52,
+        "quality_level": "poor"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 52,
+          "quality_level": "poor",
+          "all_issues": [
+            "gibberish_detected",
+            "mostly_empty_categories",
+            "no_relations",
+            "low_entity_density"
+          ],
+          "critical_issues": [],
+          "issue_count": 4,
+          "needs_review": true,
+          "component_scores": {
+            "text_extraction": 60,
+            "metadata_completeness": 100,
+            "entity_extraction": 0,
+            "relation_extraction": 30,
+            "document_classification": 100
+          }
+        },
+        "components": {
+          "text_extraction": {
+            "score": 60,
+            "issues": [
+              "gibberish_detected"
+            ],
+            "metrics": {
+              "length": 74144,
+              "special_char_ratio": 0.033,
+              "word_ratio": 0.884,
+              "sentence_ratio": 0.842,
+              "english_score": 0.36,
+              "word_count": 11628
+            }
+          },
+          "metadata_completeness": {
+            "score": 100,
+            "issues": [],
+            "completeness": 1.0,
+            "present_fields": 3,
+            "total_required": 3
+          },
+          "entity_extraction": {
+            "score": 0,
+            "issues": [
+              "low_entity_density",
+              "mostly_empty_categories"
+            ],
+            "entity_density": 0.0,
+            "total_entities": 0,
+            "entity_breakdown": {
+              "legal_refs": 0,
+              "go_refs": 0,
+              "schemes": 0,
+              "districts": 0,
+              "metrics": 0,
+              "social_categories": 0,
+              "school_types": 0,
+              "educational_levels": 0,
+              "spacy_entities": 0,
+              "keywords": 0
+            }
+          },
+          "relation_extraction": {
+            "score": 30,
+            "issues": [
+              "no_relations"
+            ],
+            "relation_count": 0
+          },
+          "document_classification": {
+            "score": 100,
+            "issues": [],
+            "consistency": true,
+            "method": "content_based"
+          }
+        },
+        "recommendations": [
+          "OCR quality is poor - consider manual review or re-scanning",
+          "Review entity extraction patterns and dictionaries",
+          "Consider re-processing with different extraction settings"
+        ]
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data (excluding example files)
+data/raw/
+data/processed/
+data/embeddings/
+data/knowledge_graph/
+!data/*/metadata.json
+
+# Logs
+logs/
+*.log
+
+# Outputs
+outputs/
+!outputs/.gitkeep
+
+# Temporary files
+*.tmp
+*.bak
+.DS_Store
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+

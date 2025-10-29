@@ -1,0 +1,160 @@
+{
+  "doc_id": "ncpr_guidelines_for_hostel_education",
+  "title": "Guidelines For Hostel Education",
+  "file_path": "/Users/nitin/Documents/AI policy Assistant/data/raw/Documents/Critical Priority/Judicial/NCPR/Guidelines for hostel education.pdf",
+  "file_name": "Guidelines for hostel education.pdf",
+  "file_format": ".pdf",
+  "doc_type": "framework",
+  "priority": "critical",
+  "parent_folders": [
+    "Critical Priority",
+    "Judicial",
+    "NCPR"
+  ],
+  "year": 2025,
+  "creation_timestamp": "2025-10-27T22:03:01.200008",
+  "modification_timestamp": "2025-10-24T01:54:00",
+  "processing_timestamp": "2025-10-29T11:19:02.308622",
+  "file_size": 7737538,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "framework",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.06804733727810651,
+      "rule": 0.023668639053254437,
+      "government_order": 0.008875739644970414,
+      "judicial": 0.0,
+      "data_report": 0.07988165680473373,
+      "budget_finance": 0.05917159763313609,
+      "framework": 1.0,
+      "circular": 0.047337278106508875
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": false,
+      "has_financial_terms": true,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 10024,
+      "avg_sentence_length": 12.092215568862276,
+      "title_length": 4
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "effective_date",
+        "raw_text": "w.e.f. to _\nThe above registration issubject tofulfilling of following conditions:-\n1.",
+        "normalized_date": "2025-10-01",
+        "position": [
+          65599,
+          65685
+        ],
+        "context": "period of one-year under\npoint 4ofthe guidelines w.e.f. to _\nThe above registration issubject toful",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date of the enforcement of these\nguidelines as per point 3 and of every hostel proposed to be established onor after that\ndate shall make an application,",
+        "normalized_date": "2025-10-03",
+        "position": [
+          13251,
+          13404
+        ],
+        "context": "he management of every hostel in existence on the date of the enforcement of these\nguidelines as per",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "Date ofFirst Opening ofHostel (Boys/Girls)\n4.",
+        "normalized_date": "2025-10-04",
+        "position": [
+          48963,
+          49008
+        ],
+        "context": "tution\n2. Name and Address ofInstitutes Doctor\n3. Date ofFirst Opening ofHostel (Boys/Girls)\n4. Sess",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "Date ofVisit: _\n2.",
+        "normalized_date": "2025-10-02",
+        "position": [
+          51978,
+          51996
+        ],
+        "context": "N OF HOSTEL\n[Seepoint 6(b) (iii)]\nVisit Format\n1. Date ofVisit: _\n2. Place of Visit: _\n3. Name ofHos",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "Before withdrawing registration under points 7(a) and/or 7(b) the competent authority\nhave togivethe management of thehostels an opportunity for making itsrepresentation.",
+        "normalized_date": "2025-07-07",
+        "position": [
+          17951,
+          18121
+        ],
+        "context": "..--.i\n(9) Procedure to Withdraw Registration:\na) Before withdrawing registration under points 7(a)",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before starting the bus?\n93.",
+        "normalized_date": "1993-10-29",
+        "position": [
+          64987,
+          65015
+        ],
+        "context": "he students are cautioned to\nkeep a safe distance before starting the bus?\n93. Are there speedgovemo",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 6,
+      "total_dates": 6,
+      "total_academic_years": 0,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "1993-10-29",
+      "latest_date": "2025-10-04",
+      "year_span": [
+        1993,
+        2025
+      ],
+      "primary_years": [
+        2025,
+        1993
+      ]
+    }
+  },
+  "effective_date": "2025-10-01",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

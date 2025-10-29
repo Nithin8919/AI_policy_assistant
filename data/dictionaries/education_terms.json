@@ -1,0 +1,9 @@
+{
+  "terms": {
+    "PTR": ["pupil-teacher ratio", "teacher-pupil ratio"],
+    "GER": ["gross enrollment ratio"],
+    "NER": ["net enrollment ratio"]
+  }
+}
+
+

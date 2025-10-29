@@ -1,0 +1,22 @@
+collections:
+  legal:
+    vector_size: 384
+    distance: Cosine
+  
+  go:
+    vector_size: 384
+    distance: Cosine
+  
+  judicial:
+    vector_size: 384
+    distance: Cosine
+  
+  data:
+    vector_size: 384
+    distance: Cosine
+  
+  external:
+    vector_size: 384
+    distance: Cosine
+
+

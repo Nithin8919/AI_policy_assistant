@@ -1,0 +1,10 @@
+{
+  "patterns": [
+    "YYYY-MM-DD",
+    "DD/MM/YYYY",
+    "FY YYYY-YY",
+    "Academic Year YYYY-YY"
+  ]
+}
+
+

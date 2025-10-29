@@ -1,0 +1,24 @@
+{
+  "queries": [
+    {
+      "id": "q001",
+      "query": "What is the pupil-teacher ratio for primary schools in AP?",
+      "category": "metric",
+      "expected_agent": "data_agent"
+    },
+    {
+      "id": "q002",
+      "query": "What are the provisions of RTE Act regarding school infrastructure?",
+      "category": "legal",
+      "expected_agent": "legal_agent"
+    },
+    {
+      "id": "q003",
+      "query": "List all teacher recruitment GOs issued in 2024",
+      "category": "government_order",
+      "expected_agent": "go_agent"
+    }
+  ]
+}
+
+
