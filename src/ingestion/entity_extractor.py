@@ -1,29 +1,30 @@
 """
-Entity Extractor for education policy documents.
+Enhanced Entity Extractor for AP Education Policy Documents.
 
-Extracts all types of entities needed for bridge table construction:
-- Legal references (Section numbers, Articles, Rules, Clauses)
-- GO references (GO numbers, departments, dates)
-- Court case references
-- Schemes (Nadu-Nedu, Amma Vodi, etc.)
-- Districts (all 13 AP districts + variations)
-- Metrics (PTR, GER, NER, etc.)
-- Social categories (SC, ST, OBC, EWS)
-- School types, educational levels, keywords
+Extracts domain-specific entities including:
+- Legal references (Sections, Articles, Rules)
+- Government Orders (GO references)
+- AP Education Schemes
+- AP Districts
+- Social categories (SC/ST/OBC)
+- School types
+- Educational levels
+- Metrics and statistics
+- Keywords
+- Named entities (using spaCy)
 """
 
 import re
-import json
-import spacy
-from typing import Dict, List, Optional, Set, Tuple
-from pathlib import Path
-from datetime import datetime
+from typing import Dict, List, Set, Optional
+from collections import Counter, defaultdict
 import logging
 
-# Add project root to path
-import sys
-project_root = Path(__file__).parent.parent.parent
-sys.path.append(str(project_root))
+try:
+    import spacy
+    SPACY_AVAILABLE = True
+except ImportError:
+    SPACY_AVAILABLE = False
+    print("Warning: spaCy not available. Install with: pip install spacy --break-system-packages")
 
 from src.utils.logger import get_logger
 
@@ -32,634 +33,517 @@ logger = get_logger(__name__)
 
 class EntityExtractor:
     """
-    Comprehensive entity extraction for education policy documents.
+    Extract domain-specific entities from education policy documents.
     
-    Extracts structured entities that feed into the bridge table system:
-    - Legal references for citation tracking
-    - Government order references for supersession chains
-    - Schemes, districts, metrics for topic matching
-    - Keywords for semantic understanding
+    Combines pattern matching with NLP for comprehensive entity extraction.
     """
     
     def __init__(self, data_dir: Optional[str] = None):
-        """
-        Initialize entity extractor with dictionaries and NLP models.
+        """Initialize entity extractor with patterns and models."""
+        self.data_dir = data_dir
         
-        Args:
-            data_dir: Path to data directory (defaults to project data/)
-        """
-        if data_dir is None:
-            data_dir = project_root / "data"
-        
-        self.data_dir = Path(data_dir)
-        self.dictionaries_dir = self.data_dir / "dictionaries"
-        
-        # Load dictionaries
-        self._load_dictionaries()
-        
-        # Initialize spaCy model (load if available, otherwise use fallback)
-        self._init_nlp_model()
-        
-        # Compile regex patterns
-        self._compile_patterns()
-        
-        logger.info(f"EntityExtractor initialized with {len(self.districts)} districts, "
-                   f"{len(self.schemes)} schemes, {len(self.metrics)} metrics")
-    
-    def _load_dictionaries(self):
-        """Load all dictionary data from JSON files."""
-        try:
-            # Education terms
-            with open(self.dictionaries_dir / "education_terms.json", 'r') as f:
-                edu_data = json.load(f)
-                self.metrics = list(edu_data.get("terms", {}).keys())
-                self.metric_synonyms = edu_data.get("terms", {})
-            
-            # AP Gazetteer
-            with open(self.dictionaries_dir / "ap_gazetteer.json", 'r') as f:
-                gazetteer = json.load(f)
-                self.districts = gazetteer.get("districts", [])
-                self.schemes = gazetteer.get("schemes", [])
-        
-        except FileNotFoundError as e:
-            logger.warning(f"Dictionary file not found: {e}. Using minimal defaults.")
-            self._load_default_dictionaries()
-    
-    def _load_default_dictionaries(self):
-        """Load hardcoded dictionaries as fallback."""
-        # AP Districts (all 13 + common variations)
-        self.districts = [
-            "Visakhapatnam", "Vizianagaram", "Srikakulam", "East Godavari", "West Godavari",
-            "Krishna", "Guntur", "Prakasam", "Nellore", "Chittoor", "Kadapa", "Anantapur", "Kurnool",
-            # Common variations
-            "Vizag", "Rajahmundry", "Vijayawada", "Tirupati", "Eluru", "Machilipatnam",
-            "Ongole", "Nandyal", "Hindupur", "Tadepalligudem"
-        ]
-        
-        # Major education schemes
-        self.schemes = [
-            "Nadu-Nedu", "Jagananna Amma Vodi", "Amma Vodi", "Jagananna Gorumudda", 
-            "Mid-Day Meal", "PM POSHAN", "Sarva Shiksha Abhiyan", "SSA",
-            "Rashtriya Madhyamik Shiksha Abhiyan", "RMSA", "Samagra Shiksha",
-            "Beti Bachao Beti Padhao", "Digital India", "Skill India"
-        ]
-        
-        # Education metrics and indicators
-        self.metrics = ["PTR", "GER", "NER", "dropout rate", "enrollment", "attendance"]
-        self.metric_synonyms = {
-            "PTR": ["pupil-teacher ratio", "teacher-pupil ratio", "student teacher ratio"],
-            "GER": ["gross enrollment ratio", "gross enrolment ratio"],
-            "NER": ["net enrollment ratio", "net enrolment ratio"]
-        }
-    
-    def _init_nlp_model(self):
-        """Initialize spaCy NLP model for entity recognition."""
-        try:
-            # Try to load English model
-            self.nlp = spacy.load("en_core_web_sm")
-            logger.info("Loaded spaCy en_core_web_sm model")
-        except OSError:
+        # Initialize spaCy if available
+        self.nlp = None
+        if SPACY_AVAILABLE:
             try:
-                # Fallback to basic English
-                self.nlp = spacy.load("en_core_web_lg")
-                logger.info("Loaded spaCy en_core_web_lg model")
+                self.nlp = spacy.load("en_core_web_sm")
+                logger.info("spaCy model loaded successfully")
             except OSError:
-                logger.warning("No spaCy model found. Using pattern-based extraction only.")
-                self.nlp = None
+                logger.warning("spaCy model not found. Install with: python -m spacy download en_core_web_sm")
+        
+        # Initialize all patterns
+        self._init_patterns()
+        self._init_ap_schemes()
+        self._init_ap_districts()
+        self._init_categories()
+        
+        logger.info("EntityExtractor initialized")
     
-    def _compile_patterns(self):
-        """Compile regex patterns for structured entity extraction."""
+    def _init_patterns(self):
+        """Initialize regex patterns for entity extraction."""
         
-        # Legal references
-        self.section_pattern = re.compile(
-            r'\b(?:Section|Sec\.?|§)\s*(\d+)(?:\s*\(\s*(\d+)\s*\))?(?:\s*\(\s*([a-z]+)\s*\))?',
-            re.IGNORECASE
+        # ============================================================================
+        # GO REFERENCE PATTERNS (Enhanced)
+        # ============================================================================
+        
+        # Primary GO pattern (comprehensive)
+        self.GO_PATTERN = re.compile(
+            r'''
+            (?:G\.O\.|GO|G\.O|Ms\.No\.|MS\s+No\.|Rt\.No\.|RT\s+No\.)  # Prefix variations
+            \s*
+            (?:MS|RT|No\.?)?                                           # Type (MS/RT/No)
+            \s*
+            (?:No\.?)?                                                 # Optional "No."
+            \s*
+            (\d+)                                                      # GO number (capture group 1)
+            (?:
+                \s*/\s*(\d{4})                                        # Optional /YYYY format
+                |
+                \s+dated?\s+(\d{1,2}[\./-]\d{1,2}[\./-]\d{2,4})      # Optional date
+                |
+                \s+dt\.?\s+(\d{1,2}[\./-]\d{1,2}[\./-]\d{2,4})       # Alternative date format
+            )?
+            ''',
+            re.IGNORECASE | re.VERBOSE
         )
         
-        self.article_pattern = re.compile(
-            r'\bArticle\s*(\d+)(?:\s*([A-Z]+))?',
-            re.IGNORECASE
-        )
+        # Additional GO patterns for context-specific matches
+        self.GO_PATTERNS_ADDITIONAL = [
+            re.compile(r'vide\s+(?:G\.O\.|GO)(?:MS|RT)?\.?\s*No\.?\s*(\d+)', re.IGNORECASE),
+            re.compile(r'in\s+(?:G\.O\.|GO)(?:MS|RT)?\.?\s*No\.?\s*(\d+)', re.IGNORECASE),
+            re.compile(r'as per\s+(?:G\.O\.|GO)(?:MS|RT)?\.?\s*No\.?\s*(\d+)', re.IGNORECASE),
+            re.compile(r'(?:G\.O\.|GO)(?:MS|RT)?\.?\s*No\.?\s*(\d+)/(\d{4})', re.IGNORECASE),
+            re.compile(r'MS\s+No\.?\s*(\d+)\s+dt\.?\s+(\d{1,2}[\./-]\d{1,2}[\./-]\d{2,4})', re.IGNORECASE)
+        ]
         
-        self.rule_pattern = re.compile(
-            r'\b(?:Rule|R\.?)\s*(\d+)(?:\s*\(\s*(\d+)\s*\))?',
-            re.IGNORECASE
-        )
+        # ============================================================================
+        # LEGAL REFERENCE PATTERNS
+        # ============================================================================
         
-        self.clause_pattern = re.compile(
-            r'\bClause\s*(\d+)',
-            re.IGNORECASE
-        )
+        self.legal_patterns = [
+            # Section patterns
+            re.compile(r'\bSection\s+(\d+)(?:\s*\(\s*(\d+)\s*\))?(?:\s*\(\s*([a-z]+)\s*\))?', re.IGNORECASE),
+            re.compile(r'\bSec\.?\s+(\d+)(?:\s*\(\s*(\d+)\s*\))?', re.IGNORECASE),
+            
+            # Article patterns
+            re.compile(r'\bArticle\s+(\d+)(?:\s*([A-Z]+))?', re.IGNORECASE),
+            re.compile(r'\bArt\.?\s+(\d+)(?:\s*([A-Z]+))?', re.IGNORECASE),
+            
+            # Rule patterns
+            re.compile(r'\bRule\s+(\d+)(?:\s*\(\s*(\d+)\s*\))?', re.IGNORECASE),
+            re.compile(r'\bR\.?\s+(\d+)', re.IGNORECASE),
+            
+            # Clause patterns
+            re.compile(r'\bClause\s+(\d+)', re.IGNORECASE),
+            
+            # Chapter patterns
+            re.compile(r'\bChapter\s+([IVX]+|\d+)', re.IGNORECASE),
+        ]
         
-        # GO (Government Order) references
-        self.go_pattern = re.compile(
-            r'\bG\.?O\.?\s*(?:Ms\.?|MS\.?)?\s*(?:No\.?)?\s*(\d+)(?:/(\d{4}))?(?:\s*(?:dated?|dt\.?)\s*([\d\-\.]+))?',
-            re.IGNORECASE
-        )
+        # ============================================================================
+        # METRIC PATTERNS
+        # ============================================================================
         
-        # More specific GO patterns
-        self.go_detailed_pattern = re.compile(
-            r'\bG\.?O\.?\s*(Ms\.?|MS\.?|Rt\.?|RT\.?)\s*(?:No\.?)?\s*(\d+)(?:/(\d{4}))?',
-            re.IGNORECASE
-        )
+        self.metric_patterns = [
+            re.compile(r'\b(gross enrollment ratio|GER)\b', re.IGNORECASE),
+            re.compile(r'\b(net enrollment ratio|NER)\b', re.IGNORECASE),
+            re.compile(r'\b(pupil[- ]teacher ratio|PTR|student[- ]teacher ratio)\b', re.IGNORECASE),
+            re.compile(r'\b(dropout rate|drop[- ]out)\b', re.IGNORECASE),
+            re.compile(r'\b(retention rate)\b', re.IGNORECASE),
+            re.compile(r'\b(transition rate)\b', re.IGNORECASE),
+            re.compile(r'\b(pass percentage|pass rate)\b', re.IGNORECASE),
+            re.compile(r'\b(learning outcome|learning outcomes)\b', re.IGNORECASE),
+            re.compile(r'\b(enrollment|enrolment)\b', re.IGNORECASE),
+        ]
+    
+    def _init_ap_schemes(self):
+        """Initialize AP education schemes list."""
+        self.AP_SCHEMES = [
+            # Major Flagship Schemes
+            "Nadu-Nedu", "Nadu Nedu", "Naadu-Nedu",
+            "Amma Vodi", "Amma Vodi Scheme", "Ammavodi",
+            "Jagananna Gorumudda", "Gorumudda", "Mid Day Meal", "MDM Scheme",
+            "Jagananna Vidya Deevena", "Vidya Deevena",
+            "Jagananna Vidya Kanuka", "Vidya Kanuka",
+            "Jagananna Amma Odi",
+            
+            # Infrastructure & Development
+            "Smart School Programme", "Smart Schools",
+            "Digital Classroom Initiative",
+            "Mana Badi Nadu Nedu", "Vasathi Deevena",
+            
+            # Teacher & Training
+            "Teacher Training Programme", "In-Service Teacher Training",
+            "DIET Programme", "District Institute of Education and Training",
+            
+            # Student Welfare
+            "SC/ST Welfare Schemes", "BC Welfare Hostel Scheme",
+            "EWS Scholarship Scheme", "Minority Welfare Scheme",
+            "Girl Child Education Scheme",
+            "Kasturba Gandhi Balika Vidyalaya", "KGBV",
+            
+            # Inclusive Education
+            "Inclusive Education Scheme", "CWSN Support Programme",
+            "Children With Special Needs",
+            
+            # Quality Improvement
+            "Quality Improvement Programme",
+            "School Quality Assessment",
+            "Learning Enhancement Programme",
+            
+            # Vocational & Skill Development
+            "Skill Development Programme",
+            "Vocational Education Scheme",
+            
+            # Other Schemes
+            "Samajik Abhisarata Programme",
+            "Sarva Shiksha Abhiyan", "SSA",
+            "Rashtriya Madhyamik Shiksha Abhiyan", "RMSA",
+            "Samagra Shiksha",
+            "Beti Bachao Beti Padhao", "BBBP",
+            "Atal Tinkering Labs", "ATL",
+            "Grama/Ward Sachivalayam Education Programme",
+            "Bridge Course Programme"
+        ]
         
-        # Court case patterns
-        self.case_pattern = re.compile(
-            r'([A-Z][a-zA-Z\s&]+)\s+(?:v\.?s?\.?|versus)\s+([A-Z][a-zA-Z\s&]+)',
-            re.MULTILINE
-        )
-        
-        # Date patterns
-        self.date_pattern = re.compile(
-            r'\b(\d{1,2})[.\-/](\d{1,2})[.\-/](\d{4})\b|'
-            r'\b(\d{4})[.\-/](\d{1,2})[.\-/](\d{1,2})\b|'
-            r'\b(\d{1,2})(?:st|nd|rd|th)?\s+(January|February|March|April|May|June|'
-            r'July|August|September|October|November|December)\s+(\d{4})\b',
-            re.IGNORECASE
-        )
-        
-        # Academic year pattern
-        self.academic_year_pattern = re.compile(
-            r'\b(\d{4})-?(\d{2,4})\b'
-        )
-        
-        # Supersession patterns
-        self.supersession_pattern = re.compile(
-            r'\b(?:in\s+)?supersession\s+of\s+.*?G\.?O\.?\s*(?:Ms\.?|MS\.?)?\s*(?:No\.?)?\s*(\d+)(?:/(\d{4}))?',
+        # Create scheme pattern
+        self.SCHEME_PATTERN = re.compile(
+            r'\b(' + '|'.join(re.escape(scheme) for scheme in self.AP_SCHEMES) + r')\b',
             re.IGNORECASE
         )
     
-    def extract_legal_references(self, text: str) -> List[Dict]:
-        """
-        Extract legal references (sections, articles, rules, clauses).
+    def _init_ap_districts(self):
+        """Initialize AP districts list with variations."""
+        self.AP_DISTRICTS = [
+            # District names with variations
+            "Anantapur", "Ananthapuramu", "Ananthapuram",
+            "Chittoor", "Chittor",
+            "East Godavari", "East Godavari District", "Godavari East",
+            "Guntur",
+            "Krishna", "Krishna District",
+            "Kurnool",
+            "Nellore", "Nellore District", "SPSR Nellore",
+            "Sri Potti Sriramulu Nellore",
+            "Prakasam", "Prakasam District",
+            "Srikakulam", "Sri Kakulam",
+            "Visakhapatnam", "Vishakhapatnam", "Vizag", "Vizag District",
+            "Vizianagaram", "Vijayanagaram",
+            "West Godavari", "West Godavari District", "Godavari West",
+            "YSR Kadapa", "YSR", "Kadapa", "Cuddapah"
+        ]
         
-        Args:
-            text: Input text to analyze
-            
-        Returns:
-            List of legal reference dictionaries
-        """
-        legal_refs = []
-        
-        # Extract sections
-        for match in self.section_pattern.finditer(text):
-            section_num = match.group(1)
-            subsection = match.group(2) if match.group(2) else None
-            clause = match.group(3) if match.group(3) else None
-            
-            ref_text = match.group(0)
-            
-            legal_refs.append({
-                "type": "section",
-                "number": section_num,
-                "subsection": subsection,
-                "clause": clause,
-                "text": ref_text,
-                "position": match.span(),
-                "act": self._infer_act_context(text, match.start())
-            })
-        
-        # Extract articles
-        for match in self.article_pattern.finditer(text):
-            article_num = match.group(1)
-            suffix = match.group(2) if match.group(2) else None
-            
-            legal_refs.append({
-                "type": "article",
-                "number": article_num,
-                "suffix": suffix,
-                "text": match.group(0),
-                "position": match.span(),
-                "act": self._infer_act_context(text, match.start())
-            })
-        
-        # Extract rules
-        for match in self.rule_pattern.finditer(text):
-            rule_num = match.group(1)
-            sub_rule = match.group(2) if match.group(2) else None
-            
-            legal_refs.append({
-                "type": "rule",
-                "number": rule_num,
-                "sub_rule": sub_rule,
-                "text": match.group(0),
-                "position": match.span(),
-                "act": self._infer_act_context(text, match.start())
-            })
-        
-        # Extract clauses
-        for match in self.clause_pattern.finditer(text):
-            clause_num = match.group(1)
-            
-            legal_refs.append({
-                "type": "clause",
-                "number": clause_num,
-                "text": match.group(0),
-                "position": match.span(),
-                "act": self._infer_act_context(text, match.start())
-            })
-        
-        return legal_refs
+        # Create district pattern
+        self.DISTRICT_PATTERN = re.compile(
+            r'\b(' + '|'.join(re.escape(district) for district in self.AP_DISTRICTS) + r')\s*(?:district)?',
+            re.IGNORECASE
+        )
     
-    def _infer_act_context(self, text: str, position: int) -> Optional[str]:
-        """
-        Infer which Act/law the reference belongs to based on context.
+    def _init_categories(self):
+        """Initialize social categories, school types, educational levels."""
         
-        Args:
-            text: Full text
-            position: Position of the reference
-            
-        Returns:
-            Inferred act name or None
-        """
-        # Look for act names in the surrounding context (±200 chars)
-        start = max(0, position - 200)
-        end = min(len(text), position + 200)
-        context = text[start:end].lower()
+        # Social Categories
+        self.SOCIAL_CATEGORIES = [
+            "SC", "Scheduled Caste", "Scheduled Castes",
+            "ST", "Scheduled Tribe", "Scheduled Tribes",
+            "OBC", "Other Backward Class", "Other Backward Classes",
+            "BC", "Backward Class", "Backward Classes",
+            "EWS", "Economically Weaker Section", "Economically Weaker Sections",
+            "BC-A", "BC-B", "BC-C", "BC-D", "BC-E",
+            "Girl Child", "Girl Students", "Female Students",
+            "Boy Students", "Male Students",
+            "Below Poverty Line", "BPL", "Above Poverty Line", "APL",
+            "Rural Students", "Urban Students", "Tribal Area Students",
+            "Minority Students", "Muslim Minority", "Christian Minority",
+            "Children With Special Needs", "CWSN",
+            "Differently Abled", "Divyang", "Orphan Students", "Orphans"
+        ]
         
-        # Common education acts
-        if "rte" in context or "right to education" in context:
-            return "RTE Act"
-        elif "education act" in context and ("1982" in context or "ap" in context or "andhra" in context):
-            return "AP Education Act 1982"
-        elif "constitution" in context:
-            return "Constitution of India"
-        elif "ncte" in context:
-            return "NCTE Act"
+        self.SOCIAL_CATEGORY_PATTERN = re.compile(
+            r'\b(' + '|'.join(re.escape(cat) for cat in self.SOCIAL_CATEGORIES) + r')\b',
+            re.IGNORECASE
+        )
         
-        return None
+        # School Types
+        self.SCHOOL_TYPES = [
+            "Government School", "Govt School", "Government Schools",
+            "Zilla Parishad School", "ZP School", "ZPHS", "ZPSS",
+            "Mandal Parishad School", "MPP School", "MPPS",
+            "Municipal School", "Corporation School",
+            "Private School", "Private Schools",
+            "Aided School", "Aided Schools",
+            "Unaided School", "Unaided Schools",
+            "Private Aided", "Private Unaided",
+            "Residential School", "Residential Schools",
+            "Welfare Residential School",
+            "Tribal Welfare School", "APTWRS",
+            "BC Welfare Hostel", "SC/ST Welfare Hostel",
+            "Kasturba Gandhi Balika Vidyalaya", "KGBV",
+            "Model School", "Model Schools",
+            "Sainik School", "Navodaya Vidyalaya", "JNV",
+            "Kendriya Vidyalaya", "KV",
+            "Primary School", "Upper Primary School",
+            "High School", "Higher Secondary School",
+            "Junior College"
+        ]
+        
+        self.SCHOOL_TYPE_PATTERN = re.compile(
+            r'\b(' + '|'.join(re.escape(stype) for stype in self.SCHOOL_TYPES) + r')\b',
+            re.IGNORECASE
+        )
+        
+        # Educational Levels
+        self.EDUCATIONAL_LEVELS = [
+            "Pre-Primary", "Pre Primary", "Anganwadi",
+            "Primary", "Primary Level", "Classes I-V", "Class 1 to 5",
+            "Upper Primary", "Classes VI-VIII", "Class 6 to 8",
+            "Secondary", "High School", "Classes IX-X", "Class 9 to 10",
+            "Higher Secondary", "Intermediate", "Classes XI-XII", "Class 11 to 12",
+            "Junior College",
+            "Class I", "Class II", "Class III", "Class IV", "Class V",
+            "Class VI", "Class VII", "Class VIII",
+            "Class IX", "Class X", "Class XI", "Class XII",
+            "SSC", "10th Standard", "10th Class",
+            "Intermediate", "12th Standard", "12th Class",
+            "Science Stream", "Commerce Stream", "Arts Stream",
+            "MPC", "BiPC", "CEC", "HEC"
+        ]
+        
+        self.EDUCATIONAL_LEVEL_PATTERN = re.compile(
+            r'\b(' + '|'.join(re.escape(level) for level in self.EDUCATIONAL_LEVELS) + r')\b',
+            re.IGNORECASE
+        )
     
-    def extract_go_references(self, text: str) -> List[Dict]:
-        """
-        Extract Government Order references.
-        
-        Args:
-            text: Input text to analyze
-            
-        Returns:
-            List of GO reference dictionaries
-        """
+    # ============================================================================
+    # EXTRACTION METHODS
+    # ============================================================================
+    
+    def extract_go_refs(self, text: str) -> List[str]:
+        """Extract Government Order references."""
         go_refs = []
         
-        # Extract detailed GO patterns first
-        for match in self.go_detailed_pattern.finditer(text):
-            dept = match.group(1).upper() if match.group(1) else "MS"
-            go_num = match.group(2)
-            year = match.group(3) if match.group(3) else None
-            
-            # Look for date in surrounding context
-            go_text = match.group(0)
-            date_match = self._find_nearby_date(text, match.end())
-            
-            go_refs.append({
-                "type": "government_order",
-                "number": int(go_num),
-                "year": int(year) if year else None,
-                "department": dept,
-                "date": date_match,
-                "text": go_text,
-                "position": match.span()
-            })
+        # Primary pattern
+        for match in self.GO_PATTERN.finditer(text):
+            go_ref = self._format_go_reference(match)
+            if go_ref:
+                go_refs.append(go_ref)
         
-        # Extract basic GO patterns
-        for match in self.go_pattern.finditer(text):
-            # Skip if already captured by detailed pattern
-            if any(abs(match.start() - ref["position"][0]) < 10 for ref in go_refs):
-                continue
-                
-            go_num = match.group(1)
-            year = match.group(2) if match.group(2) else None
-            date_str = match.group(3) if match.group(3) else None
-            
-            go_refs.append({
-                "type": "government_order",
-                "number": int(go_num),
-                "year": int(year) if year else None,
-                "department": "MS",  # Default
-                "date": self._parse_date(date_str) if date_str else None,
-                "text": match.group(0),
-                "position": match.span()
-            })
+        # Additional patterns for context-specific matches
+        for pattern in self.GO_PATTERNS_ADDITIONAL:
+            for match in pattern.finditer(text):
+                go_ref = self._format_go_reference(match)
+                if go_ref:
+                    go_refs.append(go_ref)
         
-        return go_refs
+        return list(set(go_refs))  # Deduplicate
     
-    def _find_nearby_date(self, text: str, position: int, window: int = 50) -> Optional[str]:
-        """Find a date near the given position."""
-        start = max(0, position - window)
-        end = min(len(text), position + window)
-        context = text[start:end]
-        
-        date_match = self.date_pattern.search(context)
-        if date_match:
-            return self._parse_date(date_match.group(0))
-        
-        return None
-    
-    def _parse_date(self, date_str: str) -> Optional[str]:
-        """
-        Parse various date formats to ISO format.
-        
-        Args:
-            date_str: Date string in various formats
+    def _format_go_reference(self, match) -> Optional[str]:
+        """Format GO reference from regex match."""
+        try:
+            groups = match.groups()
+            go_number = groups[0] if groups else None
             
-        Returns:
-            ISO formatted date string or None
-        """
-        if not date_str:
+            if not go_number:
+                return None
+            
+            # Try to extract year and date
+            year = None
+            date = None
+            
+            for i in range(1, len(groups)):
+                if groups[i] and len(groups[i]) == 4 and groups[i].isdigit():
+                    year = groups[i]
+                elif groups[i] and ('/' in groups[i] or '-' in groups[i] or '.' in groups[i]):
+                    date = groups[i]
+            
+            # Format GO reference
+            if year:
+                return f"G.O.MS.No. {go_number}/{year}"
+            elif date:
+                return f"G.O.MS.No. {go_number} dated {date}"
+            else:
+                return f"G.O.MS.No. {go_number}"
+        except Exception as e:
+            logger.debug(f"Error formatting GO reference: {e}")
             return None
+    
+    def extract_legal_refs(self, text: str) -> List[str]:
+        """Extract legal references (Sections, Articles, Rules)."""
+        legal_refs = []
         
-        # Try different date formats
-        formats = [
-            "%d.%m.%Y", "%d-%m-%Y", "%d/%m/%Y",
-            "%Y.%m.%d", "%Y-%m-%d", "%Y/%m/%d",
-            "%d %B %Y", "%d %b %Y"
-        ]
+        for pattern in self.legal_patterns:
+            for match in pattern.finditer(text):
+                ref = match.group(0)
+                # Clean up the reference
+                ref = re.sub(r'\s+', ' ', ref).strip()
+                legal_refs.append(ref)
         
-        for fmt in formats:
-            try:
-                date_obj = datetime.strptime(date_str.strip(), fmt)
-                return date_obj.strftime("%Y-%m-%d")
-            except ValueError:
-                continue
-        
-        return None
+        return list(set(legal_refs))
     
     def extract_schemes(self, text: str) -> List[str]:
-        """
-        Extract education scheme names.
+        """Extract AP education scheme names."""
+        schemes = []
         
-        Args:
-            text: Input text to analyze
-            
-        Returns:
-            List of scheme names found
-        """
-        found_schemes = []
-        text_lower = text.lower()
+        for match in self.SCHEME_PATTERN.finditer(text):
+            scheme = match.group(0)
+            schemes.append(scheme)
         
-        for scheme in self.schemes:
-            # Check for exact match (case insensitive)
-            if scheme.lower() in text_lower:
-                found_schemes.append(scheme)
-        
-        # Deduplicate while preserving order
-        return list(dict.fromkeys(found_schemes))
+        return list(set(schemes))
     
     def extract_districts(self, text: str) -> List[str]:
-        """
-        Extract AP district names and variations.
+        """Extract AP district names."""
+        districts = []
         
-        Args:
-            text: Input text to analyze
-            
-        Returns:
-            List of district names found
-        """
-        found_districts = []
+        for match in self.DISTRICT_PATTERN.finditer(text):
+            district = match.group(1)  # Get the captured district name
+            # Normalize district name
+            district = district.strip()
+            districts.append(district)
         
-        for district in self.districts:
-            # Use word boundary to avoid partial matches
-            pattern = r'\b' + re.escape(district) + r'\b'
-            if re.search(pattern, text, re.IGNORECASE):
-                found_districts.append(district)
-        
-        # Deduplicate while preserving order
-        return list(dict.fromkeys(found_districts))
-    
-    def extract_metrics(self, text: str) -> List[str]:
-        """
-        Extract education metrics and indicators.
-        
-        Args:
-            text: Input text to analyze
-            
-        Returns:
-            List of metrics found
-        """
-        found_metrics = []
-        text_lower = text.lower()
-        
-        for metric in self.metrics:
-            # Check metric name
-            if metric.lower() in text_lower:
-                found_metrics.append(metric)
-            
-            # Check synonyms
-            synonyms = self.metric_synonyms.get(metric, [])
-            for synonym in synonyms:
-                if synonym.lower() in text_lower:
-                    found_metrics.append(metric)
-                    break
-        
-        # Deduplicate while preserving order
-        return list(dict.fromkeys(found_metrics))
+        return list(set(districts))
     
     def extract_social_categories(self, text: str) -> List[str]:
-        """
-        Extract social categories (SC, ST, OBC, EWS, etc.).
+        """Extract social categories (SC/ST/OBC etc)."""
+        categories = []
         
-        Args:
-            text: Input text to analyze
-            
-        Returns:
-            List of social categories found
-        """
-        categories = ["SC", "ST", "OBC", "EWS", "General", "BPL", "APL", "DG", "EBC"]
-        found_categories = []
+        for match in self.SOCIAL_CATEGORY_PATTERN.finditer(text):
+            category = match.group(0)
+            categories.append(category)
         
-        # Use word boundaries to match categories
-        for category in categories:
-            pattern = r'\b' + re.escape(category) + r'\b'
-            if re.search(pattern, text, re.IGNORECASE):
-                found_categories.append(category)
-        
-        # Also check full forms
-        full_forms = {
-            "Scheduled Caste": "SC",
-            "Scheduled Tribe": "ST", 
-            "Other Backward Class": "OBC",
-            "Economically Weaker Section": "EWS",
-            "Disadvantaged Group": "DG",
-            "Below Poverty Line": "BPL",
-            "Above Poverty Line": "APL"
-        }
-        
-        for full_form, abbrev in full_forms.items():
-            if full_form.lower() in text.lower():
-                found_categories.append(abbrev)
-        
-        return list(dict.fromkeys(found_categories))
+        return list(set(categories))
     
     def extract_school_types(self, text: str) -> List[str]:
-        """
-        Extract school types (government, private aided, etc.).
+        """Extract school types."""
+        school_types = []
         
-        Args:
-            text: Input text to analyze
-            
-        Returns:
-            List of school types found
-        """
-        school_types = [
-            "government", "private aided", "private unaided", "central",
-            "residential", "ashram", "tribal", "model", "composite"
-        ]
+        for match in self.SCHOOL_TYPE_PATTERN.finditer(text):
+            school_type = match.group(0)
+            school_types.append(school_type)
         
-        found_types = []
-        text_lower = text.lower()
-        
-        for school_type in school_types:
-            if school_type in text_lower:
-                found_types.append(school_type)
-        
-        return list(dict.fromkeys(found_types))
+        return list(set(school_types))
     
     def extract_educational_levels(self, text: str) -> List[str]:
-        """
-        Extract educational levels.
+        """Extract educational levels."""
+        levels = []
         
-        Args:
-            text: Input text to analyze
-            
-        Returns:
-            List of educational levels found
-        """
-        levels = [
-            "primary", "upper primary", "elementary", "secondary", 
-            "higher secondary", "pre-primary", "ECCE"
-        ]
+        for match in self.EDUCATIONAL_LEVEL_PATTERN.finditer(text):
+            level = match.group(0)
+            levels.append(level)
         
-        found_levels = []
-        text_lower = text.lower()
-        
-        for level in levels:
-            if level in text_lower:
-                found_levels.append(level)
-        
-        return list(dict.fromkeys(found_levels))
+        return list(set(levels))
     
-    def extract_spacy_entities(self, text: str) -> List[Dict]:
-        """
-        Extract entities using spaCy NER.
+    def extract_metrics(self, text: str) -> List[str]:
+        """Extract education metrics and statistics."""
+        metrics = []
         
-        Args:
-            text: Input text to analyze
-            
-        Returns:
-            List of spaCy entities
-        """
-        if not self.nlp:
+        for pattern in self.metric_patterns:
+            for match in pattern.finditer(text):
+                metric = match.group(0)
+                metrics.append(metric)
+        
+        return list(set(metrics))
+    
+    def extract_keywords(self, text: str, top_n: int = 20) -> List[str]:
+        """Extract important keywords using frequency analysis."""
+        # Remove common words
+        stop_words = {
+            'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
+            'of', 'with', 'by', 'from', 'is', 'are', 'was', 'were', 'be', 'been',
+            'this', 'that', 'these', 'those', 'it', 'its', 'as', 'will', 'shall'
+        }
+        
+        # Extract words (4+ characters)
+        words = re.findall(r'\b[A-Za-z]{4,}\b', text.lower())
+        
+        # Filter stop words
+        words = [w for w in words if w not in stop_words]
+        
+        # Count frequency
+        word_freq = Counter(words)
+        
+        # Return top N keywords
+        return [word for word, count in word_freq.most_common(top_n)]
+    
+    def extract_spacy_entities(self, text: str) -> List[Dict[str, str]]:
+        """Extract named entities using spaCy."""
+        if not self.nlp or not text:
             return []
         
-        doc = self.nlp(text)
+        # Limit text length for performance
+        if len(text) > 100000:
+            text = text[:100000]
+        
         entities = []
         
-        for ent in doc.ents:
-            entities.append({
-                "text": ent.text,
-                "label": ent.label_,
-                "description": spacy.explain(ent.label_),
-                "start": ent.start_char,
-                "end": ent.end_char
-            })
+        try:
+            doc = self.nlp(text)
+            
+            for ent in doc.ents:
+                entities.append({
+                    "text": ent.text,
+                    "label": ent.label_,
+                    "start": ent.start_char,
+                    "end": ent.end_char
+                })
+        
+        except Exception as e:
+            logger.error(f"Error in spaCy entity extraction: {e}")
         
         return entities
     
-    def extract_all_entities(self, text: str) -> Dict:
+    def extract_all_entities(self, text: str) -> Dict[str, List]:
         """
-        Extract all types of entities from text.
+        Extract all entity types from text.
         
         Args:
             text: Input text to analyze
             
         Returns:
-            Dictionary containing all extracted entities
+            Dictionary containing all extracted entities by type
         """
         if not text or not text.strip():
-            return self._empty_entity_dict()
-        
-        try:
-            entities = {
-                "legal_refs": self.extract_legal_references(text),
-                "go_refs": self.extract_go_references(text),
-                "schemes": self.extract_schemes(text),
-                "districts": self.extract_districts(text),
-                "metrics": self.extract_metrics(text),
-                "social_categories": self.extract_social_categories(text),
-                "school_types": self.extract_school_types(text),
-                "educational_levels": self.extract_educational_levels(text),
-                "spacy_entities": self.extract_spacy_entities(text)
+            return {
+                "legal_refs": [],
+                "go_refs": [],
+                "schemes": [],
+                "districts": [],
+                "metrics": [],
+                "social_categories": [],
+                "school_types": [],
+                "educational_levels": [],
+                "spacy_entities": [],
+                "keywords": []
             }
-            
-            # Extract high-value keywords from spaCy entities
-            entities["keywords"] = self._extract_keywords_from_entities(entities)
-            
-            logger.debug(f"Extracted entities: {sum(len(v) if isinstance(v, list) else 0 for v in entities.values())} total")
-            
-            return entities
-            
-        except Exception as e:
-            logger.error(f"Error extracting entities: {e}")
-            return self._empty_entity_dict()
-    
-    def _extract_keywords_from_entities(self, entities: Dict) -> List[str]:
-        """Extract important keywords from various entity types."""
-        keywords = []
         
-        # Add scheme names as keywords
-        keywords.extend(entities.get("schemes", []))
-        
-        # Add district names as keywords  
-        keywords.extend(entities.get("districts", []))
-        
-        # Add metrics as keywords
-        keywords.extend(entities.get("metrics", []))
-        
-        # Add relevant spaCy entities as keywords
-        for ent in entities.get("spacy_entities", []):
-            if ent["label"] in ["ORG", "PERSON", "GPE", "EVENT"]:
-                # Clean and add if not too generic
-                keyword = ent["text"].strip()
-                if len(keyword) > 3 and keyword.lower() not in ["the", "and", "for", "with"]:
-                    keywords.append(keyword)
-        
-        # Deduplicate and return
-        return list(dict.fromkeys(keywords))
-    
-    def _empty_entity_dict(self) -> Dict:
-        """Return empty entity dictionary with correct structure."""
-        return {
-            "legal_refs": [],
-            "go_refs": [],
-            "schemes": [],
-            "districts": [],
-            "metrics": [],
-            "social_categories": [],
-            "school_types": [],
-            "educational_levels": [],
-            "spacy_entities": [],
-            "keywords": []
+        entities = {
+            "legal_refs": self.extract_legal_refs(text),
+            "go_refs": self.extract_go_refs(text),
+            "schemes": self.extract_schemes(text),
+            "districts": self.extract_districts(text),
+            "metrics": self.extract_metrics(text),
+            "social_categories": self.extract_social_categories(text),
+            "school_types": self.extract_school_types(text),
+            "educational_levels": self.extract_educational_levels(text),
+            "spacy_entities": self.extract_spacy_entities(text),
+            "keywords": self.extract_keywords(text)
         }
+        
+        return entities
 
 
-# Example usage and testing
+# Testing
 if __name__ == "__main__":
-    # Test the entity extractor
     extractor = EntityExtractor()
     
-    # Test text with various entities
-    test_text = """
-    Section 12(1)(c) of the RTE Act mandates 25% reservation for EWS and DG children 
-    in private unaided schools. As per GO MS No. 67/2023 dated 15.04.2023, 
-    the Nadu-Nedu programme will be implemented in Visakhapatnam and Guntur districts.
+    print("Testing Enhanced Entity Extractor\n")
     
-    The PTR should be maintained at 30:1 in primary schools as per the norms.
-    In supersession of GO MS No. 45/2018, this order covers SC and ST students.
+    # Test text with multiple entity types
+    test_text = """
+    G.O.MS.No. 67/2023 dated 15.04.2023 announces the Nadu-Nedu scheme 
+    implementation in Visakhapatnam district and Krishna district. 
+    The scheme will benefit SC/ST students in Government Schools and 
+    Zilla Parishad Schools. As per Section 5 of the AP Education Act 1982,
+    the pupil-teacher ratio (PTR) should be maintained at 30:1 for primary level.
+    The enrollment in Classes I-V has increased. Amma Vodi scheme provides 
+    financial assistance to mothers.
     """
     
+    print("Test Text:")
+    print(test_text)
+    print("\n" + "="*80 + "\n")
+    
+    # Extract all entities
     entities = extractor.extract_all_entities(test_text)
     
-    print("Extracted Entities:")
+    # Display results
+    print("Extraction Results:\n")
     for entity_type, entity_list in entities.items():
-        if entity_list:
+        if entity_type == "spacy_entities":
+            print(f"{entity_type}: {len(entity_list)} entities")
+            for ent in entity_list[:5]:  # Show first 5
+                print(f"  - {ent['text']} ({ent['label']})")
+        else:
             print(f"{entity_type}: {entity_list}")
+    
+    print("\n" + "="*80 + "\n")
+    print("Entity Extractor Test Complete!")
+    print(f"\nTotal entities extracted: {sum(len(v) if isinstance(v, list) else 0 for v in entities.values())}")

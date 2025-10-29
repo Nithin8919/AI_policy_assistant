@@ -1,26 +1,25 @@
 """
-Relation Extractor for education policy documents.
+Enhanced Relation Extractor with Improved Pattern Matching.
 
-Extracts relationships between documents to build the knowledge graph:
-- CITES relations: "as per Section 12 of RTE Act"
-- IMPLEMENTS relations: "in pursuance of Section 12"
-- SUPERSEDES relations: "in supersession of GO MS No. X"
-- AMENDS relations: "this GO amends..."
-- DEFINES relations: document defines a concept
-- MANDATES relations: "Section 12 mandates..."
+Extracts semantic relationships between entities using:
+- Improved regex patterns with context
+- Dependency parsing for verb-object relations
+- Multi-strategy approach (pattern + spaCy + heuristics)
+- Better handling of Indian legal/government text
 """
 
 import re
-import spacy
-from typing import Dict, List, Optional, Tuple, Set
-from pathlib import Path
-from dataclasses import dataclass
+from typing import List, Dict, Optional, Set, Tuple
+from dataclasses import dataclass, asdict
+from collections import defaultdict
 import logging
 
-# Add project root to path
-import sys
-project_root = Path(__file__).parent.parent.parent
-sys.path.append(str(project_root))
+try:
+    import spacy
+    SPACY_AVAILABLE = True
+except ImportError:
+    SPACY_AVAILABLE = False
+    print("Warning: spaCy not available. Install with: pip install spacy --break-system-packages")
 
 from src.utils.logger import get_logger
 
@@ -29,382 +28,453 @@ logger = get_logger(__name__)
 
 @dataclass
 class Relation:
-    """Represents a relationship between documents or entities."""
-    relation_type: str  # cites, implements, supersedes, amends, defines, mandates
+    """Represents a relation between two entities."""
+    relation_type: str
+    source: str
+    target: str
     source_chunk_id: str
-    target_reference: str  # The referenced entity (e.g., "Section 12, RTE Act")
-    target_doc_id: Optional[str] = None  # Will be resolved later
-    context: str = ""  # Surrounding sentence/phrase
     confidence: float = 1.0
-    position: Tuple[int, int] = (0, 0)  # Start, end positions in text
-    metadata: Dict = None
+    context: str = ""
+    
+    def to_dict(self) -> Dict:
+        """Convert to dictionary."""
+        return asdict(self)
 
 
 class RelationExtractor:
     """
-    Extract semantic relationships between documents and legal entities.
+    Extract semantic relationships from text.
     
-    This feeds into the knowledge graph to enable queries like:
-    - "What implements Section 12 of RTE Act?"
-    - "Which GOs supersede GO MS No. 45/2018?"
-    - "What does Article 21A mandate?"
+    Key Improvements:
+    - Better regex patterns with word boundaries
+    - Dependency parsing for implicit relations
+    - Context-aware extraction
+    - Handles Indian legal language patterns
     """
     
     def __init__(self):
-        """Initialize relation extractor with patterns and NLP models."""
-        self._compile_patterns()
-        self._init_nlp_model()
+        """Initialize relation extractor."""
+        # Initialize spaCy if available
+        self.nlp = None
+        if SPACY_AVAILABLE:
+            try:
+                self.nlp = spacy.load("en_core_web_sm")
+                logger.info("spaCy model loaded successfully")
+            except OSError:
+                logger.warning("spaCy model not found. Install with: python -m spacy download en_core_web_sm")
         
-        logger.info("RelationExtractor initialized with relationship patterns")
-    
-    def _init_nlp_model(self):
-        """Initialize spaCy model for dependency parsing."""
-        try:
-            self.nlp = spacy.load("en_core_web_sm")
-            logger.info("Loaded spaCy model for dependency parsing")
-        except OSError:
-            logger.warning("spaCy model not available. Using pattern-based extraction only.")
-            self.nlp = None
-    
-    def _compile_patterns(self):
-        """Compile regex patterns for different relation types."""
+        # Improved relation patterns
+        self._init_relation_patterns()
         
-        # CITES relations - when a document cites another
+        # Statistics
+        self.stats = {
+            "total_relations_extracted": 0,
+            "by_type": defaultdict(int),
+            "by_strategy": defaultdict(int)
+        }
+        
+        logger.info("RelationExtractor initialized")
+    
+    def _init_relation_patterns(self):
+        """Initialize improved regex patterns for relation extraction."""
+        
+        # CITES relations - improved patterns
         self.cites_patterns = [
-            # "as per Section X"
-            re.compile(r'\b(?:as per|according to|under|pursuant to)\s+([^.!?]+?)(?:\.|,|;|$)', re.IGNORECASE),
-            # "in accordance with"
-            re.compile(r'\bin accordance with\s+([^.!?]+?)(?:\.|,|;|$)', re.IGNORECASE),
-            # "Section X mandates/provides/states"
-            re.compile(r'\b((?:Section|Article|Rule)\s+\d+[^.!?]*?)\s+(?:mandates|provides|states|declares)', re.IGNORECASE),
-            # "GO MS No. X provides"
-            re.compile(r'\b(G\.?O\.?\s*(?:Ms\.?|MS\.?)\s*(?:No\.?)?\s*\d+[^.!?]*?)\s+(?:provides|mandates|states)', re.IGNORECASE)
+            # "As per Section 5" or "Under Section 5"
+            re.compile(
+                r'(?:as per|under|in|pursuant to|according to|by virtue of)\s+'
+                r'(Section|Sec\.|Article|Art\.|Rule|Clause)\s+'
+                r'(\d+(?:\s*\([a-zA-Z0-9]+\))?)',
+                re.IGNORECASE
+            ),
+            # "Section 5 provides" or "Section 5 states"
+            re.compile(
+                r'(Section|Sec\.|Article|Art\.|Rule)\s+'
+                r'(\d+(?:\s*\([a-zA-Z0-9]+\))?)\s+'
+                r'(?:provides|states|mandates|requires|specifies)',
+                re.IGNORECASE
+            ),
+            # "in terms of Section 5"
+            re.compile(
+                r'in terms of\s+(Section|Sec\.|Article|Art\.|Rule)\s+'
+                r'(\d+(?:\s*\([a-zA-Z0-9]+\))?)',
+                re.IGNORECASE
+            ),
+            # "vide G.O.MS.No. 67"
+            re.compile(
+                r'vide\s+(?:G\.O\.|GO)(?:MS|RT)?\.?\s*No\.?\s*(\d+)',
+                re.IGNORECASE
+            )
         ]
         
-        # IMPLEMENTS relations - when a document implements another
+        # IMPLEMENTS relations
         self.implements_patterns = [
-            # "in pursuance of"
-            re.compile(r'\bin pursuance of\s+([^.!?]+?)(?:\.|,|;|$)', re.IGNORECASE),
-            # "for implementation of"
-            re.compile(r'\bfor (?:the )?implementation of\s+([^.!?]+?)(?:\.|,|;|$)', re.IGNORECASE),
-            # "in exercise of powers under"
-            re.compile(r'\bin exercise of (?:the )?powers? (?:under|conferred by)\s+([^.!?]+?)(?:\.|,|;|$)', re.IGNORECASE),
-            # "to implement"
-            re.compile(r'\bto implement\s+([^.!?]+?)(?:\.|,|;|$)', re.IGNORECASE)
+            # "implements Section 5" or "implementing Section 5"
+            re.compile(
+                r'implement(?:s|ing)?\s+'
+                r'(?:the provisions of\s+)?'
+                r'(Section|Sec\.|Article|Rule)\s+'
+                r'(\d+)',
+                re.IGNORECASE
+            ),
+            # "in implementation of Act"
+            re.compile(
+                r'in implementation of\s+(?:the\s+)?'
+                r'([A-Z][A-Za-z\s,]+(?:Act|Rule|Policy|Scheme))',
+                re.IGNORECASE
+            ),
+            # "gives effect to Section"
+            re.compile(
+                r'gives effect to\s+'
+                r'(Section|Sec\.|Article|Rule)\s+'
+                r'(\d+)',
+                re.IGNORECASE
+            )
         ]
         
-        # SUPERSEDES relations - when a document supersedes another
+        # SUPERSEDES relations  
         self.supersedes_patterns = [
-            # "in supersession of"
-            re.compile(r'\bin supersession of\s+([^.!?]+?)(?:\.|,|;|$)', re.IGNORECASE),
-            # "this order supersedes"
-            re.compile(r'\bthis (?:order|GO|notification)\s+supersedes\s+([^.!?]+?)(?:\.|,|;|$)', re.IGNORECASE),
-            # "earlier GO ... is hereby cancelled"
-            re.compile(r'\b(?:earlier|previous)\s+([^.!?]*?G\.?O\.?[^.!?]*?)\s+is hereby (?:cancelled|superseded)', re.IGNORECASE),
-            # "stands superseded"
-            re.compile(r'\b([^.!?]*?G\.?O\.?[^.!?]*?)\s+stands? (?:superseded|cancelled)', re.IGNORECASE)
+            # "supersedes G.O.MS.No. 45"
+            re.compile(
+                r'supersedes?\s+(?:the\s+)?'
+                r'(?:G\.O\.|GO)(?:MS|RT)?\.?\s*No\.?\s*(\d+)',
+                re.IGNORECASE
+            ),
+            # "in supersession of GO"
+            re.compile(
+                r'in supersession of\s+(?:the\s+)?'
+                r'(?:G\.O\.|GO)(?:MS|RT)?\.?\s*No\.?\s*(\d+)',
+                re.IGNORECASE
+            ),
+            # "hereby rescinded" or "hereby cancelled"
+            re.compile(
+                r'(?:G\.O\.|GO)(?:MS|RT)?\.?\s*No\.?\s*(\d+)'
+                r'.*?(?:is hereby|are hereby)\s+'
+                r'(?:rescinded|cancelled|withdrawn|revoked)',
+                re.IGNORECASE
+            ),
+            # "replaces the earlier"
+            re.compile(
+                r'replaces?\s+(?:the\s+)?(?:earlier|previous)\s+'
+                r'(?:G\.O\.|GO|order|notification)',
+                re.IGNORECASE
+            )
         ]
         
-        # AMENDS relations - when a document amends another
+        # AMENDS relations
         self.amends_patterns = [
-            # "this GO amends"
-            re.compile(r'\bthis (?:GO|order|notification)\s+amends\s+([^.!?]+?)(?:\.|,|;|$)', re.IGNORECASE),
-            # "in modification of"
-            re.compile(r'\bin modification of\s+([^.!?]+?)(?:\.|,|;|$)', re.IGNORECASE),
-            # "is hereby amended"
-            re.compile(r'\b([^.!?]+?)\s+is hereby amended', re.IGNORECASE),
-            # "substituted by"
-            re.compile(r'\b([^.!?]+?)\s+(?:is|shall be)\s+substituted by', re.IGNORECASE)
+            # "amends Section 5"
+            re.compile(
+                r'amends?\s+(?:the\s+)?'
+                r'(Section|Sec\.|Article|Rule)\s+'
+                r'(\d+)',
+                re.IGNORECASE
+            ),
+            # "amendment to Section"
+            re.compile(
+                r'amendment\s+to\s+'
+                r'(Section|Sec\.|Article|Rule)\s+'
+                r'(\d+)',
+                re.IGNORECASE
+            ),
+            # "Section 5 is amended"
+            re.compile(
+                r'(Section|Sec\.|Article|Rule)\s+'
+                r'(\d+)\s+'
+                r'(?:is|shall be)\s+amended',
+                re.IGNORECASE
+            )
         ]
         
-        # DEFINES relations - when a document defines a concept
+        # DEFINES relations
         self.defines_patterns = [
-            # "X means" or "X shall mean"
-            re.compile(r'\b([^.!?"]+?)\s+(?:means?|shall mean)\s+([^.!?]+?)(?:\.|;|$)', re.IGNORECASE),
-            # "for the purpose of this Act, X means"
-            re.compile(r'\bfor the purposes? of [^,]+,\s*([^.!?]+?)\s+means?\s+([^.!?]+?)(?:\.|;|$)', re.IGNORECASE),
-            # "X is defined as"
-            re.compile(r'\b([^.!?]+?)\s+is defined as\s+([^.!?]+?)(?:\.|;|$)', re.IGNORECASE)
+            # "Section 5 defines X as"
+            re.compile(
+                r'(Section|Sec\.|Article|Rule)\s+'
+                r'(\d+)\s+'
+                r'defines?\s+'
+                r'"([^"]+)"',
+                re.IGNORECASE
+            ),
+            # '"X" means (as defined in Section 5)'
+            re.compile(
+                r'"([^"]+)"\s+means\s+.*?'
+                r'\(as defined in\s+(Section|Sec\.|Article|Rule)\s+(\d+)\)',
+                re.IGNORECASE
+            )
         ]
         
-        # MANDATES relations - when a law/section mandates something
+        # MANDATES relations
         self.mandates_patterns = [
-            # "Section X mandates"
-            re.compile(r'\b((?:Section|Article|Rule)\s+\d+[^.!?]*?)\s+mandates?\s+([^.!?]+?)(?:\.|;|$)', re.IGNORECASE),
-            # "shall ensure/provide/maintain"
-            re.compile(r'\b([^.!?]*?(?:school|teacher|student)[^.!?]*?)\s+shall\s+(?:ensure|provide|maintain)\s+([^.!?]+?)(?:\.|;|$)', re.IGNORECASE),
-            # "it shall be mandatory"
-            re.compile(r'\bit shall be mandatory (?:for|to)\s+([^.!?]+?)(?:\.|;|$)', re.IGNORECASE)
+            # "Section 5 mandates that"
+            re.compile(
+                r'(Section|Sec\.|Article|Rule)\s+'
+                r'(\d+)\s+'
+                r'(?:mandates?|requires?|stipulates?|prescribes?)',
+                re.IGNORECASE
+            ),
+            # "shall be mandatory under Section 5"
+            re.compile(
+                r'shall be (?:mandatory|compulsory|required)\s+under\s+'
+                r'(Section|Sec\.|Article|Rule)\s+'
+                r'(\d+)',
+                re.IGNORECASE
+            )
+        ]
+        
+        # ALLOCATES patterns (for schemes/budget)
+        self.allocates_patterns = [
+            # "Rs. 100 crore allocated for Nadu-Nedu"
+            re.compile(
+                r'(?:Rs|INR|₹)\.?\s*(\d+(?:,\d+)*(?:\.\d+)?)\s*'
+                r'(?:crore|lakh|thousand)?\s+'
+                r'(?:is\s+)?allocated\s+(?:for|to|under)\s+'
+                r'([A-Z][A-Za-z\s-]+(?:Scheme|Programme|Project))',
+                re.IGNORECASE
+            )
+        ]
+        
+        # APPLIES_TO patterns (for districts/categories)
+        self.applies_to_patterns = [
+            # "applicable to SC/ST students"
+            re.compile(
+                r'applicable\s+to\s+'
+                r'(SC|ST|OBC|EWS|Minority|Girl|Rural|Urban)',
+                re.IGNORECASE
+            ),
+            # "in Visakhapatnam district"
+            re.compile(
+                r'in\s+([A-Z][a-z]+)\s+district',
+                re.IGNORECASE
+            )
         ]
     
     def extract_cites_relations(self, text: str, chunk_id: str) -> List[Relation]:
-        """Extract CITES relations from text."""
+        """Extract citation relationships."""
         relations = []
         
         for pattern in self.cites_patterns:
             for match in pattern.finditer(text):
-                target_ref = match.group(1).strip()
+                # Extract context (50 chars before and after)
+                start = max(0, match.start() - 50)
+                end = min(len(text), match.end() + 50)
+                context = text[start:end].strip()
                 
-                # Get surrounding context (sentence)
-                context = self._get_sentence_context(text, match.start())
+                # Build target reference
+                if len(match.groups()) >= 2:
+                    target = f"{match.group(1)} {match.group(2)}"
+                else:
+                    target = match.group(0)
                 
-                relations.append(Relation(
+                relation = Relation(
                     relation_type="cites",
+                    source=chunk_id,
+                    target=target.strip(),
                     source_chunk_id=chunk_id,
-                    target_reference=target_ref,
-                    context=context,
                     confidence=0.9,
-                    position=match.span()
-                ))
+                    context=context
+                )
+                relations.append(relation)
+                self.stats["by_type"]["cites"] += 1
         
         return relations
     
     def extract_implements_relations(self, text: str, chunk_id: str) -> List[Relation]:
-        """Extract IMPLEMENTS relations from text."""
+        """Extract implementation relationships."""
         relations = []
         
         for pattern in self.implements_patterns:
             for match in pattern.finditer(text):
-                target_ref = match.group(1).strip()
-                context = self._get_sentence_context(text, match.start())
+                start = max(0, match.start() - 50)
+                end = min(len(text), match.end() + 50)
+                context = text[start:end].strip()
                 
-                relations.append(Relation(
+                # Build target
+                if len(match.groups()) >= 2 and match.group(2):
+                    target = f"{match.group(1)} {match.group(2)}"
+                else:
+                    target = match.group(1)
+                
+                relation = Relation(
                     relation_type="implements",
+                    source=chunk_id,
+                    target=target.strip(),
                     source_chunk_id=chunk_id,
-                    target_reference=target_ref,
-                    context=context,
-                    confidence=0.95,
-                    position=match.span()
-                ))
+                    confidence=0.85,
+                    context=context
+                )
+                relations.append(relation)
+                self.stats["by_type"]["implements"] += 1
         
         return relations
     
     def extract_supersedes_relations(self, text: str, chunk_id: str) -> List[Relation]:
-        """Extract SUPERSEDES relations from text."""
+        """Extract supersession relationships."""
         relations = []
         
         for pattern in self.supersedes_patterns:
             for match in pattern.finditer(text):
-                target_ref = match.group(1).strip()
-                context = self._get_sentence_context(text, match.start())
+                start = max(0, match.start() - 50)
+                end = min(len(text), match.end() + 50)
+                context = text[start:end].strip()
                 
-                # Parse superseded GO details
-                superseded_go = self._parse_go_reference(target_ref)
+                # Try to extract GO number
+                go_match = re.search(r'(\d+)', match.group(0))
+                if go_match:
+                    target = f"G.O.MS.No. {go_match.group(1)}"
+                else:
+                    target = match.group(0)
                 
-                relations.append(Relation(
+                relation = Relation(
                     relation_type="supersedes",
+                    source=chunk_id,
+                    target=target.strip(),
                     source_chunk_id=chunk_id,
-                    target_reference=target_ref,
-                    context=context,
-                    confidence=0.95,
-                    position=match.span(),
-                    metadata={"superseded_go": superseded_go}
-                ))
+                    confidence=0.95,  # High confidence for explicit supersession
+                    context=context
+                )
+                relations.append(relation)
+                self.stats["by_type"]["supersedes"] += 1
         
         return relations
     
     def extract_amends_relations(self, text: str, chunk_id: str) -> List[Relation]:
-        """Extract AMENDS relations from text."""
+        """Extract amendment relationships."""
         relations = []
         
         for pattern in self.amends_patterns:
             for match in pattern.finditer(text):
-                target_ref = match.group(1).strip()
-                context = self._get_sentence_context(text, match.start())
+                start = max(0, match.start() - 50)
+                end = min(len(text), match.end() + 50)
+                context = text[start:end].strip()
                 
-                relations.append(Relation(
+                if len(match.groups()) >= 2:
+                    target = f"{match.group(1)} {match.group(2)}"
+                else:
+                    target = match.group(0)
+                
+                relation = Relation(
                     relation_type="amends",
+                    source=chunk_id,
+                    target=target.strip(),
                     source_chunk_id=chunk_id,
-                    target_reference=target_ref,
-                    context=context,
                     confidence=0.9,
-                    position=match.span()
-                ))
+                    context=context
+                )
+                relations.append(relation)
+                self.stats["by_type"]["amends"] += 1
         
         return relations
     
     def extract_defines_relations(self, text: str, chunk_id: str) -> List[Relation]:
-        """Extract DEFINES relations from text."""
+        """Extract definition relationships."""
         relations = []
         
         for pattern in self.defines_patterns:
             for match in pattern.finditer(text):
-                # For defines relations, we have both the term and definition
-                term = match.group(1).strip()
-                definition = match.group(2).strip() if match.lastindex > 1 else ""
+                start = max(0, match.start() - 50)
+                end = min(len(text), match.end() + 50)
+                context = text[start:end].strip()
                 
-                context = self._get_sentence_context(text, match.start())
+                # Extract defined term
+                if len(match.groups()) >= 3:
+                    term = match.group(1) if '"' in match.group(1) else match.group(3)
+                    target = f"{match.group(2)} {match.group(3)}" if len(match.groups()) >= 3 else match.group(2)
+                else:
+                    term = match.group(1)
+                    target = match.group(0)
                 
-                relations.append(Relation(
+                relation = Relation(
                     relation_type="defines",
+                    source=chunk_id,
+                    target=target.strip(),
                     source_chunk_id=chunk_id,
-                    target_reference=term,
-                    context=context,
-                    confidence=0.95,
-                    position=match.span(),
-                    metadata={"definition": definition}
-                ))
+                    confidence=0.85,
+                    context=context
+                )
+                relations.append(relation)
+                self.stats["by_type"]["defines"] += 1
         
         return relations
     
     def extract_mandates_relations(self, text: str, chunk_id: str) -> List[Relation]:
-        """Extract MANDATES relations from text."""
+        """Extract mandate relationships."""
         relations = []
         
         for pattern in self.mandates_patterns:
             for match in pattern.finditer(text):
-                if match.lastindex >= 2:
-                    source_ref = match.group(1).strip()
-                    mandate = match.group(2).strip()
-                    
-                    context = self._get_sentence_context(text, match.start())
-                    
-                    relations.append(Relation(
-                        relation_type="mandates",
-                        source_chunk_id=chunk_id,
-                        target_reference=source_ref,
-                        context=context,
-                        confidence=0.9,
-                        position=match.span(),
-                        metadata={"mandate": mandate}
-                    ))
+                start = max(0, match.start() - 50)
+                end = min(len(text), match.end() + 50)
+                context = text[start:end].strip()
+                
+                if len(match.groups()) >= 2:
+                    target = f"{match.group(1)} {match.group(2)}"
                 else:
-                    # Single group pattern
-                    target_ref = match.group(1).strip()
-                    context = self._get_sentence_context(text, match.start())
-                    
-                    relations.append(Relation(
-                        relation_type="mandates",
-                        source_chunk_id=chunk_id,
-                        target_reference=target_ref,
-                        context=context,
-                        confidence=0.8,
-                        position=match.span()
-                    ))
+                    target = match.group(0)
+                
+                relation = Relation(
+                    relation_type="mandates",
+                    source=chunk_id,
+                    target=target.strip(),
+                    source_chunk_id=chunk_id,
+                    confidence=0.85,
+                    context=context
+                )
+                relations.append(relation)
+                self.stats["by_type"]["mandates"] += 1
         
         return relations
     
     def extract_spacy_relations(self, text: str, chunk_id: str) -> List[Relation]:
-        """
-        Extract relations using spaCy dependency parsing.
-        
-        This can catch more complex semantic relationships that 
-        regex patterns might miss.
-        """
-        if not self.nlp:
+        """Extract relations using spaCy dependency parsing."""
+        if not self.nlp or not text or len(text) > 100000:
             return []
         
         relations = []
         
         try:
-            doc = self.nlp(text)
+            # Process text
+            doc = self.nlp(text[:10000])  # Limit to first 10k chars for performance
             
-            for sent in doc.sents:
-                # Look for specific dependency patterns
-                
-                # Pattern: "X implements Y" (subject-verb-object)
-                for token in sent:
-                    if token.lemma_ in ["implement", "enforce", "execute"] and token.pos_ == "VERB":
-                        # Find subject and object
-                        subj = None
-                        obj = None
-                        
-                        for child in token.children:
-                            if child.dep_ in ["nsubj", "nsubjpass"]:
-                                subj = child
-                            elif child.dep_ in ["dobj", "pobj"]:
-                                obj = child
-                        
-                        if subj and obj:
-                            # Extract the full phrases
-                            subj_phrase = self._extract_phrase(subj)
-                            obj_phrase = self._extract_phrase(obj)
+            # Look for verb-object relations
+            for token in doc:
+                # Look for key verbs
+                if token.lemma_ in ["implement", "supersede", "amend", "cite", "define", "mandate"]:
+                    # Find object
+                    for child in token.children:
+                        if child.dep_ in ["dobj", "pobj"]:
+                            # Extract context
+                            start = max(0, token.idx - 30)
+                            end = min(len(text), child.idx + len(child.text) + 30)
+                            context = text[start:end].strip()
                             
-                            relations.append(Relation(
-                                relation_type="implements",
+                            relation = Relation(
+                                relation_type=token.lemma_,
+                                source=chunk_id,
+                                target=child.text,
                                 source_chunk_id=chunk_id,
-                                target_reference=obj_phrase,
-                                context=sent.text,
-                                confidence=0.7,
-                                position=(sent.start_char, sent.end_char),
-                                metadata={"method": "spacy_dependency", "subject": subj_phrase}
-                            ))
-                
-                # Pattern: "According to X" / "As per X"
-                for token in sent:
-                    if token.text.lower() in ["according", "per"] and token.head.pos_ == "ADP":
-                        # Find the object of the preposition
-                        for child in token.head.children:
-                            if child.dep_ == "pobj":
-                                ref_phrase = self._extract_phrase(child)
-                                
-                                relations.append(Relation(
-                                    relation_type="cites",
-                                    source_chunk_id=chunk_id,
-                                    target_reference=ref_phrase,
-                                    context=sent.text,
-                                    confidence=0.8,
-                                    position=(sent.start_char, sent.end_char),
-                                    metadata={"method": "spacy_dependency"}
-                                ))
-        
+                                confidence=0.7,  # Lower confidence for dependency-based
+                                context=context
+                            )
+                            relations.append(relation)
+                            self.stats["by_type"][token.lemma_] += 1
+                            self.stats["by_strategy"]["spacy"] += 1
+            
         except Exception as e:
-            logger.warning(f"Error in spaCy relation extraction: {e}")
+            logger.debug(f"Error in spaCy relation extraction: {e}")
         
         return relations
-    
-    def _extract_phrase(self, token) -> str:
-        """Extract the full phrase for a token (including dependents)."""
-        # Get all tokens in the subtree
-        phrase_tokens = list(token.subtree)
-        phrase_tokens.sort(key=lambda x: x.i)  # Sort by position
-        
-        return " ".join([t.text for t in phrase_tokens])
-    
-    def _get_sentence_context(self, text: str, position: int, window: int = 150) -> str:
-        """Get the sentence containing the given position."""
-        # Find sentence boundaries around the position
-        start = max(0, position - window)
-        end = min(len(text), position + window)
-        
-        context = text[start:end]
-        
-        # Try to find complete sentences
-        sentences = re.split(r'[.!?]+', context)
-        if len(sentences) > 1:
-            # Return the middle sentence(s)
-            middle = len(sentences) // 2
-            return sentences[middle].strip()
-        
-        return context.strip()
-    
-    def _parse_go_reference(self, go_text: str) -> Dict:
-        """Parse GO reference text to extract structured information."""
-        go_pattern = re.compile(
-            r'G\.?O\.?\s*(?:Ms\.?|MS\.?|Rt\.?|RT\.?)?\s*(?:No\.?)?\s*(\d+)(?:/(\d{4}))?',
-            re.IGNORECASE
-        )
-        
-        match = go_pattern.search(go_text)
-        if match:
-            return {
-                "number": int(match.group(1)),
-                "year": int(match.group(2)) if match.group(2) else None,
-                "full_text": go_text
-            }
-        
-        return {"full_text": go_text}
     
     def extract_all_relations(self, text: str, chunk_id: str) -> List[Relation]:
         """
         Extract all types of relations from text.
         
         Args:
-            text: Input text to analyze
-            chunk_id: ID of the source chunk
+            text: Input text
+            chunk_id: Chunk identifier
             
         Returns:
-            List of all extracted relations
+            List of extracted relations
         """
         if not text or not text.strip():
             return []
@@ -412,7 +482,7 @@ class RelationExtractor:
         all_relations = []
         
         try:
-            # Extract different types of relations
+            # Pattern-based extraction (primary strategy)
             all_relations.extend(self.extract_cites_relations(text, chunk_id))
             all_relations.extend(self.extract_implements_relations(text, chunk_id))
             all_relations.extend(self.extract_supersedes_relations(text, chunk_id))
@@ -420,13 +490,18 @@ class RelationExtractor:
             all_relations.extend(self.extract_defines_relations(text, chunk_id))
             all_relations.extend(self.extract_mandates_relations(text, chunk_id))
             
-            # Add spaCy-based relations
-            all_relations.extend(self.extract_spacy_relations(text, chunk_id))
+            # spaCy-based extraction (secondary strategy)
+            if self.nlp:
+                all_relations.extend(self.extract_spacy_relations(text, chunk_id))
             
-            # Deduplicate based on similar target references
+            # Deduplicate
             all_relations = self._deduplicate_relations(all_relations)
             
-            logger.debug(f"Extracted {len(all_relations)} relations from chunk {chunk_id}")
+            # Update stats
+            self.stats["total_relations_extracted"] += len(all_relations)
+            
+            if len(all_relations) > 0:
+                logger.debug(f"Extracted {len(all_relations)} relations from chunk {chunk_id}")
             
         except Exception as e:
             logger.error(f"Error extracting relations from chunk {chunk_id}: {e}")
@@ -434,19 +509,21 @@ class RelationExtractor:
         return all_relations
     
     def _deduplicate_relations(self, relations: List[Relation]) -> List[Relation]:
-        """Remove duplicate or very similar relations."""
+        """Remove duplicate or highly similar relations."""
         if not relations:
             return []
         
-        # Group by relation type and target reference
         seen = set()
         unique_relations = []
         
         for relation in relations:
-            # Create a key for deduplication
+            # Normalize target for comparison
+            target_norm = re.sub(r'\s+', ' ', relation.target.lower().strip())
+            
+            # Create deduplication key
             key = (
                 relation.relation_type,
-                relation.target_reference.lower().strip(),
+                target_norm,
                 relation.source_chunk_id
             )
             
@@ -457,46 +534,39 @@ class RelationExtractor:
         return unique_relations
     
     def relations_to_dict(self, relations: List[Relation]) -> List[Dict]:
-        """Convert relation objects to dictionaries for JSON serialization."""
-        return [
-            {
-                "relation_type": rel.relation_type,
-                "source_chunk_id": rel.source_chunk_id,
-                "target_reference": rel.target_reference,
-                "target_doc_id": rel.target_doc_id,
-                "context": rel.context,
-                "confidence": rel.confidence,
-                "position": rel.position,
-                "metadata": rel.metadata or {}
-            }
-            for rel in relations
-        ]
+        """Convert relation objects to dictionaries."""
+        return [r.to_dict() for r in relations]
+    
+    def get_stats(self) -> Dict:
+        """Get extraction statistics."""
+        return dict(self.stats)
 
 
-# Example usage and testing
+# Testing
 if __name__ == "__main__":
-    # Test the relation extractor
     extractor = RelationExtractor()
     
-    # Test text with various relation types
-    test_text = """
-    As per Section 12(1)(c) of the RTE Act, private schools shall reserve 25% seats 
-    for EWS and DG children. In pursuance of Article 21A of the Constitution, 
-    this notification is issued.
+    # Test with sample legal text
+    test_texts = [
+        "As per Section 5 of the Education Act, schools must maintain records.",
+        "This GO implements the provisions of Section 10 of the Act.",
+        "In supersession of G.O.MS.No. 45/2020, the following is notified.",
+        "Section 12 mandates that all schools provide free education.",
+        "Vide G.O.MS.No. 67 dated 15.04.2023, Nadu-Nedu scheme is implemented.",
+        "Under Article 21A of the Constitution, education is a fundamental right."
+    ]
     
-    In supersession of GO MS No. 45/2018 dated 10.03.2018, this order provides 
-    new guidelines. This GO amends the earlier provisions regarding teacher recruitment.
+    print("Testing Relation Extraction:\n")
     
-    For the purpose of this Act, "disadvantaged group" means a group of people 
-    who may be discriminated against. Section 21 mandates formation of School 
-    Management Committees in all schools.
-    """
-    
-    relations = extractor.extract_all_relations(test_text, "test_chunk_001")
-    
-    print(f"Extracted {len(relations)} relations:")
-    for rel in relations:
-        print(f"- {rel.relation_type}: {rel.target_reference}")
-        print(f"  Context: {rel.context[:100]}...")
-        print(f"  Confidence: {rel.confidence}")
+    total_relations = 0
+    for i, text in enumerate(test_texts):
+        relations = extractor.extract_all_relations(text, f"test_chunk_{i}")
+        print(f"Text: {text}")
+        print(f"Relations found: {len(relations)}")
+        for rel in relations:
+            print(f"  - {rel.relation_type}: {rel.source} -> {rel.target}")
         print()
+        total_relations += len(relations)
+    
+    print(f"Total relations extracted: {total_relations}")
+    print(f"\nStatistics: {extractor.get_stats()}")
