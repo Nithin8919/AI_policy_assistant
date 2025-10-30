@@ -1,0 +1,280 @@
+{
+  "doc_id": "government_orders_procs.rc_.no_.1078085_mdm_2020_dt.17.11.2022",
+  "title": "Procs.Rc .No..1078085 Mdm 2020 Dt.17.11.2022",
+  "file_path": "data/organized_documents/Government_Orders/Procs.Rc_.No_.1078085-MDM-2020-Dt.17.11.2022.pdf",
+  "file_name": "Procs.Rc_.No_.1078085-MDM-2020-Dt.17.11.2022.pdf",
+  "file_format": ".pdf",
+  "doc_type": "data_report",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Government_Orders"
+  ],
+  "year": 2022,
+  "creation_timestamp": "2025-10-30T15:59:39.971857",
+  "modification_timestamp": "2025-10-30T15:59:39.971531",
+  "processing_timestamp": "2025-10-30T16:01:39.092668",
+  "file_size": 1683277,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "data_report",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.4,
+      "rule": 0.0,
+      "government_order": 0.05,
+      "judicial": 0.0,
+      "data_report": 1.0,
+      "budget_finance": 0.0,
+      "framework": 0.1,
+      "circular": 0.25
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": true,
+      "has_financial_terms": false,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": false,
+      "word_count": 4804,
+      "avg_sentence_length": 2.968984962406015,
+      "title_length": 1
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "17/11/2022",
+        "normalized_date": "2022-11-17",
+        "position": [
+          213,
+          223
+        ],
+        "context": "EENA, I.A.S.,\nProcs.Rc.No.1078085/MDM/2020 Dated:\u00b717/11/2022\nSub:SE Dept., - PM POSHAN - Jagananna G",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "21/11/2022",
+        "normalized_date": "2022-11-21",
+        "position": [
+          347,
+          357
+        ],
+        "context": "tation of revision of existing revised menu w.e.,\n21/11/2022 -Certain instructions -Issued - Regardi",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "13/01/2020",
+        "normalized_date": "2020-01-13",
+        "position": [
+          460,
+          470
+        ],
+        "context": "vt.Memo No.ESEOl-SEDNOCSE/I 731/Prog.1/2019,\nDate.13/01/2020.\n2.This office Procs.Rc.No.ESE02-27021/",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "16/01/2020",
+        "normalized_date": "2020-01-16",
+        "position": [
+          530,
+          540
+        ],
+        "context": "ffice Procs.Rc.No.ESE02-27021/10/2020-MDM-CSE,\ndt.16/01/2020.\n3.This office Proc s.R e. No. ESE02-2",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "18/01/2020",
+        "normalized_date": "2020-01-18",
+        "position": [
+          606,
+          616
+        ],
+        "context": "Proc s.R e. No. ESE02-2 7021/74/2019-M DM-CSE,\ndt.18/01/2020\n4.This office Lr.Rc.No.ESE02-27021/10/2",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "25/01/2020",
+        "normalized_date": "2020-01-25",
+        "position": [
+          672,
+          682
+        ],
+        "context": "s office Lr.Rc.No.ESE02-27021/10/2020-MDM-CSE,\nDt.25/01/2020.\n5.This office Memo.No.ESE02-27021/132/",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "24/02/2022",
+        "normalized_date": "2022-02-24",
+        "position": [
+          739,
+          749
+        ],
+        "context": "s office Memo.No.ESE02-27021/132/2019-MDM-CSE,\ndt.24/02/2022.\n6.This office Memo.No.E SE02-27021/132",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "10/03/2022",
+        "normalized_date": "2022-03-10",
+        "position": [
+          808,
+          818
+        ],
+        "context": "office Memo.No.E SE02-27021/132/2019-M OM-CSE,\ndt.10/03/2022.\n7.This office Memo.No.ESE02-27021/132/",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "29/06/2022",
+        "normalized_date": "2022-06-29",
+        "position": [
+          875,
+          885
+        ],
+        "context": "s office Memo.No.ESE02-27021/132/2019-MDM-CSE,\ndt.29/06/2022.\n8. This office Memo.No.1652460/MDM&SS/",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "03/10/2022",
+        "normalized_date": "2022-10-03",
+        "position": [
+          934,
+          944
+        ],
+        "context": "2.\n8. This office Memo.No.1652460/MDM&SS/2022, dt.03/10/2022.\n&&&\nAll the Regional Director of Schoo",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "21/01/2020",
+        "normalized_date": "2020-01-21",
+        "position": [
+          1816,
+          1826
+        ],
+        "context": "e\nDay implemented w.e.f., implemented w.e.f.,\nNo.\n21/01/2020 21/11/2022\nu~. . Pnnnal wi h bnilPd ~--",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "21/11/2022",
+        "normalized_date": "2022-11-21",
+        "position": [
+          1827,
+          1837
+        ],
+        "context": "mented w.e.f., implemented w.e.f.,\nNo.\n21/01/2020 21/11/2022\nu~. . Pnnnal wi h bnilPd ~-- I\nooked Ri",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "21/01/2020",
+        "normalized_date": "2020-01-21",
+        "position": [
+          3349,
+          3359
+        ],
+        "context": "s.\nNo. | Day | Existing Menu\nimplemented w.e.f.,\n21/01/2020 | Revised Menu to be\nimplemented w.e.f.",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "21/11/2022",
+        "normalized_date": "2022-11-21",
+        "position": [
+          3401,
+          3411
+        ],
+        "context": "/01/2020 | Revised Menu to be\nimplemented w.e.f.,\n21/11/2022\n1 | Monday | ooked Rice, Pappu Charu,\ni",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/11/2022",
+        "normalized_date": "2022-11-17",
+        "position": [
+          4796,
+          4806
+        ],
+        "context": "Page 4 ---\nuo~a\u2022 ~QJO_so\n2ot1;{);{)lf fo:>~~ 0\": 17/11/2022\n~,spo ~~ .'.:I.lOo:m ~~ ~~\n~-~0. o~.:w",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "November 21, 2022",
+        "normalized_date": "2022-11-21",
+        "position": [
+          1652,
+          1669
+        ],
+        "context": "ws and the same is\ndecided to be implemented from November 21, 2022.onwards.\n\n--- Page 2 ---\nFilo No",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "November 21, 2022",
+        "normalized_date": "2022-11-21",
+        "position": [
+          2844,
+          2861
+        ],
+        "context": "em to implement the same from coming Monday i.e.,\nNovember 21, 2022 without fail.\nAlso requested iss",
+        "confidence": 0.9
+      }
+    ],
+    "academic_years": [],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 17,
+      "total_dates": 17,
+      "total_academic_years": 0,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "2020-01-13",
+      "latest_date": "2022-11-21",
+      "year_span": [
+        2020,
+        2022
+      ],
+      "primary_years": [
+        2022,
+        2020
+      ]
+    }
+  },
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

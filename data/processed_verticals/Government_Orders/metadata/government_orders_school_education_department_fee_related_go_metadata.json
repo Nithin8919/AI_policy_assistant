@@ -1,0 +1,311 @@
+{
+  "doc_id": "government_orders_school_education_department_fee_related_go",
+  "title": "School Education Department Fee Related Go",
+  "file_path": "data/organized_documents/Government_Orders/School Education Department Fee-related GO.pdf",
+  "file_name": "School Education Department Fee-related GO.pdf",
+  "file_format": ".pdf",
+  "doc_type": "government_order",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Government_Orders"
+  ],
+  "year": 2022,
+  "creation_timestamp": "2025-10-30T15:59:39.995907",
+  "modification_timestamp": "2025-10-30T15:59:39.995713",
+  "processing_timestamp": "2025-10-30T16:01:31.491265",
+  "file_size": 122560,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "government_order",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.2,
+      "rule": 0.4,
+      "government_order": 1.0,
+      "judicial": 0.0,
+      "data_report": 0.5333333333333333,
+      "budget_finance": 0.0,
+      "framework": 0.0,
+      "circular": 0.2
+    },
+    "structural_features": {
+      "has_sections": false,
+      "has_chapters": false,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": true,
+      "has_financial_terms": false,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": false,
+      "word_count": 2038,
+      "avg_sentence_length": 17.483333333333334,
+      "title_length": 5
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "30/09/2019",
+        "normalized_date": "2019-09-30",
+        "position": [
+          540,
+          550
+        ],
+        "context": "CATION (TRAINING) DEPARTMENT\nG.0.MS.No. 66 Dated: 30/09/2019.\nRead the following:-\n1 . G.0.Ms.No.111",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/10/2016",
+        "normalized_date": "2016-10-01",
+        "position": [
+          638,
+          648
+        ],
+        "context": "11, School Education (Training) Department,\ndated 01/10/2016\n2 . From Administrative Officer, AP AFR",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "18/07/2019",
+        "normalized_date": "2019-07-18",
+        "position": [
+          733,
+          743
+        ],
+        "context": "P AFRC, Guntur, Lr.No.94/AFRC/\nFFC/2019-20, dated 18/07/2019.\n***\n0 R D E R:\nIn the G.0 first read a",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/07/2019",
+        "normalized_date": "2019-07-17",
+        "position": [
+          1204,
+          1214
+        ],
+        "context": "Fee\nRegulatory Committee in their meeting held on 17/07/2019 have recommended\nfee in respect of 44 M",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/09/2019",
+        "normalized_date": "2019-09-30",
+        "position": [
+          1615,
+          1625
+        ],
+        "context": "inary\nissue of the Andhra Pradesh Gazettee, dated 30/09/2019.\nNOTIFICATION\nIn exercise of the powers",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/07/2019",
+        "normalized_date": "2019-07-17",
+        "position": [
+          1951,
+          1961
+        ],
+        "context": "ee Regulatory Committee) in their meeting held\non 17/07/2019, the Govemor of Andhra Pradesh hereby n",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/09/2019",
+        "normalized_date": "2019-09-30",
+        "position": [
+          4861,
+          4871
+        ],
+        "context": "t to publish\nin the extraordinary Gazettee, dated 30/09/2019 and supply 50 copies\nimmediately)\nThe A",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/09/2019",
+        "normalized_date": "2019-09-30",
+        "position": [
+          6128,
+          6138
+        ],
+        "context": "No. 66 , School Education (TRG) Department,\nDated 30/09/2019.\nCourse Name M.Ed\nBlock Period 2019-202",
+        "confidence": 0.9
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "dated 18/07/2019.",
+        "normalized_date": "2019-07-18",
+        "position": [
+          727,
+          744
+        ],
+        "context": "cer, AP AFRC, Guntur, Lr.No.94/AFRC/\nFFC/2019-20, dated 18/07/2019.\n***\n0 R D E R:\nIn the G.0 first",
+        "confidence": 0.85
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "dated 30/09/2019.",
+        "normalized_date": "2019-09-30",
+        "position": [
+          1609,
+          1626
+        ],
+        "context": "traordinary\nissue of the Andhra Pradesh Gazettee, dated 30/09/2019.\nNOTIFICATION\nIn exercise of the",
+        "confidence": 0.85
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "dated 30/09/2019 and supply 50 copies\nimmediately)\nThe Administrative Officer,",
+        "normalized_date": "2019-09-30",
+        "position": [
+          4855,
+          4933
+        ],
+        "context": "request to publish\nin the extraordinary Gazettee, dated 30/09/2019 and supply 50 copies\nimmediately)",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [
+      {
+        "type": "academic_year",
+        "raw_text": "2019-20",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          718,
+          725
+        ],
+        "context": "tive Officer, AP AFRC, Guntur, Lr.No.94/AFRC/\nFFC/2019-20, dated 18/07/2019.\n***\n0 R D E R:\nIn the G",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2019-20",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          4131,
+          4139
+        ],
+        "context": ", now recommended by the AFRC for the block period\n2019-20 to 2021-22, is based on the details/figur",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          4142,
+          4150
+        ],
+        "context": "mended by the AFRC for the block period\n2019-20 to 2021-22, is based on the details/figures uploaded",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2019-2020",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          6169,
+          6179
+        ],
+        "context": "t,\nDated 30/09/2019.\nCourse Name M.Ed\nBlock Period 2019-2020 to 2021-2022\nCollege Society College Na",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2021-2022",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          6182,
+          6192
+        ],
+        "context": "9/2019.\nCourse Name M.Ed\nBlock Period 2019-2020 to 2021-2022\nCollege Society College Name Determined",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2019-2020",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          8799,
+          8808
+        ],
+        "context": "Page 4]\nCourse Name | | M.Ed | |\nBlock Period | | 2019-2020 to 2021-2022 | |\nS.No | College\nCode | S",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2021-2022",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          8811,
+          8821
+        ],
+        "context": "se Name | | M.Ed | |\nBlock Period | | 2019-2020 to 2021-2022 | |\nS.No | College\nCode | Society\nCode",
+        "confidence": 0.9
+      }
+    ],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 18,
+      "total_dates": 11,
+      "total_academic_years": 7,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "2016-10-01",
+      "latest_date": "2019-09-30",
+      "year_span": [
+        2016,
+        2022
+      ],
+      "primary_years": [
+        2022,
+        2021,
+        2020,
+        2019,
+        2016
+      ]
+    }
+  },
+  "issue_date": "2019-07-18",
+  "academic_year": "2021-2022",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

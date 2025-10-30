@@ -1,0 +1,706 @@
+{
+  "doc_id": "legal_ap_bifurcation_act",
+  "title": "AP Bifurcation Act",
+  "file_path": "data/organized_documents/Legal/AP_BIfurcation_Act.pdf",
+  "file_name": "AP_BIfurcation_Act.pdf",
+  "file_format": ".pdf",
+  "doc_type": "act",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Legal"
+  ],
+  "year": 2025,
+  "creation_timestamp": "2025-10-30T15:45:07.951871",
+  "modification_timestamp": "2025-10-30T15:45:07.951673",
+  "processing_timestamp": "2025-10-30T15:48:15.970896",
+  "file_size": 730913,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "act",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 1.0,
+      "rule": 0.0,
+      "government_order": 0.7647058823529411,
+      "judicial": 0.06470588235294118,
+      "data_report": 0.023529411764705882,
+      "budget_finance": 0.3588235294117647,
+      "framework": 0.25588235294117645,
+      "circular": 0.10588235294117647
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": true,
+      "has_financial_terms": true,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 28282,
+      "avg_sentence_length": 10.90296803652968,
+      "title_length": 1
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "29/5/2014",
+        "normalized_date": "2014-05-29",
+        "position": [
+          12370,
+          12379
+        ],
+        "context": "by Act 19 of 2014, s.2, for certain words (w.e.f. 29/5/2014).\n6\n\n--- Page 7 ---\n(4) The Govemor shal",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "29/4/2015",
+        "normalized_date": "2015-04-29",
+        "position": [
+          22257,
+          22266
+        ],
+        "context": "he Legislative Council of Andhra Pradesh\u201d (w.e.f. 29/4/2015).\n2. Subs. by s. 3, ibid., for \u201c50 seats",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "29/4/2015",
+        "normalized_date": "2015-04-29",
+        "position": [
+          22362,
+          22371
+        ],
+        "context": "he Legislative Council of Andhra Pradesh\u201d (w.e.f. 29/4/2015).\n3. Subs. by s. 3, ibid., for entry 1 (",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "29/4/2015",
+        "normalized_date": "2015-04-29",
+        "position": [
+          22419,
+          22428
+        ],
+        "context": "15).\n3. Subs. by s. 3, ibid., for entry 1 (w.e.f. 29/4/2015).\n9\n\n--- Page 10 ---\n(ii) in the Fourth",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "23/4/2015",
+        "normalized_date": "2015-04-23",
+        "position": [
+          114408,
+          114417
+        ],
+        "context": "1. Subs. by notification No. G.S.R. 311(E), dated 23/4/2015.\n35\n\n--- Page 36 ---\n1 2\nChodimella, San",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "23/4/2015",
+        "normalized_date": "2015-04-23",
+        "position": [
+          116717,
+          116726
+        ],
+        "context": "1. Subs. by notification No. G.S.R. 311(E), dated 23/4/2015.\n36\n\n--- Page 37 ---\n1 2\n84. Jaggayyapet",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "23/4/2015",
+        "normalized_date": "2015-04-23",
+        "position": [
+          141042,
+          141051
+        ],
+        "context": "s.\n1. Subsby notificationNo. G.S.R. 311(E), dated 23/4/2015.\n47\n\n--- Page 48 ---\nTABLE B - PARLIAMEN",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "23/4/2015",
+        "normalized_date": "2015-04-23",
+        "position": [
+          146997,
+          147006
+        ],
+        "context": "gonda\n* See notification No. G.S.R. 313(E), dated 23/4/2015.\n50\n\n--- Page 51 ---\nTHE FOURTH SCHEDULE",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "14/10/2014",
+        "normalized_date": "2014-10-14",
+        "position": [
+          149552,
+          149562
+        ],
+        "context": "1. Ins. by notification No. G.S.R. 725(E), dated 14/10/2014.\n* Omitted by notificationNo. G.S.R. 31",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "23/4/2015",
+        "normalized_date": "2015-04-23",
+        "position": [
+          149614,
+          149623
+        ],
+        "context": "* Omitted by notificationNo. G.S.R. 312(E), dated 23/4/2015.\nThe seat vacated by Shri K. R. Amos sha",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "3/5/1089",
+        "normalized_date": "1089-05-03",
+        "position": [
+          168646,
+          168654
+        ],
+        "context": "bad.\n63. Andhra Pradesh Toddy Tappers Cooperative 3/5/1089, Beside\nFinance Corporation Ltd. (AP Geet",
+        "confidence": 0.9
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "w.e.f. 29/5/2014).",
+        "normalized_date": "2014-05-29",
+        "position": [
+          12363,
+          12381
+        ],
+        "context": "Subs. by Act 19 of 2014, s.2, for certain words (w.e.f. 29/5/2014).\n6\n\n--- Page 7 ---\n(4) The Govem",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "w.e.f. 29/4/2015).",
+        "normalized_date": "2015-04-29",
+        "position": [
+          22355,
+          22373
+        ],
+        "context": "ts in the Legislative Council of Andhra Pradesh\u201d (w.e.f. 29/4/2015).\n3. Subs. by s. 3, ibid., for en",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "with effect from such date or dates as the Central Govemment may,",
+        "normalized_date": "2025-05-30",
+        "position": [
+          74736,
+          74801
+        ],
+        "context": "stituted under\nsub-section (2) in such manner and with effect from such date or dates as the Central",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on the 15th day of February,",
+        "normalized_date": "2025-02-15",
+        "position": [
+          129660,
+          129691
+        ],
+        "context": "Mandal and Villages or\nother territorialdivision as on the 15th day of February, 2004. Further, any",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on the 15th day of February,",
+        "normalized_date": "2025-02-15",
+        "position": [
+          143516,
+          143547
+        ],
+        "context": "Mandal and Villages or other\nterritorialdivision as on the 15th day of February, 2004. Further, any",
+        "confidence": 0.85
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "dated 4th March,",
+        "normalized_date": "2025-03-04",
+        "position": [
+          8489,
+          8505
+        ],
+        "context": "nd June, 2014, vide notification No. S.0. 655(E), dated 4th March, 2014, see Gazette of India, Extra",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date of establishment of the High Court of Andhra\nPradesh as may be determined by the President,",
+        "normalized_date": "2025-05-30",
+        "position": [
+          31203,
+          31299
+        ],
+        "context": "t\nHyderabad holding office immediately before the date of establishment of the High Court of Andhra",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date referred to\nin sub-section (1) of section 30,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          32248,
+          32298
+        ],
+        "context": "o Bar Council and advocates.--(1) On and from the date referred to\nin sub-section (1) of section 30,",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date referred to in sub-section (1) of section 30 is an\nadvocate on the roll of the Bar Council of the existing State of Andhra Pradesh and practising as an\nadvocate in the High Court at Hyderabad,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          32541,
+          32738
+        ],
+        "context": "ituted.\n(2) Any person who immediately before the date referred to in sub-section (1) of section 30",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date referred to in sub-section (1) of section 30,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          33802,
+          33852
+        ],
+        "context": "ith\nthe like principles as immediately before the date referred to in sub-section (1) of section 30,",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date exercisable by the High Court at Hyderabad:\nProvided that any rules or orders which are in force immediately before the datereferred to in\nsub-section (1) of section 30 with respect to practice and procedure in the High Court at Hyderabad shall,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          34461,
+          34711
+        ],
+        "context": "tice and procedure as are immediately\nbefore that date exercisable by the High Court at Hyderabad:\nP",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date\nreferred to in sub-section (1) of section 30 with respect to the custody of the seal of the High Court at\nHyderabad shall,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          35027,
+          35154
+        ],
+        "context": "h Court.--The law in force immediately before the date\nreferred to in sub-section (1) of section 30",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date referred to in\nsub-section (1) of section 30 with respect to the form of writs and other processes used,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          35352,
+          35461
+        ],
+        "context": "ocesses.--The law in force immediately before the date referred to in\nsub-section (1) of section 30",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date referred to in sub-section (1) of\nsection 30 relating to the powers of the Chief Justice,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          35736,
+          35830
+        ],
+        "context": "Judges.--The law in force immediately before the date referred to in sub-section (1) of\nsection 30",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date\nreferred to in sub-section (1) of section 30 relating to appeals to the Supreme Court from the High Court at\nHyderabad and the Judges and division courts thereof shall,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          36154,
+          36327
+        ],
+        "context": "Court.-- The law in force immediately before the date\nreferred to in sub-section (1) of section 30",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date referred to in\nsub-section (1) of section 30,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          36585,
+          36635
+        ],
+        "context": "d, the High Court at Hyderabad shall, as from the date referred to in\nsub-section (1) of section 30,",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date referred to\nin sub-section (1) of section 30 as are certified,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          36783,
+          36850
+        ],
+        "context": "he High Court at Hyderabad immediately before the date referred to\nin sub-section (1) of section 30",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date referred to in sub-section (1) of section 30,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          38167,
+          38217
+        ],
+        "context": "e by the High Court at Hyderabad--\n(a) before the date referred to in sub-section (1) of section 30,",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date referred to in sub-section (1) of section 30,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          38721,
+          38771
+        ],
+        "context": "gh Court.--Any\nperson who, immediately before the date referred to in sub-section (1) of section 30,",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date referred to in sub-section (1) of section 30 with respect to that High Court by\nany Legislature or other authority having power to make such provision.",
+        "normalized_date": "2025-01-30",
+        "position": [
+          40044,
+          40200
+        ],
+        "context": "to anyprovision that may be\nmade on or after the date referred to in sub-section (1) of section 30",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date or dates as the Central Govemment may,",
+        "normalized_date": "2025-05-30",
+        "position": [
+          74758,
+          74801
+        ],
+        "context": "tion (2) in such manner and with effect from such date or dates as the Central Govemment may,\nby ord",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date as may be agreed upon between the Govemments of the successor States or,",
+        "normalized_date": "2025-05-30",
+        "position": [
+          77137,
+          77214
+        ],
+        "context": "able for serving in the successor State from such\ndate as may be agreed upon between the Govemments",
+        "confidence": 0.85
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "dated 23/4/2015.",
+        "normalized_date": "2015-04-23",
+        "position": [
+          141036,
+          141052
+        ],
+        "context": "Mandals.\n1. Subsby notificationNo. G.S.R. 311(E), dated 23/4/2015.\n47\n\n--- Page 48 ---\nTABLE B - PAR",
+        "confidence": 0.85
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "dated 14/10/2014.",
+        "normalized_date": "2014-10-14",
+        "position": [
+          149546,
+          149563
+        ],
+        "context": "Razvi.\n1. Ins. by notification No. G.S.R. 725(E), dated 14/10/2014.\n* Omitted by notificationNo. G.S",
+        "confidence": 0.85
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "dated 23/4/2015.",
+        "normalized_date": "2015-04-23",
+        "position": [
+          149608,
+          149624
+        ],
+        "context": "2014.\n* Omitted by notificationNo. G.S.R. 312(E), dated 23/4/2015.\nThe seat vacated by Shri K. R. Am",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the date of establishment of the High Court of Andhra\nPradesh as may be determined by the President,",
+        "normalized_date": "2025-05-30",
+        "position": [
+          31192,
+          31299
+        ],
+        "context": "igh Court at\nHyderabad holding office immediately before the date of establishment of the High Court",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the datereferred to in sub-section (1) of\nsection 30,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          32010,
+          32070
+        ],
+        "context": "d authorityas, under the law in force immediately before the datereferred to in sub-section (1) of\ns",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the date referred to in sub-section (1) of section 30 is an\nadvocate on the roll of the Bar Council of the existing State of Andhra Pradesh and practising as an\nadvocate in the High Court at Hyderabad,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          32530,
+          32738
+        ],
+        "context": "ll\nbe substituted.\n(2) Any person who immediately before the date referred to in sub-section (1) of",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before thedate referred to in\nsub-section (1) of section 30,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          33341,
+          33401
+        ],
+        "context": "r than the advocates who are entitled immediately before thedate referred to in\nsub-section (1) of s",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the date referred to in sub-section (1) of section 30,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          33791,
+          33852
+        ],
+        "context": "ccordance with\nthe like principles as immediately before the date referred to in sub-section (1) of",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the datereferred to in sub-section (1) of section 30 with respect to\npractice and procedure in the High Court at Hyderabad shall,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          34063,
+          34199
+        ],
+        "context": "isions of this\nPart, the law in force immediately before the datereferred to in sub-section (1) of s",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before that date exercisable by the High Court at Hyderabad:\nProvided that any rules or orders which are in force immediately before the datereferred to in\nsub-section (1) of section 30 with respect to practice and procedure in the High Court at Hyderabad shall,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          34449,
+          34711
+        ],
+        "context": "pect to practice and procedure as are immediately\nbefore that date exercisable by the High Court at",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the date\nreferred to in sub-section (1) of section 30 with respect to the custody of the seal of the High Court at\nHyderabad shall,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          35016,
+          35154
+        ],
+        "context": "Pradesh High Court.--The law in force immediately before the date\nreferred to in sub-section (1) of",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the date referred to in\nsub-section (1) of section 30 with respect to the form of writs and other processes used,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          35341,
+          35461
+        ],
+        "context": "nd other processes.--The law in force immediately before the date referred to in\nsub-section (1) of",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the date referred to in sub-section (1) of\nsection 30 relating to the powers of the Chief Justice,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          35725,
+          35830
+        ],
+        "context": ". Powers of Judges.--The law in force immediately before the date referred to in sub-section (1) of",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the date\nreferred to in sub-section (1) of section 30 relating to appeals to the Supreme Court from the High Court at\nHyderabad and the Judges and division courts thereof shall,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          36143,
+          36327
+        ],
+        "context": "to Supreme Court.-- The law in force immediately before the date\nreferred to in sub-section (1) of",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the date referred to\nin sub-section (1) of section 30 as are certified,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          36772,
+          36850
+        ],
+        "context": "ending in the High Court at Hyderabad immediately before the date referred to\nin sub-section (1) of",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the date referred to in sub-section (1) of section 30,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          38156,
+          38217
+        ],
+        "context": "y order made by the High Court at Hyderabad--\n(a) before the date referred to in sub-section (1) of",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the date referred to in sub-section (1) of section 30,",
+        "normalized_date": "2025-01-30",
+        "position": [
+          38710,
+          38771
+        ],
+        "context": "Pradesh High Court.--Any\nperson who, immediately before the date referred to in sub-section (1) of",
+        "confidence": 0.85
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "before\nthe appointed day shall be allocated to the successor State cadres of the same service constituted under\nsub-section (2) in such manner and with effect from such date or dates as the Central Govemment may,",
+        "normalized_date": "2025-05-02",
+        "position": [
+          74589,
+          74801
+        ],
+        "context": "ices bome on the Andhra Pradesh cadre immediately before\nthe appointed day shall be allocated to the",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the appointed day in the case of\nany person deemed to have been allocated to the State of Andhra Pradesh or to the State of Telangana\nunder section 77 shall not be varied to his disadvantage except with the previous approval of the Central\nGovemment.",
+        "normalized_date": "1977-10-30",
+        "position": [
+          77821,
+          78078
+        ],
+        "context": "the conditions of service applicable immediately before the appointed day in the case of\nany person",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the\nappointed day and drawn in any area outside the territories of theexisting State shall be the liability of the\nState of Andhra Pradesh subject to adjustments tobe made in accordance with paragraph 3 as if such\npensions had been drawn in any treasuryin the State of Andhra Pradesh under paragraph 1.",
+        "normalized_date": "2025-03-01",
+        "position": [
+          159362,
+          159671
+        ],
+        "context": "Andhra Pradesh in respect of pension rollsgranted before the\nappointed day and drawn in any area out",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [],
+    "date_ranges": [
+      {
+        "type": "date_range",
+        "raw_text": "from the appointed day, shall be 175 and 119,",
+        "start_date": "0175-10-30",
+        "end_date": "0119-10-30",
+        "position": [
+          17330,
+          17375
+        ],
+        "context": "he States of Andhra Pradesh and Telangana, on and\nfrom the appointed day, shall be 175 and 119, resp",
+        "confidence": 0.85
+      },
+      {
+        "type": "date_range",
+        "raw_text": "from the appointed day, there shall be 2[58\nseats in the Legislative Council of Andhra Pradesh] and 40 seats in the Legislative Council of Telangana,",
+        "start_date": "2058-02-28",
+        "end_date": "2040-10-30",
+        "position": [
+          21650,
+          21799
+        ],
+        "context": "Provisions as to Legislative Councils.-(1) On and from the appointed day, there shall be 2[58\nseats",
+        "confidence": 0.85
+      }
+    ],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 55,
+      "total_dates": 53,
+      "total_academic_years": 0,
+      "total_ranges": 2,
+      "total_periods": 0,
+      "earliest_date": "1089-05-03",
+      "latest_date": "2025-05-30",
+      "year_span": [
+        1089,
+        2025
+      ],
+      "primary_years": [
+        2025,
+        2015,
+        2014,
+        1977,
+        1089
+      ]
+    }
+  },
+  "issue_date": "2025-03-04",
+  "effective_date": "2014-05-29",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

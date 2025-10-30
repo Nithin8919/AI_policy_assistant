@@ -7,3 +7,5 @@ def rerank(results: List, query: str, diversity_weight: float = 0.3) -> List:
     return results
 
 
+
+

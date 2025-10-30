@@ -1,0 +1,160 @@
+{
+  "doc_id": "schemes_nadu_nedu_programme_go_(2020)",
+  "title": "Nadu Nedu Programme GO (2020)",
+  "file_path": "data/organized_documents/Schemes/Nadu-Nedu Programme GO (2020).pdf",
+  "file_name": "Nadu-Nedu Programme GO (2020).pdf",
+  "file_format": ".pdf",
+  "doc_type": "government_order",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Schemes"
+  ],
+  "year": 2020,
+  "creation_timestamp": "2025-10-30T16:04:37.608674",
+  "modification_timestamp": "2025-10-30T16:04:37.608498",
+  "processing_timestamp": "2025-10-30T16:05:00.719490",
+  "file_size": 41596,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "government_order",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.0,
+      "rule": 0.0,
+      "government_order": 1.0,
+      "judicial": 0.0,
+      "data_report": 0.0,
+      "budget_finance": 0.4,
+      "framework": 0.0,
+      "circular": 0.2
+    },
+    "structural_features": {
+      "has_sections": false,
+      "has_chapters": false,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": false,
+      "has_tables": false,
+      "has_financial_terms": true,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": false,
+      "word_count": 406,
+      "avg_sentence_length": 5.372093023255814,
+      "title_length": 4
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "12/10/2020",
+        "normalized_date": "2020-10-12",
+        "position": [
+          472,
+          482
+        ],
+        "context": "TION (CABINET.II) DEPARTMENT\nG.0.Rt.No.1558 Dated:12/10/2020\nRead the following :\n1. G.0.Ms.No.148,",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/12/2019",
+        "normalized_date": "2019-12-01",
+        "position": [
+          552,
+          562
+        ],
+        "context": ":\n1. G.0.Ms.No.148, G.A (Cabinet.II) Dept., Dated 01/12/2019.\n2. G.0.Rt.No.2914, G.A (Cabinet.II) De",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "27/12/2019",
+        "normalized_date": "2019-12-27",
+        "position": [
+          613,
+          623
+        ],
+        "context": "2. G.0.Rt.No.2914, G.A (Cabinet.II) Dept., Dated 27/12/2019.\n3. From the Head of PMU Nadu - Nedu, A",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/09/2020",
+        "normalized_date": "2020-09-17",
+        "position": [
+          741,
+          751
+        ],
+        "context": "Lr.No.001/PMU/Nadu Nedu / Establishment/134 dated:17/09/2020.\n--:0:--\nORDER :\nIn the G.0. 1st read a",
+        "confidence": 0.9
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "Dated 01/12/2019.",
+        "normalized_date": "2019-12-01",
+        "position": [
+          546,
+          563
+        ],
+        "context": "owing :\n1. G.0.Ms.No.148, G.A (Cabinet.II) Dept., Dated 01/12/2019.\n2. G.0.Rt.No.2914, G.A (Cabinet.",
+        "confidence": 0.85
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "Dated 27/12/2019.",
+        "normalized_date": "2019-12-27",
+        "position": [
+          607,
+          624
+        ],
+        "context": "/2019.\n2. G.0.Rt.No.2914, G.A (Cabinet.II) Dept., Dated 27/12/2019.\n3. From the Head of PMU Nadu - N",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 6,
+      "total_dates": 6,
+      "total_academic_years": 0,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "2019-12-01",
+      "latest_date": "2020-10-12",
+      "year_span": [
+        2019,
+        2020
+      ],
+      "primary_years": [
+        2020,
+        2019
+      ]
+    }
+  },
+  "issue_date": "2019-12-01",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

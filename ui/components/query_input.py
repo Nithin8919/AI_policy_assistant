@@ -6,3 +6,5 @@ def query_input():
     return st.text_area("Enter your query:")
 
 
+
+

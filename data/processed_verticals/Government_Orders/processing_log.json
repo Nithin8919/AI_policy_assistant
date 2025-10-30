@@ -1,0 +1,3165 @@
+{
+  "pipeline_stats": {
+    "documents_processed": 13,
+    "documents_successful": 13,
+    "documents_failed": 0,
+    "total_chunks": 1043,
+    "total_entities": 0,
+    "total_relations": 0,
+    "total_topics_matched": 41,
+    "processing_errors": [],
+    "quality_distribution": {
+      "excellent": 0,
+      "good": 0,
+      "acceptable": 13,
+      "poor": 0,
+      "critical": 0
+    }
+  },
+  "processing_results": [
+    {
+      "doc_id": "government_orders_g_o_ms_no_47_dt.22.05.2023",
+      "status": "failed",
+      "stage": "text_extraction",
+      "error": "Poor text extraction quality",
+      "quality_score": 0
+    },
+    {
+      "document_info": {
+        "doc_id": "government_orders_school_education_department_fee_related_go",
+        "title": "School Education Department Fee Related Go",
+        "doc_type": "government_order",
+        "classification_confidence": 1.0,
+        "file_path": "data/organized_documents/Government_Orders/School Education Department Fee-related GO.pdf",
+        "processing_timestamp": "2025-10-30T16:01:31.524689"
+      },
+      "processing_results": {
+        "text_length": 11677,
+        "chunk_count": 20,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 6,
+        "quality_score": 54.0,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 54.0,
+          "quality_level": "acceptable",
+          "document_type": "government_order",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 100,
+          "entity_quality": 0,
+          "relation_quality": 50,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 100,
+            "text_length": 11677,
+            "word_count": 2038,
+            "issues": []
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 50,
+            "issues": [
+              "No relations found"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "No entities extracted",
+          "No relations found",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 500,
+          "min_entity_density": 3.0,
+          "min_section_count": 1,
+          "min_go_refs": 1
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {
+          "rte_section_12_1_c": [
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0000",
+              "score": 3.7,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0000",
+              "score": 3.2,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0000",
+              "score": 4.53,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0003",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0004",
+              "score": 2.5,
+              "confidence": "medium"
+            }
+          ],
+          "data_management": [
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0000",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0001",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0003",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0004",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0005",
+              "score": 2.5,
+              "confidence": "medium"
+            }
+          ],
+          "private_school_regulation": [
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0000",
+              "score": 3.5,
+              "confidence": "high"
+            }
+          ],
+          "rte_compliance": [
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0001",
+              "score": 1.75,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0000",
+              "score": 1.58,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0003",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0004",
+              "score": 2.33,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0005",
+              "score": 1.75,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0006",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0011",
+              "score": 2.0,
+              "confidence": "medium"
+            }
+          ],
+          "infrastructure_norms": [
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0001",
+              "score": 6.4,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0004",
+              "score": 6.9,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0005",
+              "score": 6.4,
+              "confidence": "high"
+            }
+          ],
+          "examination_system": [
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0001",
+              "score": 3.2,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_school_education_department_fee_related_go_chunk_0004",
+              "score": 3.2,
+              "confidence": "high"
+            }
+          ]
+        },
+        "statistics": {
+          "total_topics_matched": 6,
+          "total_topic_bridge_coverage": 20.0,
+          "top_topics": [
+            {
+              "topic_id": "rte_compliance",
+              "topic_name": "RTE Act Compliance and Implementation",
+              "chunk_count": 8
+            },
+            {
+              "topic_id": "data_management",
+              "topic_name": "Education Data Management Systems",
+              "chunk_count": 7
+            },
+            {
+              "topic_id": "rte_section_12_1_c",
+              "topic_name": "RTE Section 12(1)(c) - 25% Reservation in Private Schools",
+              "chunk_count": 6
+            },
+            {
+              "topic_id": "infrastructure_norms",
+              "topic_name": "School Infrastructure and Building Norms",
+              "chunk_count": 3
+            },
+            {
+              "topic_id": "examination_system",
+              "topic_name": "Examination and Evaluation System",
+              "chunk_count": 2
+            },
+            {
+              "topic_id": "private_school_regulation",
+              "topic_name": "Private School Recognition and Regulation",
+              "chunk_count": 1
+            }
+          ],
+          "topic_chunk_counts": {
+            "rte_section_12_1_c": 6,
+            "data_management": 7,
+            "private_school_regulation": 1,
+            "rte_compliance": 8,
+            "infrastructure_norms": 3,
+            "examination_system": 2
+          },
+          "high_confidence_matches": 9,
+          "medium_confidence_matches": 18
+        }
+      }
+    },
+    {
+      "document_info": {
+        "doc_id": "government_orders_2025se_36315_ms15_e_dt.19.04.2025",
+        "title": "2025Se 36315 Ms15 E Dt.19.04.2025",
+        "doc_type": "data_report",
+        "classification_confidence": 1.0,
+        "file_path": "data/organized_documents/Government_Orders/2025SE_36315_MS15_E-Dt.19.04.2025.pdf",
+        "processing_timestamp": "2025-10-30T16:01:35.209235"
+      },
+      "processing_results": {
+        "text_length": 104165,
+        "chunk_count": 201,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 58.0,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 58.0,
+          "quality_level": "acceptable",
+          "document_type": "data_report",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 100,
+          "entity_quality": 0,
+          "relation_quality": 70,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 100,
+            "text_length": 104165,
+            "word_count": 16064,
+            "issues": []
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 70,
+            "issues": [
+              "No relations found (not critical for this doc type)"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "No entities extracted",
+          "No relations found (not critical for this doc type)",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 1000,
+          "min_entity_density": 10.0,
+          "min_metrics": 5
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "doc_id": "government_orders_nadu_nedu_extension_2022_1",
+      "status": "failed",
+      "stage": "text_extraction",
+      "error": "Poor text extraction quality",
+      "quality_score": 0
+    },
+    {
+      "document_info": {
+        "doc_id": "government_orders_go_ms_129_dt.15.07.2022",
+        "title": "GO MS 129 Dt.15.07.2022",
+        "doc_type": "act",
+        "classification_confidence": 1.0,
+        "file_path": "data/organized_documents/Government_Orders/GO-MS-129-Dt.15.07.2022.pdf",
+        "processing_timestamp": "2025-10-30T16:01:35.880197"
+      },
+      "processing_results": {
+        "text_length": 16554,
+        "chunk_count": 31,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 51.5,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 51.5,
+          "quality_level": "acceptable",
+          "document_type": "act",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 90,
+          "entity_quality": 0,
+          "relation_quality": 50,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 90,
+            "text_length": 16554,
+            "word_count": 2632,
+            "issues": [
+              "Multiple dots (possible OCR error)"
+            ]
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 50,
+            "issues": [
+              "No relations found"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "Multiple dots (possible OCR error)",
+          "No entities extracted",
+          "No relations found",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 1000,
+          "min_entity_density": 5.0,
+          "min_section_count": 3,
+          "min_legal_refs": 5
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "doc_id": "government_orders_g_o_ms_no_117_",
+      "status": "failed",
+      "stage": "text_extraction",
+      "error": "Poor text extraction quality",
+      "quality_score": 0
+    },
+    {
+      "document_info": {
+        "doc_id": "government_orders_g.o.ms_.no_.187_dt.10.12.2022",
+        "title": "G.O.MS .No..187 Dt.10.12.2022",
+        "doc_type": "framework",
+        "classification_confidence": 1.0,
+        "file_path": "data/organized_documents/Government_Orders/G.O.MS_.No_.187-Dt.10.12.2022.pdf",
+        "processing_timestamp": "2025-10-30T16:01:37.323112"
+      },
+      "processing_results": {
+        "text_length": 40063,
+        "chunk_count": 70,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 58.0,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 58.0,
+          "quality_level": "acceptable",
+          "document_type": "framework",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 100,
+          "entity_quality": 0,
+          "relation_quality": 70,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 100,
+            "text_length": 40063,
+            "word_count": 6247,
+            "issues": []
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 70,
+            "issues": [
+              "No relations found (not critical for this doc type)"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "No entities extracted",
+          "No relations found (not critical for this doc type)",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 2000,
+          "min_entity_density": 8.0,
+          "min_section_count": 5,
+          "min_keywords": 10
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "document_info": {
+        "doc_id": "government_orders_procs.rc_.no_.1078085_mdm_2020_dt.17.11.2022",
+        "title": "Procs.Rc .No..1078085 Mdm 2020 Dt.17.11.2022",
+        "doc_type": "data_report",
+        "classification_confidence": 1.0,
+        "file_path": "data/organized_documents/Government_Orders/Procs.Rc_.No_.1078085-MDM-2020-Dt.17.11.2022.pdf",
+        "processing_timestamp": "2025-10-30T16:01:39.159243"
+      },
+      "processing_results": {
+        "text_length": 30146,
+        "chunk_count": 48,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 55.5,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 55.5,
+          "quality_level": "acceptable",
+          "document_type": "data_report",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 90,
+          "entity_quality": 0,
+          "relation_quality": 70,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 90,
+            "text_length": 30146,
+            "word_count": 4804,
+            "issues": [
+              "Multiple dots (possible OCR error)"
+            ]
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 70,
+            "issues": [
+              "No relations found (not critical for this doc type)"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "Multiple dots (possible OCR error)",
+          "No entities extracted",
+          "No relations found (not critical for this doc type)",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 1000,
+          "min_entity_density": 10.0,
+          "min_metrics": 5
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "document_info": {
+        "doc_id": "government_orders_finance_dept_for_educational_strength",
+        "title": "Finance Dept For Educational Strength",
+        "doc_type": "framework",
+        "classification_confidence": 1.0,
+        "file_path": "data/organized_documents/Government_Orders/Finance Dept for Educational Strength.pdf",
+        "processing_timestamp": "2025-10-30T16:01:40.298695"
+      },
+      "processing_results": {
+        "text_length": 39195,
+        "chunk_count": 59,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 55.5,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 55.5,
+          "quality_level": "acceptable",
+          "document_type": "framework",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 90,
+          "entity_quality": 0,
+          "relation_quality": 70,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 90,
+            "text_length": 39195,
+            "word_count": 5527,
+            "issues": [
+              "Multiple dots (possible OCR error)"
+            ]
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 70,
+            "issues": [
+              "No relations found (not critical for this doc type)"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "Multiple dots (possible OCR error)",
+          "No entities extracted",
+          "No relations found (not critical for this doc type)",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 2000,
+          "min_entity_density": 8.0,
+          "min_section_count": 5,
+          "min_keywords": 10
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "document_info": {
+        "doc_id": "government_orders_andhra_rte_rules2009",
+        "title": "Andhra RTE Rules2009",
+        "doc_type": "act",
+        "classification_confidence": 1.0,
+        "file_path": "data/organized_documents/Government_Orders/Andhra_rte_rules2009.pdf",
+        "processing_timestamp": "2025-10-30T16:01:43.023070"
+      },
+      "processing_results": {
+        "text_length": 90772,
+        "chunk_count": 176,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 51.5,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 51.5,
+          "quality_level": "acceptable",
+          "document_type": "act",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 90,
+          "entity_quality": 0,
+          "relation_quality": 50,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 90,
+            "text_length": 90772,
+            "word_count": 15393,
+            "issues": [
+              "Multiple dots (possible OCR error)"
+            ]
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 50,
+            "issues": [
+              "No relations found"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "Multiple dots (possible OCR error)",
+          "No entities extracted",
+          "No relations found",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 1000,
+          "min_entity_density": 5.0,
+          "min_section_count": 3,
+          "min_legal_refs": 5
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "document_info": {
+        "doc_id": "government_orders_school_education_circular_oct_2020",
+        "title": "School Education Circular Oct 2020",
+        "doc_type": "framework",
+        "classification_confidence": 1.0,
+        "file_path": "data/organized_documents/Government_Orders/School Education Circular Oct 2020.pdf",
+        "processing_timestamp": "2025-10-30T16:01:43.540122"
+      },
+      "processing_results": {
+        "text_length": 12579,
+        "chunk_count": 22,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 55.5,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 55.5,
+          "quality_level": "acceptable",
+          "document_type": "framework",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 90,
+          "entity_quality": 0,
+          "relation_quality": 70,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 90,
+            "text_length": 12579,
+            "word_count": 1939,
+            "issues": [
+              "Multiple dots (possible OCR error)"
+            ]
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 70,
+            "issues": [
+              "No relations found (not critical for this doc type)"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "Multiple dots (possible OCR error)",
+          "No entities extracted",
+          "No relations found (not critical for this doc type)",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 2000,
+          "min_entity_density": 8.0,
+          "min_section_count": 5,
+          "min_keywords": 10
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "document_info": {
+        "doc_id": "government_orders_g.o.ms.no._30",
+        "title": "G.O.Ms.No. 30",
+        "doc_type": "government_order",
+        "classification_confidence": 1.0,
+        "file_path": "data/organized_documents/Government_Orders/G.O.MS.No. 30.pdf",
+        "processing_timestamp": "2025-10-30T16:01:44.071382"
+      },
+      "processing_results": {
+        "text_length": 11530,
+        "chunk_count": 20,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 54.0,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 54.0,
+          "quality_level": "acceptable",
+          "document_type": "government_order",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 100,
+          "entity_quality": 0,
+          "relation_quality": 50,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 100,
+            "text_length": 11530,
+            "word_count": 1783,
+            "issues": []
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 50,
+            "issues": [
+              "No relations found"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "No entities extracted",
+          "No relations found",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 500,
+          "min_entity_density": 3.0,
+          "min_section_count": 1,
+          "min_go_refs": 1
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "document_info": {
+        "doc_id": "government_orders_go_ms_129_dt.15.07.2022_1",
+        "title": "GO MS 129 Dt.15.07.2022 1",
+        "doc_type": "act",
+        "classification_confidence": 1.0,
+        "file_path": "data/organized_documents/Government_Orders/GO-MS-129-Dt.15.07.2022_1.pdf",
+        "processing_timestamp": "2025-10-30T16:01:44.629742"
+      },
+      "processing_results": {
+        "text_length": 16554,
+        "chunk_count": 31,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 51.5,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 51.5,
+          "quality_level": "acceptable",
+          "document_type": "act",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 90,
+          "entity_quality": 0,
+          "relation_quality": 50,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 90,
+            "text_length": 16554,
+            "word_count": 2632,
+            "issues": [
+              "Multiple dots (possible OCR error)"
+            ]
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 50,
+            "issues": [
+              "No relations found"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "Multiple dots (possible OCR error)",
+          "No entities extracted",
+          "No relations found",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 1000,
+          "min_entity_density": 5.0,
+          "min_section_count": 3,
+          "min_legal_refs": 5
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "doc_id": "government_orders_go_ms_no.56_dt.20.06.2023",
+      "status": "failed",
+      "stage": "text_extraction",
+      "error": "Poor text extraction quality",
+      "quality_score": 0
+    },
+    {
+      "doc_id": "government_orders_jaganann_ammavodi_g_o_ms_no_54",
+      "status": "failed",
+      "stage": "text_extraction",
+      "error": "Poor text extraction quality",
+      "quality_score": 0
+    },
+    {
+      "document_info": {
+        "doc_id": "government_orders_2025se_36317_ms16_e_dt.19.04.2025",
+        "title": "2025Se 36317 Ms16 E Dt.19.04.2025",
+        "doc_type": "data_report",
+        "classification_confidence": 1.0,
+        "file_path": "data/organized_documents/Government_Orders/2025SE_36317_MS16_E-Dt.19.04.2025.pdf",
+        "processing_timestamp": "2025-10-30T16:01:48.177770"
+      },
+      "processing_results": {
+        "text_length": 102273,
+        "chunk_count": 189,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 0,
+        "quality_score": 58.0,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 58.0,
+          "quality_level": "acceptable",
+          "document_type": "data_report",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 100,
+          "entity_quality": 0,
+          "relation_quality": 70,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 100,
+            "text_length": 102273,
+            "word_count": 15890,
+            "issues": []
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 70,
+            "issues": [
+              "No relations found (not critical for this doc type)"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "No entities extracted",
+          "No relations found (not critical for this doc type)",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 1000,
+          "min_entity_density": 10.0,
+          "min_metrics": 5
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {},
+        "statistics": {}
+      }
+    },
+    {
+      "document_info": {
+        "doc_id": "government_orders_jagananna_amma_vodi_go.79_(2019)",
+        "title": "Jagananna Amma Vodi Go.79 (2019)",
+        "doc_type": "framework",
+        "classification_confidence": 1.0,
+        "file_path": "data/organized_documents/Government_Orders/Jagananna Amma Vodi GO.79 (2019).pdf",
+        "processing_timestamp": "2025-10-30T16:01:48.435829"
+      },
+      "processing_results": {
+        "text_length": 9436,
+        "chunk_count": 16,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 13,
+        "quality_score": 58.0,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 58.0,
+          "quality_level": "acceptable",
+          "document_type": "framework",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 100,
+          "entity_quality": 0,
+          "relation_quality": 70,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 100,
+            "text_length": 9436,
+            "word_count": 1385,
+            "issues": []
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 70,
+            "issues": [
+              "No relations found (not critical for this doc type)"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "No entities extracted",
+          "No relations found (not critical for this doc type)",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 2000,
+          "min_entity_density": 8.0,
+          "min_section_count": 5,
+          "min_keywords": 10
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {
+          "jagananna_amma_vodi": [
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0000",
+              "score": 10.73,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0001",
+              "score": 6.45,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0002",
+              "score": 10.73,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0003",
+              "score": 12.63,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0002",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0003",
+              "score": 2.33,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0000",
+              "score": 9.73,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0001",
+              "score": 2.33,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0002",
+              "score": 8.73,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0003",
+              "score": 9.23,
+              "confidence": "high"
+            }
+          ],
+          "data_management": [
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0000",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0002",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0000",
+              "score": 5.5,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0001",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0002",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0003",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0004",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0005",
+              "score": 3.0,
+              "confidence": "high"
+            }
+          ],
+          "rte_compliance": [
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0001",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0003",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0005",
+              "score": 1.67,
+              "confidence": "medium"
+            }
+          ],
+          "education_finance": [
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0000",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0002",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0000",
+              "score": 1.67,
+              "confidence": "medium"
+            }
+          ],
+          "examination_system": [
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            }
+          ],
+          "mother_tongue_education": [
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0002",
+              "score": 1.5,
+              "confidence": "medium"
+            }
+          ],
+          "attendance_monitoring": [
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0003",
+              "score": 5.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0001",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0004",
+              "score": 3.0,
+              "confidence": "high"
+            }
+          ],
+          "private_school_regulation": [
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0003",
+              "score": 3.0,
+              "confidence": "high"
+            }
+          ],
+          "vocational_education": [
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0003",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0002",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0003",
+              "score": 3.5,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0006",
+              "score": 1.5,
+              "confidence": "medium"
+            }
+          ],
+          "quality_monitoring": [
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0003",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0004",
+              "score": 1.5,
+              "confidence": "medium"
+            }
+          ],
+          "school_grants": [
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            }
+          ],
+          "digital_education": [
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0002",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0003",
+              "score": 3.7,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0005",
+              "score": 2.5,
+              "confidence": "medium"
+            }
+          ],
+          "community_participation": [
+            {
+              "chunk_id": "government_orders_jagananna_amma_vodi_go.79_(2019)_chunk_0004",
+              "score": 2.0,
+              "confidence": "medium"
+            }
+          ]
+        },
+        "statistics": {
+          "total_topics_matched": 13,
+          "total_topic_bridge_coverage": 43.3,
+          "top_topics": [
+            {
+              "topic_id": "jagananna_amma_vodi",
+              "topic_name": "Jagananna Amma Vodi Scheme",
+              "chunk_count": 10
+            },
+            {
+              "topic_id": "data_management",
+              "topic_name": "Education Data Management Systems",
+              "chunk_count": 9
+            },
+            {
+              "topic_id": "rte_compliance",
+              "topic_name": "RTE Act Compliance and Implementation",
+              "chunk_count": 5
+            },
+            {
+              "topic_id": "vocational_education",
+              "topic_name": "Vocational Education and Skill Development",
+              "chunk_count": 5
+            },
+            {
+              "topic_id": "education_finance",
+              "topic_name": "Education Finance and Budget Allocation",
+              "chunk_count": 3
+            },
+            {
+              "topic_id": "attendance_monitoring",
+              "topic_name": "Student Attendance and Dropout Prevention",
+              "chunk_count": 3
+            },
+            {
+              "topic_id": "digital_education",
+              "topic_name": "Digital Education and Technology Integration",
+              "chunk_count": 3
+            },
+            {
+              "topic_id": "quality_monitoring",
+              "topic_name": "Quality Monitoring and Assurance",
+              "chunk_count": 2
+            },
+            {
+              "topic_id": "examination_system",
+              "topic_name": "Examination and Evaluation System",
+              "chunk_count": 1
+            },
+            {
+              "topic_id": "mother_tongue_education",
+              "topic_name": "Mother Tongue and Multilingual Education",
+              "chunk_count": 1
+            }
+          ],
+          "topic_chunk_counts": {
+            "jagananna_amma_vodi": 10,
+            "data_management": 9,
+            "rte_compliance": 5,
+            "education_finance": 3,
+            "examination_system": 1,
+            "mother_tongue_education": 1,
+            "attendance_monitoring": 3,
+            "private_school_regulation": 1,
+            "vocational_education": 5,
+            "quality_monitoring": 2,
+            "school_grants": 1,
+            "digital_education": 3,
+            "community_participation": 1
+          },
+          "high_confidence_matches": 15,
+          "medium_confidence_matches": 30
+        }
+      }
+    },
+    {
+      "doc_id": "government_orders_nadu_nedu_extension_2022",
+      "status": "failed",
+      "stage": "text_extraction",
+      "error": "Poor text extraction quality",
+      "quality_score": 0
+    },
+    {
+      "document_info": {
+        "doc_id": "government_orders_nadu_nedu_phase_2_details",
+        "title": "Nadu Nedu Phase 2 Details",
+        "doc_type": "framework",
+        "classification_confidence": 1.0,
+        "file_path": "data/organized_documents/Government_Orders/Nadu-Nedu Phase 2 Details.pdf",
+        "processing_timestamp": "2025-10-30T16:01:51.411824"
+      },
+      "processing_results": {
+        "text_length": 95771,
+        "chunk_count": 160,
+        "entity_count": 0,
+        "relation_count": 0,
+        "topics_matched": 22,
+        "quality_score": 55.5,
+        "quality_level": "acceptable"
+      },
+      "quality_report": {
+        "overall": {
+          "overall_score": 55.5,
+          "quality_level": "acceptable",
+          "document_type": "framework",
+          "is_production_ready": false
+        },
+        "component_scores": {
+          "text_quality": 90,
+          "entity_quality": 0,
+          "relation_quality": 70,
+          "metadata_quality": 95
+        },
+        "detailed_assessment": {
+          "text": {
+            "score": 90,
+            "text_length": 95771,
+            "word_count": 15012,
+            "issues": [
+              "Multiple dots (possible OCR error)"
+            ]
+          },
+          "entities": {
+            "score": 0,
+            "issues": [
+              "No entities extracted"
+            ],
+            "entity_density": 0.0
+          },
+          "relations": {
+            "score": 70,
+            "issues": [
+              "No relations found (not critical for this doc type)"
+            ],
+            "relation_count": 0
+          },
+          "metadata": {
+            "score": 95,
+            "issues": [
+              "Missing recommended metadata: source_url"
+            ],
+            "completeness": 100.0
+          }
+        },
+        "issues": [
+          "Multiple dots (possible OCR error)",
+          "No entities extracted",
+          "No relations found (not critical for this doc type)",
+          "Missing recommended metadata: source_url"
+        ],
+        "recommendations": [
+          "Review entity extraction patterns or try with manual annotation",
+          "Add more relation extraction patterns or use dependency parsing",
+          "Document is usable but could benefit from enhancement"
+        ],
+        "thresholds_used": {
+          "min_text_length": 2000,
+          "min_entity_density": 8.0,
+          "min_section_count": 5,
+          "min_keywords": 10
+        }
+      },
+      "topic_results": {
+        "topic_to_chunks": {
+          "school_management_committees": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 3.67,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 3.67,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 3.33,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 2.17,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 1.83,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.17,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 3.17,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 3.33,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 3.33,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.83,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 3.33,
+              "confidence": "high"
+            }
+          ],
+          "rte_compliance": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 1.75,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 1.75,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.58,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.75,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.83,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 1.75,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.75,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.83,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0008",
+              "score": 1.75,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.75,
+              "confidence": "medium"
+            }
+          ],
+          "nadu_nedu_programme": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 9.05,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 6.45,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 11.55,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0008",
+              "score": 4.45,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 4.45,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 7.65,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 7.05,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0007",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 5.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 4.45,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 4.45,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 7.05,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 3.7,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 4.45,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.95,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 7.05,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 6.9,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 6.4,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 4.45,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 3.7,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 4.45,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 4.45,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 4.45,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 6.9,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 3.7,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 3.7,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 4.45,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 3.7,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 4.2,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 3.7,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 6.2,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 9.55,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 3.7,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 6.2,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 3.95,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 3.95,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 10.25,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 4.2,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 4.45,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 3.95,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 3.95,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 3.7,
+              "confidence": "high"
+            }
+          ],
+          "examination_system": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 3.2,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 2.5,
+              "confidence": "medium"
+            }
+          ],
+          "teacher_training": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0007",
+              "score": 3.2,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 3.2,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 3.7,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 3.5,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 3.5,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 3.0,
+              "confidence": "high"
+            }
+          ],
+          "vocational_education": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0008",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.5,
+              "confidence": "medium"
+            }
+          ],
+          "data_management": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0008",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.5,
+              "confidence": "medium"
+            }
+          ],
+          "digital_education": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.5,
+              "confidence": "medium"
+            }
+          ],
+          "teacher_recruitment": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            }
+          ],
+          "quality_monitoring": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 4.5,
+              "confidence": "high"
+            }
+          ],
+          "rte_section_12_1_c": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.5,
+              "confidence": "medium"
+            }
+          ],
+          "education_finance": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.17,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 2.17,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 1.5,
+              "confidence": "medium"
+            }
+          ],
+          "gender_equity": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 2.5,
+              "confidence": "medium"
+            }
+          ],
+          "school_grants": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.5,
+              "confidence": "medium"
+            }
+          ],
+          "ptr_norms": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.83,
+              "confidence": "medium"
+            }
+          ],
+          "community_participation": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 3.0,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 2.0,
+              "confidence": "medium"
+            }
+          ],
+          "textbook_curriculum": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0002",
+              "score": 2.0,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0000",
+              "score": 2.0,
+              "confidence": "medium"
+            }
+          ],
+          "attendance_monitoring": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.5,
+              "confidence": "medium"
+            }
+          ],
+          "inclusive_education": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 1.5,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.5,
+              "confidence": "medium"
+            }
+          ],
+          "teacher_transfers": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0001",
+              "score": 1.5,
+              "confidence": "medium"
+            }
+          ],
+          "midday_meal_programme": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 6.1,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0004",
+              "score": 5.6,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 6.43,
+              "confidence": "high"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0007",
+              "score": 5.6,
+              "confidence": "high"
+            }
+          ],
+          "jagananna_amma_vodi": [
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0003",
+              "score": 2.83,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0005",
+              "score": 1.67,
+              "confidence": "medium"
+            },
+            {
+              "chunk_id": "government_orders_nadu_nedu_phase_2_details_chunk_0006",
+              "score": 2.0,
+              "confidence": "medium"
+            }
+          ]
+        },
+        "statistics": {
+          "total_topics_matched": 22,
+          "total_topic_bridge_coverage": 73.3,
+          "top_topics": [
+            {
+              "topic_id": "nadu_nedu_programme",
+              "topic_name": "Nadu-Nedu School Infrastructure Programme",
+              "chunk_count": 55
+            },
+            {
+              "topic_id": "data_management",
+              "topic_name": "Education Data Management Systems",
+              "chunk_count": 51
+            },
+            {
+              "topic_id": "school_management_committees",
+              "topic_name": "School Management Committees (SMC)",
+              "chunk_count": 40
+            },
+            {
+              "topic_id": "rte_compliance",
+              "topic_name": "RTE Act Compliance and Implementation",
+              "chunk_count": 38
+            },
+            {
+              "topic_id": "vocational_education",
+              "topic_name": "Vocational Education and Skill Development",
+              "chunk_count": 25
+            },
+            {
+              "topic_id": "teacher_training",
+              "topic_name": "Teacher Training and Professional Development",
+              "chunk_count": 15
+            },
+            {
+              "topic_id": "quality_monitoring",
+              "topic_name": "Quality Monitoring and Assurance",
+              "chunk_count": 8
+            },
+            {
+              "topic_id": "community_participation",
+              "topic_name": "Community Participation in Education",
+              "chunk_count": 8
+            },
+            {
+              "topic_id": "rte_section_12_1_c",
+              "topic_name": "RTE Section 12(1)(c) - 25% Reservation in Private Schools",
+              "chunk_count": 5
+            },
+            {
+              "topic_id": "education_finance",
+              "topic_name": "Education Finance and Budget Allocation",
+              "chunk_count": 5
+            }
+          ],
+          "topic_chunk_counts": {
+            "school_management_committees": 40,
+            "rte_compliance": 38,
+            "nadu_nedu_programme": 55,
+            "examination_system": 4,
+            "teacher_training": 15,
+            "vocational_education": 25,
+            "data_management": 51,
+            "digital_education": 1,
+            "teacher_recruitment": 3,
+            "quality_monitoring": 8,
+            "rte_section_12_1_c": 5,
+            "education_finance": 5,
+            "gender_equity": 1,
+            "school_grants": 2,
+            "ptr_norms": 1,
+            "community_participation": 8,
+            "textbook_curriculum": 2,
+            "attendance_monitoring": 1,
+            "inclusive_education": 2,
+            "teacher_transfers": 1,
+            "midday_meal_programme": 4,
+            "jagananna_amma_vodi": 3
+          },
+          "high_confidence_matches": 77,
+          "medium_confidence_matches": 198
+        }
+      }
+    }
+  ]
+}

@@ -25,3 +25,5 @@ CREATE INDEX idx_metrics_district ON metrics(district);
 CREATE INDEX idx_bridge_topic ON bridge_table(topic);
 
 
+
+

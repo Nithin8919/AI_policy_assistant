@@ -12,3 +12,5 @@ class QueryResponse(BaseModel):
     confidence: float = 0.0
 
 
+
+

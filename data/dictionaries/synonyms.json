@@ -1,0 +1,22 @@
+{
+  "student": ["pupil", "learner", "child", "scholar", "ward"],
+  "teacher": ["educator", "instructor", "faculty", "tutor", "guru"],
+  "school": ["institution", "educational institution", "vidyalaya", "shala"],
+  "enrollment": ["enrolment", "admission", "registration", "intake"],
+  "dropout": ["attrition", "wastage", "discontinuation"],
+  "scheme": ["programme", "program", "yojana", "initiative", "project"],
+  "district": ["mandal", "region", "area", "zone"],
+  "government": ["sarkar", "state", "administration"],
+  "education": ["shiksha", "vidya", "learning", "schooling"],
+  "budget": ["allocation", "funding", "expenditure", "outlay"],
+  "village": ["gram", "panchayat", "hamlet"],
+  "block": ["mandal", "taluka", "tehsil"],
+  "infrastructure": ["facilities", "amenities", "buildings"],
+  "quality": ["standards", "excellence", "performance"],
+  "access": ["availability", "reach", "coverage"],
+  "equity": ["fairness", "inclusion", "equality"],
+  "achievement": ["performance", "outcome", "result", "attainment"],
+  "assessment": ["evaluation", "examination", "test", "appraisal"],
+  "curriculum": ["syllabus", "course", "study material"],
+  "training": ["capacity building", "skill development", "preparation"]
+}

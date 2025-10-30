@@ -11,6 +11,8 @@ build/
 develop-eggs/
 dist/
 downloads/
+organized_documents/
+
 eggs/
 .eggs/
 lib/

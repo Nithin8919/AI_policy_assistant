@@ -1,7 +1,37 @@
 {
   "RTE": ["Right to Education"],
   "NEP": ["National Education Policy"],
-  "UDISE": ["Unified District Information System for Education"]
+  "UDISE": ["Unified District Information System for Education"],
+  "UDISE+": ["Unified District Information System for Education Plus"],
+  "PTR": ["Pupil-Teacher Ratio", "Teacher-Pupil Ratio"],
+  "GER": ["Gross Enrollment Ratio"],
+  "NER": ["Net Enrollment Ratio"],
+  "SSA": ["Sarva Shiksha Abhiyan"],
+  "RMSA": ["Rashtriya Madhyamik Shiksha Abhiyan"],
+  "NCERT": ["National Council of Educational Research and Training"],
+  "SCERT": ["State Council of Educational Research and Training"],
+  "NCTE": ["National Council for Teacher Education"],
+  "NAS": ["National Achievement Survey"],
+  "ASER": ["Annual Status of Education Report"],
+  "MDM": ["Mid-Day Meal"],
+  "GO": ["Government Order"],
+  "DSC": ["District Selection Committee"],
+  "TRT": ["Teacher Recruitment Test"],
+  "NCPCR": ["National Commission for Protection of Child Rights"],
+  "AP": ["Andhra Pradesh"],
+  "BCE": ["Backward Class Education"],
+  "SC": ["Scheduled Caste"],
+  "ST": ["Scheduled Tribe"],
+  "OBC": ["Other Backward Classes"],
+  "EWS": ["Economically Weaker Sections"],
+  "PWD": ["Person with Disability"],
+  "KGBV": ["Kasturba Gandhi Balika Vidyalaya"],
+  "AWC": ["Anganwadi Centre"],
+  "ICDS": ["Integrated Child Development Services"],
+  "SMS": ["School Management System"],
+  "MIS": ["Management Information System"]
 }
+
+
 
 

@@ -1,0 +1,244 @@
+{
+  "doc_id": "government_orders_g.o.ms.no._30",
+  "title": "G.O.Ms.No. 30",
+  "file_path": "data/organized_documents/Government_Orders/G.O.MS.No. 30.pdf",
+  "file_name": "G.O.MS.No. 30.pdf",
+  "file_format": ".pdf",
+  "doc_type": "government_order",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Government_Orders"
+  ],
+  "year": 2025,
+  "creation_timestamp": "2025-10-30T15:59:40.036816",
+  "modification_timestamp": "2025-10-30T15:59:40.036632",
+  "processing_timestamp": "2025-10-30T16:01:44.057353",
+  "file_size": 69553,
+  "go_info": {
+    "number": 30,
+    "year": null,
+    "department": "MS"
+  },
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "government_order",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.43243243243243246,
+      "rule": 0.6216216216216216,
+      "government_order": 1.0,
+      "judicial": 0.08108108108108109,
+      "data_report": 0.0,
+      "budget_finance": 0.0,
+      "framework": 0.24324324324324326,
+      "circular": 0.0
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": true,
+      "has_go_number": false,
+      "has_case_citation": false,
+      "has_tables": false,
+      "has_financial_terms": false,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": false,
+      "word_count": 1783,
+      "avg_sentence_length": 12.97887323943662,
+      "title_length": 2
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "11/07/2025",
+        "normalized_date": "2025-07-11",
+        "position": [
+          436,
+          446
+        ],
+        "context": "OL EDUCATION (PS) DEPARTMENT\nG.0.MS.No. 30\nDated: 11/07/2025\nRead the following: -\n1. G.0.Ms.No.1, E",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/01/1994",
+        "normalized_date": "1994-01-01",
+        "position": [
+          521,
+          531
+        ],
+        "context": "G.0.Ms.No.1, Education (PS.2) Department, dated: 01/01/1994.\n2. G.0.Ms.No.43, School Education (PS)",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "09/08/2018",
+        "normalized_date": "2018-08-09",
+        "position": [
+          586,
+          596
+        ],
+        "context": "G.0.Ms.No.43, School Education (PS) Dept., dated. 09/08/2018.\n3. G.0.Ms.No.26, School Education (PS)",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "16/02/2019",
+        "normalized_date": "2019-02-16",
+        "position": [
+          651,
+          661
+        ],
+        "context": "G.0.Ms.No.26, School Education (PS) Dept., dated. 16/02/2019.\n4. The Hon\u2019ble High Court Orders dt: 1",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "16/04/2019",
+        "normalized_date": "2019-04-16",
+        "position": [
+          700,
+          710
+        ],
+        "context": "16/02/2019.\n4. The Hon\u2019ble High Court Orders dt: 16/04/2019 in WP.No. 28912 of\n2018 and 18 others.",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "05/01/2023",
+        "normalized_date": "2023-01-05",
+        "position": [
+          787,
+          797
+        ],
+        "context": "d 18 others.\n5. The Hon\u2019ble High Court Orders dt: 05/01/2023 in WP.No. 30927 of\n2022 and 17 others.",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "09/05/2025",
+        "normalized_date": "2025-05-09",
+        "position": [
+          850,
+          860
+        ],
+        "context": "WP.No. 30927 of\n2022 and 17 others.\n6. Orders dt:09/05/2025 in W.P.No.7036 of 2025 and 09 others of",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "09/07/2025",
+        "normalized_date": "2025-07-09",
+        "position": [
+          1041,
+          1051
+        ],
+        "context": ", Vide\nLr.Rc.NoESSE02-17022/1/2025-PS1-CSE, Dated 09/07/2025\n****\nORDER:\nThe Govemment in the second",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/01/1994",
+        "normalized_date": "1994-01-01",
+        "position": [
+          1737,
+          1747
+        ],
+        "context": "of\n\n--- Page 2 ---\nG.0.Ms.No.1, Education, dated 01/01/1994 and also as per the Schedule\nprescribed",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/03/2025",
+        "normalized_date": "2025-03-19",
+        "position": [
+          1995,
+          2005
+        ],
+        "context": "de\nthe proceedings Rc.No.143/C2/2024 (Ex.P.1), Dt.19/03/2025 regarding\nthe directions to the aided i",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "09/08/2018",
+        "normalized_date": "2018-08-09",
+        "position": [
+          3249,
+          3259
+        ],
+        "context": "Ms.No.43, School Education (PS) Department, dated\n09/08/2018 and G.0.Ms.No.26, School Education (PS)",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "16/02/2019",
+        "normalized_date": "2019-02-16",
+        "position": [
+          3318,
+          3328
+        ],
+        "context": "Ms.No.26, School Education (PS) Department, dated\n16/02/2019, Govemment hereby make the following am",
+        "confidence": 0.9
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "Dated 09/07/2025\n****\nORDER:\nThe Govemment in the second read above amended Rule 12 and\ndeleted Rule 13 of the Andhra Pradesh Educational Institutions\n(Establishment,",
+        "normalized_date": "2025-07-09",
+        "position": [
+          1035,
+          1201
+        ],
+        "context": ", A.P., Vide\nLr.Rc.NoESSE02-17022/1/2025-PS1-CSE, Dated 09/07/2025\n****\nORDER:\nThe Govemment in the",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 13,
+      "total_dates": 13,
+      "total_academic_years": 0,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "1994-01-01",
+      "latest_date": "2025-07-11",
+      "year_span": [
+        1994,
+        2025
+      ],
+      "primary_years": [
+        2025,
+        2023,
+        2019,
+        2018,
+        1994
+      ]
+    }
+  },
+  "issue_date": "2025-07-09",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

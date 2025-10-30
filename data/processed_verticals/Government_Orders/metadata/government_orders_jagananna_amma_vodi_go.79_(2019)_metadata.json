@@ -1,0 +1,210 @@
+{
+  "doc_id": "government_orders_jagananna_amma_vodi_go.79_(2019)",
+  "title": "Jagananna Amma Vodi Go.79 (2019)",
+  "file_path": "data/organized_documents/Government_Orders/Jagananna Amma Vodi GO.79 (2019).pdf",
+  "file_name": "Jagananna Amma Vodi GO.79 (2019).pdf",
+  "file_format": ".pdf",
+  "doc_type": "framework",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Government_Orders"
+  ],
+  "year": 2020,
+  "creation_timestamp": "2025-10-30T15:59:40.062137",
+  "modification_timestamp": "2025-10-30T15:59:40.061941",
+  "processing_timestamp": "2025-10-30T16:01:48.404707",
+  "file_size": 65628,
+  "go_info": {
+    "number": 79,
+    "year": 2019,
+    "department": "MS"
+  },
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "framework",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.0,
+      "rule": 0.0,
+      "government_order": 0.8333333333333334,
+      "judicial": 0.0,
+      "data_report": 0.0,
+      "budget_finance": 0.0,
+      "framework": 1.0,
+      "circular": 0.0
+    },
+    "structural_features": {
+      "has_sections": false,
+      "has_chapters": false,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": false,
+      "has_tables": false,
+      "has_financial_terms": false,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 1385,
+      "avg_sentence_length": 11.716666666666667,
+      "title_length": 5
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "04/11/2019",
+        "normalized_date": "2019-11-04",
+        "position": [
+          599,
+          609
+        ],
+        "context": "UCATION (PROG-II) DEPARTMENT\nG.0.MS.No. 79 Dated: 04/11/2019\nRead;\nFrom Commissioner of School Educa",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "26/08/2019",
+        "normalized_date": "2019-08-26",
+        "position": [
+          682,
+          692
+        ],
+        "context": "r of School Education Lr. Rc.No. 242/A&I/2019,\ndt:26/08/2019.\n---xxx---\nORDER:\nThe Hon\u2019ble Chief Min",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "15/10/2019",
+        "normalized_date": "2019-10-15",
+        "position": [
+          8392,
+          8402
+        ],
+        "context": "IN01-FMU0ASD(SE)/39/2019 Computer No. 1001277, dt.15/10/2019.\n(BY ORDER AND IN THE NAME OF THE GOVER",
+        "confidence": 0.9
+      }
+    ],
+    "academic_years": [
+      {
+        "type": "academic_year",
+        "raw_text": "academic year 2019-2020",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          392,
+          415
+        ],
+        "context": "cation)- Implementation\nof the programme from the academic year 2019-2020 - Orders - Issued.\n-------",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "Academic year 2019-2020",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          1262,
+          1285
+        ],
+        "context": "esidential Schools/Colleges in the State from the Academic year 2019-2020.\n2. Accordingly, the Commi",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "Academic year\n2019-2020",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          1956,
+          1979
+        ],
+        "context": "dential Schools/Jr.Colleges in the State from the Academic year\n2019-2020 under a new programme \u201cJAG",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "academic year 2019-2020",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          392,
+          415
+        ],
+        "context": "cation)- Implementation\nof the programme from the academic year 2019-2020 - Orders - Issued.\n-------",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "Academic year 2019-2020",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          1262,
+          1285
+        ],
+        "context": "esidential Schools/Colleges in the State from the Academic year 2019-2020.\n2. Accordingly, the Commi",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "Academic year\n2019-2020",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          1956,
+          1979
+        ],
+        "context": "dential Schools/Jr.Colleges in the State from the Academic year\n2019-2020 under a new programme \u201cJAG",
+        "confidence": 0.9
+      }
+    ],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 9,
+      "total_dates": 3,
+      "total_academic_years": 6,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "2019-08-26",
+      "latest_date": "2019-11-04",
+      "year_span": [
+        2019,
+        2020
+      ],
+      "primary_years": [
+        2020,
+        2019
+      ]
+    }
+  },
+  "academic_year": "2019-2020",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

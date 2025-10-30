@@ -1,0 +1,160 @@
+{
+  "doc_id": "schemes_private_aided_schools_takeover_policy",
+  "title": "Private Aided Schools Takeover Policy",
+  "file_path": "data/organized_documents/Schemes/Private Aided Schools Takeover Policy.pdf",
+  "file_name": "Private Aided Schools Takeover Policy.pdf",
+  "file_format": ".pdf",
+  "doc_type": "framework",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Schemes"
+  ],
+  "year": 2021,
+  "creation_timestamp": "2025-10-30T16:04:37.605211",
+  "modification_timestamp": "2025-10-30T16:04:37.605025",
+  "processing_timestamp": "2025-10-30T16:05:00.361517",
+  "file_size": 2003247,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "framework",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.08163265306122448,
+      "rule": 0.0,
+      "government_order": 0.5510204081632653,
+      "judicial": 0.0,
+      "data_report": 0.1836734693877551,
+      "budget_finance": 0.0,
+      "framework": 1.0,
+      "circular": 0.14285714285714285
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": false,
+      "has_financial_terms": false,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 1848,
+      "avg_sentence_length": 13.227586206896552,
+      "title_length": 5
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "17/08/2021",
+        "normalized_date": "2021-08-17",
+        "position": [
+          335,
+          345
+        ],
+        "context": "OOL EDUCATION (P.S) DEPARTMENT\nG.0.Ms.No.50 Dated.17/08/2021\nRead the following:-\nI.A.P. Education A",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "06/04/2021",
+        "normalized_date": "2021-04-06",
+        "position": [
+          447,
+          457
+        ],
+        "context": "G.0.Rt.No.52, Higher Education [CE] Dept., dated: 06/04/2021.\nORDER:\nDecades ago when the concept of",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "06/04/2021",
+        "normalized_date": "2021-04-06",
+        "position": [
+          4120,
+          4130
+        ],
+        "context": ".0.Rt.No.52, Higher\nEducation (C.E.) Dept., dated.06/04/2021 to study the performance of\nPrivate Aid",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/01/1994",
+        "normalized_date": "1994-01-01",
+        "position": [
+          5539,
+          5549
+        ],
+        "context": "0.Ms.No.I of Education (P .S.2) Department dated: 01/01/1994,\nG.0.Ms.No.ll of School Education (Ser.",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "23/01/2009",
+        "normalized_date": "2009-01-23",
+        "position": [
+          5612,
+          5622
+        ],
+        "context": "l of School Education (Ser.IT) Department. dated:\n23/01/2009, G.0.Ms.No.l2 of School Education (Ser.",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "23/01/2009",
+        "normalized_date": "2009-01-23",
+        "position": [
+          5684,
+          5694
+        ],
+        "context": "l2 of School Education (Ser.II)\nDepartment. dated:23/01/2009 etc., will be amended suitably or\nnew o",
+        "confidence": 0.9
+      }
+    ],
+    "academic_years": [],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 6,
+      "total_dates": 6,
+      "total_academic_years": 0,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "1994-01-01",
+      "latest_date": "2021-08-17",
+      "year_span": [
+        1994,
+        2021
+      ],
+      "primary_years": [
+        2021,
+        2009,
+        1994
+      ]
+    }
+  },
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

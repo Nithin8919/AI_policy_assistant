@@ -6,3 +6,5 @@ def generate_answer(context: list, query: str, mode: str) -> str:
     return "Generated answer"
 
 
+
+

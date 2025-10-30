@@ -7,3 +7,5 @@ class QueryRequest(BaseModel):
     conversation_history: list = []
 
 
+
+

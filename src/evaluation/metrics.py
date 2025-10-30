@@ -15,3 +15,5 @@ def calculate_recall(predicted: list, actual: list) -> float:
     return correct / len(actual)
 
 
+
+

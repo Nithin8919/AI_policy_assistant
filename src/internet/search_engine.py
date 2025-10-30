@@ -7,3 +7,5 @@ def search_web(query: str, api_key: str, engine: str = "serpapi") -> list:
     return results
 
 
+
+

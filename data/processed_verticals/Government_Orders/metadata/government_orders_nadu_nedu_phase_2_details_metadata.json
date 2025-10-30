@@ -1,0 +1,598 @@
+{
+  "doc_id": "government_orders_nadu_nedu_phase_2_details",
+  "title": "Nadu Nedu Phase 2 Details",
+  "file_path": "data/organized_documents/Government_Orders/Nadu-Nedu Phase 2 Details.pdf",
+  "file_name": "Nadu-Nedu Phase 2 Details.pdf",
+  "file_format": ".pdf",
+  "doc_type": "framework",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Government_Orders"
+  ],
+  "year": 4202,
+  "creation_timestamp": "2025-10-30T15:59:40.077851",
+  "modification_timestamp": "2025-10-30T15:59:40.077610",
+  "processing_timestamp": "2025-10-30T16:01:51.114284",
+  "file_size": 1572190,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "framework",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.0,
+      "rule": 0.5384615384615384,
+      "government_order": 0.18974358974358974,
+      "judicial": 0.0,
+      "data_report": 0.49230769230769234,
+      "budget_finance": 0.4564102564102564,
+      "framework": 1.0,
+      "circular": 0.14358974358974358
+    },
+    "structural_features": {
+      "has_sections": false,
+      "has_chapters": false,
+      "has_rules": false,
+      "has_go_number": true,
+      "has_case_citation": true,
+      "has_tables": true,
+      "has_financial_terms": true,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 15012,
+      "avg_sentence_length": 13.730560578661844,
+      "title_length": 4
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "30/03/2021",
+        "normalized_date": "2021-03-30",
+        "position": [
+          632,
+          642
+        ],
+        "context": "C Elections 2024- Reg\nRef:- 1 GO.Ms.No.27 Edn dt: 30/03/2021\n2. G.0 Ms No 87 Edn Dt30-11-2019\n3 SMC",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "06/08/2024",
+        "normalized_date": "2024-08-06",
+        "position": [
+          745,
+          755
+        ],
+        "context": "laration Dt---------------\n4G.0.Rt.No.326 Edn Dt: 06/08/2024\n5 CSE AP Memo.No. 2567328 /MBMB/2024, D",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "14/10/2024",
+        "normalized_date": "2024-10-14",
+        "position": [
+          797,
+          807
+        ],
+        "context": "/08/2024\n5 CSE AP Memo.No. 2567328 /MBMB/2024, Dt:14/10/2024\n6 Parents Committee Resolution to Open",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/3/2021",
+        "normalized_date": "2021-03-30",
+        "position": [
+          1521,
+          1530
+        ],
+        "context": "Cheques As Per Rule XV (f) Of G.0 Ms No 27 Edn DT\n30/3/2021 . A resolution Of SMC reference 6th read",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/03/2021",
+        "normalized_date": "2021-03-30",
+        "position": [
+          2525,
+          2535
+        ],
+        "context": "UCATION (PROG.II) DEPARTMENT\nG.0.MS.No. 27 Dated: 30/03/2021.\nRead the following:\n1. G.0.Ms.No.87,Sc",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/11/2019",
+        "normalized_date": "2019-11-30",
+        "position": [
+          2610,
+          2620
+        ],
+        "context": "G.0.Ms.No.87,School Education (Prog.II) Dept, dt. 30/11/2019\n2. G.0.Ms.No.22,School Education (Prog.",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "06/05/2020",
+        "normalized_date": "2020-05-06",
+        "position": [
+          2675,
+          2685
+        ],
+        "context": ".0.Ms.No.22,School Education (Prog.II) Dept., dt. 06/05/2020\n3. From the DSE, AP, Lr. Rc. No.1269061",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "4/11/2020",
+        "normalized_date": "2020-11-04",
+        "position": [
+          2744,
+          2753
+        ],
+        "context": "the DSE, AP, Lr. Rc. No.1269061/CSE/MBNN/2020, dt.4/11/2020, 29/01/2021\nand 20/03/2021.\nORDER\nIn the",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "29/01/2021",
+        "normalized_date": "2021-01-29",
+        "position": [
+          2755,
+          2765
+        ],
+        "context": ", Lr. Rc. No.1269061/CSE/MBNN/2020, dt.4/11/2020, 29/01/2021\nand 20/03/2021.\nORDER\nIn the reference",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "20/03/2021",
+        "normalized_date": "2021-03-20",
+        "position": [
+          2770,
+          2780
+        ],
+        "context": "69061/CSE/MBNN/2020, dt.4/11/2020, 29/01/2021\nand 20/03/2021.\nORDER\nIn the reference 1st read above,",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "25/2/2021",
+        "normalized_date": "2021-02-25",
+        "position": [
+          5491,
+          5500
+        ],
+        "context": ".No.FMU0ASD(SE)/57/2020 (Computer No.1289730), dt.25/2/2021 and\nFinance (HR-II) Department vide thei",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "3/3/2021",
+        "normalized_date": "2021-03-03",
+        "position": [
+          5590,
+          5598
+        ],
+        "context": "ir U.0.No.1315147/HR-II/ FIN01-HR0MISC/1/2021,\ndt.3/3/2021.\n(BY ORDER AND IN THE NAME OF THE GOVERNO",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/03/2021",
+        "normalized_date": "2021-03-30",
+        "position": [
+          7382,
+          7392
+        ],
+        "context": "G.0.Ms.No.27, School Education (Prog.II) Dept, dt.30/03/2021.\nGuidelines for implementation of Mana",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/3/2021",
+        "normalized_date": "2021-03-30",
+        "position": [
+          52010,
+          52019
+        ],
+        "context": "Annexure to G.0.Ms.No.27, SE (Prog.II) Dept., dt.30/3/2021\nEstablishment of Technical Support Unit",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/11/2019",
+        "normalized_date": "2019-11-30",
+        "position": [
+          59788,
+          59798
+        ],
+        "context": "DUCATION (PROG.II) DEPARTMENT\nG.0.Ms.No.87 Dated: 30/11/2019\nRead the following;\n1. From the CSE eFi",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "29/10/2019",
+        "normalized_date": "2019-10-29",
+        "position": [
+          59875,
+          59885
+        ],
+        "context": "m the CSE eFile No.SSA-13021/205/2019-SPE-SSA, dt.29/10/2019.\n2. Govt Memo of SE No: ESE01-SEDNOSPD/",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "11/11/2019",
+        "normalized_date": "2019-11-11",
+        "position": [
+          59946,
+          59956
+        ],
+        "context": "emo of SE No: ESE01-SEDNOSPD/158/2019-PROG-II,\ndt:11/11/2019.\n3. Govt Memo of PR&RD No: ESE01-SEDN0C",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "11/11/2019",
+        "normalized_date": "2019-11-11",
+        "position": [
+          60021,
+          60031
+        ],
+        "context": "of PR&RD No: ESE01-SEDN0CSE/1470/2019-PROG-II,\nDt:11/11/2019.\n---XXX---\nORDER:\nGovemment considers t",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/11/2019",
+        "normalized_date": "2019-11-19",
+        "position": [
+          85971,
+          85981
+        ],
+        "context": "N01-FMU0ASD(SE)/51/2019 (Computer No.1019144),\ndt.19/11/2019.\n(BY ORDER AND IN THE NAME OF THE GOVER",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/11/2019",
+        "normalized_date": "2019-11-30",
+        "position": [
+          88877,
+          88887
+        ],
+        "context": "s.No.87 School Education (Prog.II) Department, dt.30/11/2019\nABSTRACT OF MANDALS AND MUNCIPALITIES A",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "22/08/2024",
+        "normalized_date": "2024-08-22",
+        "position": [
+          90757,
+          90767
+        ],
+        "context": "Memo No. ESE02- 2532125/ 25/2024 -MDM - CSE ,\nDt:22/08/2024\nSub: School Education Department-Change",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "14/10/2024",
+        "normalized_date": "2024-10-14",
+        "position": [
+          93833,
+          93843
+        ],
+        "context": "CATION DEPARTMENT\nMemo.No. 2567328 /MBMB/2024, Dt:14/10/2024\nSub SE - MBMB - SMC Bank Account Change",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "10/09/2024",
+        "normalized_date": "2024-09-10",
+        "position": [
+          94040,
+          94050
+        ],
+        "context": "nal Project Coordinator, Palnadu District on\nRef:\n10/09/2024 at 04.49 PM.\n2. Memo No. ESE02- 2532125",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "22/08/2024",
+        "normalized_date": "2024-08-22",
+        "position": [
+          94115,
+          94125
+        ],
+        "context": ". Memo No. ESE02- 2532125/ 25/2024 -MDM - CSE, Dt:22/08/2024.\n****\nAll the District Educational Ofce",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/11/2019",
+        "normalized_date": "2019-11-30",
+        "position": [
+          94399,
+          94409
+        ],
+        "context": "87, School\nEducation sProg.IIO Department, dated:30/11/2019.\n\u2022 Presently District Educational Ofcer",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "10/09/2024",
+        "normalized_date": "2024-09-10",
+        "position": [
+          95685,
+          95695
+        ],
+        "context": "ditional Project Coordinator, Palnadu District on\n10/09/2024 at 04.49 PM.\n2. Memo No. ESE02- 2532125",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "22/08/2024",
+        "normalized_date": "2024-08-22",
+        "position": [
+          95760,
+          95770
+        ],
+        "context": ". Memo No. ESE02- 2532125/ 25/2024 -MDM - CSE, Dt:22/08/2024.",
+        "confidence": 0.9
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "with effect from the\nFinancial Year 2019-2020,",
+        "normalized_date": "2019-01-01",
+        "position": [
+          3015,
+          3061
+        ],
+        "context": "ate in a period of three years (in three phases), with effect from the\nFinancial Year 2019-2020, dul",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "DT\n30/3/2021 .",
+        "normalized_date": "2021-03-30",
+        "position": [
+          1518,
+          1532
+        ],
+        "context": "he Cheques As Per Rule XV (f) Of G.0 Ms No 27 Edn DT\n30/3/2021 . A resolution Of SMC reference 6th r",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "dt. 30/11/2019\n2.",
+        "normalized_date": "2019-11-30",
+        "position": [
+          2606,
+          2623
+        ],
+        "context": "1. G.0.Ms.No.87,School Education (Prog.II) Dept, dt. 30/11/2019\n2. G.0.Ms.No.22,School Education (P",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [
+      {
+        "type": "academic_year",
+        "raw_text": "FY 2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          2235,
+          2245
+        ],
+        "context": "tutions with (10) components in the State for the FY 2021-22 with\nan amount of Rs.4,446 crores and g",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "Financial Year 2019-2020",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          3036,
+          3060
+        ],
+        "context": "ree years (in three phases), with effect from the\nFinancial Year 2019-2020, duly issuing detailed gu",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "FY 2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          4085,
+          4095
+        ],
+        "context": "nters, 446 Bhavitha Centers in\nthe State, for the FY 2021-22, with an amount of Rs.4,446 crores (Rup",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "FY 2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          7548,
+          7558
+        ],
+        "context": ",345 educational institutions in the State in the FY 2021-22.\nI. The Project for Transforming School",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "Financial Year 2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          7684,
+          7706
+        ],
+        "context": "e\nimplemented in Govemment Schools in a period of Financial Year 2021-22. A\ntotal of 16345 Education",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2019-20",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          60974,
+          60982
+        ],
+        "context": "a phased manner over a period of\nthree years from 2019-20.\n3. Govemment after careful examination o",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "financial year 2019-20",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          61605,
+          61627
+        ],
+        "context": "State in\na period of three years from the current financial year 2019-20 with the following\nguidelin",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "4202-01",
+        "start_year": 4202,
+        "end_year": 4201,
+        "year_range": "4202-4201",
+        "position": [
+          61704,
+          61711
+        ],
+        "context": "nes and also to meet the expenditure from HoA (I) 4202-01-202-06-210-217,\n(II) 4202-01-202-06-520-52",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "4202-01",
+        "start_year": 4202,
+        "end_year": 4201,
+        "year_range": "4202-4201",
+        "position": [
+          61733,
+          61740
+        ],
+        "context": "nditure from HoA (I) 4202-01-202-06-210-217,\n(II) 4202-01-202-06-520-521, (III) 4202-01-202-06-530-5",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "4202-01",
+        "start_year": 4202,
+        "end_year": 4201,
+        "year_range": "4202-4201",
+        "position": [
+          61763,
+          61770
+        ],
+        "context": "02-06-210-217,\n(II) 4202-01-202-06-520-521, (III) 4202-01-202-06-530-531 for implementing the projec",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2019-20",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          62127,
+          62135
+        ],
+        "context": "ll Govemment Schools in a period of (3) years from 2019-20.\nII. The project shall cover all the (44,",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2019-2024",
+        "start_year": 2019,
+        "end_year": 2024,
+        "year_range": "2019-2024",
+        "position": [
+          91898,
+          91908
+        ],
+        "context": "S.No Name of the Scheme during Revised Scheme Name\n2019-2024\n1. Jagananna Gorumudda \u201cDokka Seethamma",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2019-2024",
+        "start_year": 2019,
+        "end_year": 2024,
+        "year_range": "2019-2024",
+        "position": [
+          92928,
+          92938
+        ],
+        "context": "ble 2 on Page 35]\nS.No | Name of the Scheme during\n2019-2024 | Revised Scheme Name\n1. | Jagananna Go",
+        "confidence": 0.9
+      }
+    ],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 43,
+      "total_dates": 30,
+      "total_academic_years": 13,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "2019-01-01",
+      "latest_date": "2024-10-14",
+      "year_span": [
+        2019,
+        4202
+      ],
+      "primary_years": [
+        4202,
+        4201,
+        2024,
+        2022,
+        2021
+      ]
+    }
+  },
+  "effective_date": "2019-01-01",
+  "academic_year": "4202-4201",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

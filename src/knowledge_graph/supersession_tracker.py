@@ -463,3 +463,5 @@ class SupersessionTracker:
             "average_confidence": avg_confidence,
             "chain_topics": [chain.topic for chain in self.supersession_chains.values()]
         }
+
+

@@ -1,0 +1,198 @@
+{
+  "doc_id": "legal_ncte_national_professional_standards_for_teachers_2023",
+  "title": "Ncte National Professional Standards For Teachers 2023",
+  "file_path": "data/organized_documents/Legal/NCTE National Professional Standards for Teachers 2023.pdf",
+  "file_name": "NCTE National Professional Standards for Teachers 2023.pdf",
+  "file_format": ".pdf",
+  "doc_type": "framework",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Legal"
+  ],
+  "year": 2025,
+  "creation_timestamp": "2025-10-30T15:45:08.068409",
+  "modification_timestamp": "2025-10-30T15:45:08.068090",
+  "processing_timestamp": "2025-10-30T15:48:32.003520",
+  "file_size": 24157978,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "framework",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.038288288288288286,
+      "rule": 0.04054054054054054,
+      "government_order": 0.08783783783783784,
+      "judicial": 0.0,
+      "data_report": 0.6621621621621622,
+      "budget_finance": 0.018018018018018018,
+      "framework": 1.0,
+      "circular": 0.10810810810810811
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": true,
+      "has_financial_terms": true,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 22090,
+      "avg_sentence_length": 11.409,
+      "title_length": 7
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "17th\nNovember 2021",
+        "normalized_date": "2021-11-17",
+        "position": [
+          16244,
+          16262
+        ],
+        "context": "lic review on NCTE website and on MyGov portal on 17th\nNovember 2021. Simultaneously, 15 Open House",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "29th March 2022",
+        "normalized_date": "2022-03-29",
+        "position": [
+          17068,
+          17083
+        ],
+        "context": "aced before the committee constituted for NPST on 29th March 2022 which was\napproved as Field Trial",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17th\nNovember 2021",
+        "normalized_date": "2021-11-17",
+        "position": [
+          18977,
+          18995
+        ],
+        "context": "lic review on NCTE website and on MyGov portal on 17th\nNovember 2021. Simultaneously, 15 Open House",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "29th March 2022",
+        "normalized_date": "2022-03-29",
+        "position": [
+          19801,
+          19816
+        ],
+        "context": "aced before the committee constituted for NPST on 29th March 2022 which was\napproved as Field Trial",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "31st August 2021",
+        "normalized_date": "2021-08-31",
+        "position": [
+          146242,
+          146258
+        ],
+        "context": "d Post / Fax\nNCTE-Acad013/2/2021-0/o US(Acad.)-HQ 31st August 2021\nOFFICE ORDER (Revised)\nIt is deci",
+        "confidence": 0.9
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date with\ndevelopments in the subject\narea and brings new\nconcepts into curriculum\ntransaction\n4.",
+        "normalized_date": "2025-10-04",
+        "position": [
+          105163,
+          105260
+        ],
+        "context": "ates local and\nindigenous knowledge | Keeps up to date with\ndevelopments in the subject\narea and bri",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the committee constituted for NPST on 29th March 2022 which was\napproved as Field Trial Version.",
+        "normalized_date": "2022-03-29",
+        "position": [
+          17023,
+          17126
+        ],
+        "context": "used to prepare a final draft on NPST\nand placed before the committee constituted for NPST on 29th",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the committee constituted for NPST on 29th March 2022 which was\napproved as Field Trial Version.",
+        "normalized_date": "2022-03-29",
+        "position": [
+          19756,
+          19859
+        ],
+        "context": "used to prepare a final draft on NPST\nand placed before the committee constituted for NPST on 29th",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [
+      {
+        "type": "academic_year",
+        "raw_text": "\n2022-23",
+        "start_year": 2022,
+        "end_year": 2023,
+        "year_range": "2022-2023",
+        "position": [
+          149947,
+          149955
+        ],
+        "context": "ths, so as to implement NPST from Academic Session\n2022-23.\nx. Any other point found relevant to NPS",
+        "confidence": 0.9
+      }
+    ],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 9,
+      "total_dates": 8,
+      "total_academic_years": 1,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "2021-08-31",
+      "latest_date": "2025-10-04",
+      "year_span": [
+        2021,
+        2025
+      ],
+      "primary_years": [
+        2025,
+        2023,
+        2022,
+        2021
+      ]
+    }
+  },
+  "academic_year": "2022-2023",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

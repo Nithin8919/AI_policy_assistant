@@ -1,0 +1,803 @@
+{
+  "doc_id": "government_orders_g.o.ms_.no_.187_dt.10.12.2022",
+  "title": "G.O.MS .No..187 Dt.10.12.2022",
+  "file_path": "data/organized_documents/Government_Orders/G.O.MS_.No_.187-Dt.10.12.2022.pdf",
+  "file_name": "G.O.MS_.No_.187-Dt.10.12.2022.pdf",
+  "file_format": ".pdf",
+  "doc_type": "framework",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Government_Orders"
+  ],
+  "year": 5000,
+  "creation_timestamp": "2025-10-30T15:59:40.022082",
+  "modification_timestamp": "2025-10-30T15:59:40.021761",
+  "processing_timestamp": "2025-10-30T16:01:37.268165",
+  "file_size": 4706467,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "framework",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.08648648648648649,
+      "rule": 0.0,
+      "government_order": 0.7513513513513513,
+      "judicial": 0.0,
+      "data_report": 0.08648648648648649,
+      "budget_finance": 0.0,
+      "framework": 1.0,
+      "circular": 0.021621621621621623
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": true,
+      "has_financial_terms": false,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 6247,
+      "avg_sentence_length": 11.257443082311735,
+      "title_length": 1
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "10/12/2022",
+        "normalized_date": "2022-12-10",
+        "position": [
+          441,
+          451
+        ],
+        "context": "ION (SERVICES.II) DEPARTMENT\nG.0.MS.No.187 Dated: 10/12/2022.\nRead the followin :\n1) A. P Education",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "03/03/2011",
+        "normalized_date": "2011-03-03",
+        "position": [
+          574,
+          584
+        ],
+        "context": "Ms.No.20, School Education (PE-Progs.I) Dept., Dt:03/03/2011.\n3) G.0.Ms.No.53, School Education (Ser",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "12/10/2020",
+        "normalized_date": "2020-10-12",
+        "position": [
+          639,
+          649
+        ],
+        "context": "G.0.Ms.No.53, School Education (Ser.II) Dept., Dt:12/10/2020.\n4) G.0.Ms.No.54, School Education (Ser",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "12/10/2020",
+        "normalized_date": "2020-10-12",
+        "position": [
+          704,
+          714
+        ],
+        "context": "G.0.Ms.No.54, School Education (Ser.II) Dept., Dt:12/10/2020.\n5) G.0.Ms.No.59, School Education (Ser",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "24/11/2020",
+        "normalized_date": "2020-11-24",
+        "position": [
+          769,
+          779
+        ],
+        "context": "G.0.Ms.No.59, School Education (Ser.II) Dept., Dt:24/11/2020.\n6) G.0.Rt.No.237, School Education (IE",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "29/09/2021",
+        "normalized_date": "2021-09-29",
+        "position": [
+          834,
+          844
+        ],
+        "context": "G.0.Rt.No.237, School Education (IE.Al) Dept., Dt:29/09/2021.\n7) G.0.Ms.No.84, School Education (Pra",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "24/12/2021",
+        "normalized_date": "2021-12-24",
+        "position": [
+          900,
+          910
+        ],
+        "context": ".0.Ms.No.84, School Education (Prag.II) Dept., Dt:24/12/2021.\n8) G.0.Ms.No.85, School Education (Pra",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "24/12/2021",
+        "normalized_date": "2021-12-24",
+        "position": [
+          966,
+          976
+        ],
+        "context": ".0.Ms.No.85, School Education (Prag.II) Dept., Dt:24/12/2021.\n9) G.0.Rt.No.40, HM & FW (Bl) Dept., D",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "28/01/2022",
+        "normalized_date": "2022-01-28",
+        "position": [
+          1019,
+          1029
+        ],
+        "context": "12/2021.\n9) G.0.Rt.No.40, HM & FW (Bl) Dept., Dt: 28/01/2022.\n10) G .0. Ms. No.116, Finance (H R.I-P",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "07/06/2022",
+        "normalized_date": "2022-06-07",
+        "position": [
+          1094,
+          1104
+        ],
+        "context": "No.116, Finance (H R.I-Plg. & Policy) Dept., Dt: 07/06/2022.\n11) G.0.Ms.No.117, School Education (S",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "10/06/2022",
+        "normalized_date": "2022-06-10",
+        "position": [
+          1161,
+          1171
+        ],
+        "context": ".0.Ms.No.117, School Education (Ser.II) Dept., Dt:10/06/2022\n12) G.0.Ms.No.122, Finance (HR.I-PLG.&P",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "16/06/2022",
+        "normalized_date": "2022-06-16",
+        "position": [
+          1229,
+          1239
+        ],
+        "context": ".Ms.No.122, Finance (HR.I-PLG.&POLICY) Dept., Dt: 16/06/2022\n13) G.0.Ms.No.128, School Education (Se",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "13/07/2022",
+        "normalized_date": "2022-07-13",
+        "position": [
+          1295,
+          1305
+        ],
+        "context": ".0.Ms.No.128, School Education (Ser.II) Dept., Dt:13/07/2022\n14) From the CSE, e-file No.ESE02-14/ll",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "12/12/2022",
+        "normalized_date": "2022-12-12",
+        "position": [
+          7203,
+          7213
+        ],
+        "context": "Activity Date\ndays\nSubmission of Management wise,\n12/12/2022 -\n1 Category wise, subject wise, Medium",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "13/12/2022",
+        "normalized_date": "2022-12-13",
+        "position": [
+          7256,
+          7266
+        ],
+        "context": "12/2022 -\n1 Category wise, subject wise, Medium 2\n13/12/2022\nwise vacancies in the website\nApplying",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "14/12/2022",
+        "normalized_date": "2022-12-14",
+        "position": [
+          7333,
+          7343
+        ],
+        "context": "n the website\nApplying for transfer by HM/Teacher 14/12/2022 -\n2 3\nin online with self-attested deta",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/12/2022",
+        "normalized_date": "2022-12-17",
+        "position": [
+          7387,
+          7397
+        ],
+        "context": "2/2022 -\n2 3\nin online with self-attested details 17/12/2022\n- - --- -\nVerification of applications",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "18/12/2022",
+        "normalized_date": "2022-12-18",
+        "position": [
+          7445,
+          7455
+        ],
+        "context": "22\n- - --- -\nVerification of applications through 18/12/2022 -\n3 2\nonline 19/12/2022\nDisplay of prov",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/12/2022",
+        "normalized_date": "2022-12-19",
+        "position": [
+          7469,
+          7479
+        ],
+        "context": "n of applications through 18/12/2022 -\n3 2\nonline 19/12/2022\nDisplay of provisional Seniority lists",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "20/12/2022",
+        "normalized_date": "2022-12-20",
+        "position": [
+          7551,
+          7561
+        ],
+        "context": "l Seniority lists\nbased on entitlement points and\n20/12/2022 -\n4 submission of uploaded objections 3",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "22/12/2022",
+        "normalized_date": "2022-12-22",
+        "position": [
+          7602,
+          7612
+        ],
+        "context": "0/12/2022 -\n4 submission of uploaded objections 3\n22/12/2022\n(with proof) in the website to the\nDEO",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "20/12/2022",
+        "normalized_date": "2022-12-20",
+        "position": [
+          7971,
+          7981
+        ],
+        "context": "jections\n(with proof) in the website to the\nDEO | 20/12/2022 -\n22/12/2022 | 3\n\n--- Page 4 ---\nRedres",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "22/12/2022",
+        "normalized_date": "2022-12-22",
+        "position": [
+          7984,
+          7994
+        ],
+        "context": "h proof) in the website to the\nDEO | 20/12/2022 -\n22/12/2022 | 3\n\n--- Page 4 ---\nRedressal of object",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "23/12/2022",
+        "normalized_date": "2022-12-23",
+        "position": [
+          8093,
+          8103
+        ],
+        "context": "ies posted\non website by the District Educational 23/12/2022 -\n5 2\nOfficer with the approval of Join",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "24/12/2022",
+        "normalized_date": "2022-12-24",
+        "position": [
+          8145,
+          8155
+        ],
+        "context": "/12/2022 -\n5 2\nOfficer with the approval of Joint 24/12/2022\nCollector/ Committee\nDisplay of final s",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "26/12/2022",
+        "normalized_date": "2022-12-26",
+        "position": [
+          8216,
+          8226
+        ],
+        "context": "Committee\nDisplay of final seniority list with\n6 26/12/2022 1\nentitlement points in the website\n~ -",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "27/12/2022",
+        "normalized_date": "2022-12-27",
+        "position": [
+          8308,
+          8318
+        ],
+        "context": "site\n~ - - - -\nSubmission of online web option by 27/12/2022 -\n7\n6\nthe Headmastec~Teachers 01/01/202",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/01/2023",
+        "normalized_date": "2023-01-01",
+        "position": [
+          8349,
+          8359
+        ],
+        "context": "ption by 27/12/2022 -\n7\n6\nthe Headmastec~Teachers 01/01/2023\n- -\n02/01/2023 -\n8 Display of final all",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "02/01/2023",
+        "normalized_date": "2023-01-02",
+        "position": [
+          8364,
+          8374
+        ],
+        "context": "2022 -\n7\n6\nthe Headmastec~Teachers 01/01/2023\n- -\n02/01/2023 -\n8 Display of final allotment places l",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "10/01/2023",
+        "normalized_date": "2023-01-10",
+        "position": [
+          8420,
+          8430
+        ],
+        "context": "2023 -\n8 Display of final allotment places list 9\n10/01/2023\nf---\nReview of final allocations, if an",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "11/01/2023",
+        "normalized_date": "2023-01-11",
+        "position": [
+          8474,
+          8484
+        ],
+        "context": "1/2023\nf---\nReview of final allocations, if any\n9 11/01/2023 1\ngrievances (technical issues)\nDisplay",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "12/01/2023",
+        "normalized_date": "2023-01-12",
+        "position": [
+          8558,
+          8568
+        ],
+        "context": "issues)\nDisplay of transfer orders on the web\n10 12/01/2023 1\nfor downloading\nTOTAL 30\n~\n7. The C.S",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "26/12/2022",
+        "normalized_date": "2022-12-26",
+        "position": [
+          10405,
+          10415
+        ],
+        "context": "achers\n-\nDisplay of final allotment places list | 26/12/2022 | 1\n| | 27/12/2022 - | 6\n| | 01/01/2023",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "27/12/2022",
+        "normalized_date": "2022-12-27",
+        "position": [
+          10424,
+          10434
+        ],
+        "context": "final allotment places list | 26/12/2022 | 1\n| | 27/12/2022 - | 6\n| | 01/01/2023\n02/01/2023 -\n10/01",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/01/2023",
+        "normalized_date": "2023-01-01",
+        "position": [
+          10445,
+          10455
+        ],
+        "context": "es list | 26/12/2022 | 1\n| | 27/12/2022 - | 6\n| | 01/01/2023\n02/01/2023 -\n10/01/2023 | 9\n| Review of",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "02/01/2023",
+        "normalized_date": "2023-01-02",
+        "position": [
+          10456,
+          10466
+        ],
+        "context": "6/12/2022 | 1\n| | 27/12/2022 - | 6\n| | 01/01/2023\n02/01/2023 -\n10/01/2023 | 9\n| Review of final allo",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "10/01/2023",
+        "normalized_date": "2023-01-10",
+        "position": [
+          10469,
+          10479
+        ],
+        "context": "| | 27/12/2022 - | 6\n| | 01/01/2023\n02/01/2023 -\n10/01/2023 | 9\n| Review of final allocations, if a",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "11/01/2023",
+        "normalized_date": "2023-01-11",
+        "position": [
+          10554,
+          10564
+        ],
+        "context": "locations, if any\ngrievances (technical issues) | 11/01/2023 | 1\n10 | Display of transfer orders on",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "12/01/2023",
+        "normalized_date": "2023-01-12",
+        "position": [
+          10630,
+          10640
+        ],
+        "context": "y of transfer orders on the web\nfor downloading | 12/01/2023 | 1\n| | | 30\n\n--- Page 5 ---\n11. This o",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/10/2022",
+        "normalized_date": "2022-10-19",
+        "position": [
+          10812,
+          10822
+        ],
+        "context": "DPP(TRPO)/217 /2022, (Computer No.1872156)\nDated. 19/10/2022.\n(BY ORDER AND IN THE NAME OF THE GOVER",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "31/08/2024",
+        "normalized_date": "2024-08-31",
+        "position": [
+          13215,
+          13225
+        ],
+        "context": "ovided those who are going to retire on or before\n31/08/2024 (within 2 years) shall not be transferr",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "31/08/2022",
+        "normalized_date": "2022-08-31",
+        "position": [
+          13475,
+          13485
+        ],
+        "context": "master (Gr.II)/ Teacher aged below 50 years as on\n31/08/2022 and working in Girls High School shall",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "31/08/2022",
+        "normalized_date": "2022-08-31",
+        "position": [
+          13720,
+          13730
+        ],
+        "context": "Gr.II)/Teachers\nwho crossed 50 years of age as on 31/08/2022 may be considered\nfor posting to such s",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "14/10/2021",
+        "normalized_date": "2021-10-14",
+        "position": [
+          15570,
+          15580
+        ],
+        "context": "promoted as per the guidelines of CSE\nProcgs Dt: 14/10/2021 shall compulsorily apply for transfers.",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "31/08/2022",
+        "normalized_date": "2022-08-31",
+        "position": [
+          17556,
+          17566
+        ],
+        "context": "f years of service in the respective school as on 31/08/2022 in\nthe following manner\n(i)\n(a) For eve",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "31/08/2022",
+        "normalized_date": "2022-08-31",
+        "position": [
+          19172,
+          19182
+        ],
+        "context": "ted year of total\nservice in all categories as on 31/08/2022. (more than 6 months shall be\nconsidere",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/11/2022",
+        "normalized_date": "2022-11-30",
+        "position": [
+          25814,
+          25824
+        ],
+        "context": "ied for counselling:\na. All clear vacancies as on 30/11/2022.\nb. All vacancies arising due to compul",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "14/10/2021",
+        "normalized_date": "2021-10-14",
+        "position": [
+          26055,
+          26065
+        ],
+        "context": "otted\nplaces on adhoc basis as per CSE Procgs Dt: 14/10/2021, their\nplaces are to be shown as vacant",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "31/08/2022",
+        "normalized_date": "2022-08-31",
+        "position": [
+          26980,
+          26990
+        ],
+        "context": "n the Child Info data with the cut-off date as on 31/08/2022 and\nby taking into consideration the pu",
+        "confidence": 0.9
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on\n31/08/2022 and working in Girls High School shall be transferred\nmandatorily.",
+        "normalized_date": "2022-08-31",
+        "position": [
+          13469,
+          13552
+        ],
+        "context": "e Headmaster (Gr.II)/ Teacher aged below 50 years as on\n31/08/2022 and working in Girls High School",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on 31/08/2022 may be considered\nfor posting to such schools.",
+        "normalized_date": "2022-08-31",
+        "position": [
+          13714,
+          13777
+        ],
+        "context": "ster (Gr.II)/Teachers\nwho crossed 50 years of age as on 31/08/2022 may be considered\nfor posting to",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on 31/08/2022.",
+        "normalized_date": "2022-08-31",
+        "position": [
+          19166,
+          19183
+        ],
+        "context": "completed year of total\nservice in all categories as on 31/08/2022. (more than 6 months shall be\ncon",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on 30/11/2022.",
+        "normalized_date": "2022-11-30",
+        "position": [
+          25808,
+          25825
+        ],
+        "context": "notified for counselling:\na. All clear vacancies as on 30/11/2022.\nb. All vacancies arising due to",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on 31/08/2022 and\nby taking into consideration the pupil-teacher ratio and as per the\nre-apportionment norms as notified by Govemment vide ref 11th &\nth\n13 read above.",
+        "normalized_date": "2022-08-31",
+        "position": [
+          26974,
+          27144
+        ],
+        "context": "ased\non the Child Info data with the cut-off date as on 31/08/2022 and\nby taking into consideration",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "date as on 31/08/2022 and\nby taking into consideration the pupil-teacher ratio and as per the\nre-apportionment norms as notified by Govemment vide ref 11th &\nth\n13 read above.",
+        "normalized_date": "2022-08-31",
+        "position": [
+          26969,
+          27144
+        ],
+        "context": "ted based\non the Child Info data with the cut-off date as on 31/08/2022 and\nby taking into considera",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "on or before\n31/08/2024 (within 2 years) shall not be transferred until and\nunless the incumbent requests for such transfer.",
+        "normalized_date": "2024-08-31",
+        "position": [
+          13202,
+          13326
+        ],
+        "context": "dered).\nb) Provided those who are going to retire on or before\n31/08/2024 (within 2 years) shall not",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [
+      {
+        "type": "academic_year",
+        "raw_text": "2022-23",
+        "start_year": 2022,
+        "end_year": 2023,
+        "year_range": "2022-2023",
+        "position": [
+          5323,
+          5330
+        ],
+        "context": "teachers shouldn't impact the Academic Calendar, 2022-23 in Schools.\nAcademic Calendar consists of",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "Academic Year 2022-23",
+        "start_year": 2022,
+        "end_year": 2023,
+        "year_range": "2022-2023",
+        "position": [
+          12202,
+          12223
+        ],
+        "context": "Parishad and Mandal Praja Parishad\nSchools during Academic Year 2022-23\n1. These guidelines shall ap",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 5000-4500",
+        "start_year": 5000,
+        "end_year": 4500,
+        "year_range": "5000-4500",
+        "position": [
+          26745,
+          26755
+        ],
+        "context": "nd\nworking: 4500, then to be blocked vacancies are 5000-4500=500.\nIf 40 mandals in the district, pro",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "Academic Year 2022-23",
+        "start_year": 2022,
+        "end_year": 2023,
+        "year_range": "2022-2023",
+        "position": [
+          12202,
+          12223
+        ],
+        "context": "Parishad and Mandal Praja Parishad\nSchools during Academic Year 2022-23\n1. These guidelines shall ap",
+        "confidence": 0.9
+      }
+    ],
+    "date_ranges": [
+      {
+        "type": "date_range",
+        "raw_text": "from class 1 to 5 with one or two SGTs\nteaching 18 subjects,",
+        "start_date": "2025-10-01",
+        "end_date": "2025-05-18",
+        "position": [
+          2987,
+          3047
+        ],
+        "context": "ge of human resources,\nrunning of primary schools from class 1 to 5 with one or two SGTs\nteaching 18",
+        "confidence": 0.85
+      },
+      {
+        "type": "date_range",
+        "raw_text": "from classes 3 to 5 of High Schools by imparting education to the children\nby subject experts with B.",
+        "start_date": "2025-10-03",
+        "end_date": "2025-10-05",
+        "position": [
+          4347,
+          4448
+        ],
+        "context": "as decided to strengthen the teaching and leaming\nfrom classes 3 to 5 of High Schools by imparting e",
+        "confidence": 0.85
+      },
+      {
+        "type": "date_range",
+        "raw_text": "from 2nd January to 10th January,",
+        "start_date": "2025-01-02",
+        "end_date": "2025-01-10",
+        "position": [
+          5493,
+          5526
+        ],
+        "context": "ative Assessment (SA-I) Examinations is scheduled\nfrom 2nd January to 10th January, 2023 for all cla",
+        "confidence": 0.85
+      }
+    ],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 63,
+      "total_dates": 56,
+      "total_academic_years": 4,
+      "total_ranges": 3,
+      "total_periods": 0,
+      "earliest_date": "2011-03-03",
+      "latest_date": "2024-08-31",
+      "year_span": [
+        2011,
+        5000
+      ],
+      "primary_years": [
+        5000,
+        4500,
+        2024,
+        2023,
+        2022
+      ]
+    }
+  },
+  "academic_year": "5000-4500",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

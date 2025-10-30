@@ -16,3 +16,5 @@ def select_mode(query: str, user_override: str = None) -> str:
         return "normal"
 
 
+
+

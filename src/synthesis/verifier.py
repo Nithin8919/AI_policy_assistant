@@ -10,3 +10,5 @@ def verify_facts(answer: str, sources: list) -> dict:
     return {"verified": True, "issues": []}
 
 
+
+

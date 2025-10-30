@@ -1,0 +1,711 @@
+{
+  "doc_id": "schemes_jagananna_amma_vodi_case_study_(1)",
+  "title": "Jagananna Amma Vodi Case Study (1)",
+  "file_path": "data/organized_documents/Schemes/Jagananna Amma Vodi Case Study (1).pdf",
+  "file_name": "Jagananna Amma Vodi Case Study (1).pdf",
+  "file_format": ".pdf",
+  "doc_type": "data_report",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Schemes"
+  ],
+  "year": 2582,
+  "creation_timestamp": "2025-10-30T16:04:37.598171",
+  "modification_timestamp": "2025-10-30T16:04:37.597798",
+  "processing_timestamp": "2025-10-30T16:05:01.723254",
+  "file_size": 416415,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "data_report",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.0,
+      "rule": 0.057692307692307696,
+      "government_order": 0.0,
+      "judicial": 0.0,
+      "data_report": 1.0,
+      "budget_finance": 0.3717948717948718,
+      "framework": 0.358974358974359,
+      "circular": 0.0
+    },
+    "structural_features": {
+      "has_sections": false,
+      "has_chapters": false,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": true,
+      "has_financial_terms": true,
+      "has_legal_language": false,
+      "has_administrative_language": false,
+      "has_policy_language": true,
+      "word_count": 4363,
+      "avg_sentence_length": 12.928571428571429,
+      "title_length": 6
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "9th January 2020",
+        "normalized_date": "2020-01-09",
+        "position": [
+          4286,
+          4302
+        ],
+        "context": "details:\nThe objective of the Scheme: Launched on 9th January 2020 by Hon\u2019ble Chief Minister of Andh",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "January 9, 2020",
+        "normalized_date": "2020-01-09",
+        "position": [
+          1887,
+          1902
+        ],
+        "context": "ched by Chief Minister Y. S. Jagan Mohan Reddy on January 9, 2020, with an initial\nbudget allocation",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "January 11, 2021",
+        "normalized_date": "2021-01-11",
+        "position": [
+          2141,
+          2157
+        ],
+        "context": "households. Its subsequent phase,\ninaugurated on January 11, 2021, with a budget infusion of \u20b96,673",
+        "confidence": 0.9
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "Before and After Scheme Implementation\nPre-Scheme Dropout Rate (%) Post-Scheme Dropout Rate (%)\nScheme Start 2020 0.",
+        "normalized_date": "2020-01-01",
+        "position": [
+          14392,
+          14508
+        ],
+        "context": "rovement over the years.\nTable - 3: Dropout Rates Before and After Scheme Implementation\nPre-Scheme",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [
+      {
+        "type": "academic_year",
+        "raw_text": "2582-2160",
+        "start_year": 2582,
+        "end_year": 2160,
+        "year_range": "2582-2160",
+        "position": [
+          82,
+          91
+        ],
+        "context": "al for Multidisciplinary Research (IJFMR)\nE-ISSN: 2582-2160 \u25cf Website: www.ijfmr.com \u25cf Email: editor",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "academic year 2019-20",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          1965,
+          1986
+        ],
+        "context": "tial\nbudget allocation of \u20b96,455.80 crore for the academic year 2019-20, the Jagananna Amma Vodi sch",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2582-2160",
+        "start_year": 2582,
+        "end_year": 2160,
+        "year_range": "2582-2160",
+        "position": [
+          3125,
+          3134
+        ],
+        "context": "al for Multidisciplinary Research (IJFMR)\nE-ISSN: 2582-2160 \u25cf Website: www.ijfmr.com \u25cf Email: editor",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2582-2160",
+        "start_year": 2582,
+        "end_year": 2160,
+        "year_range": "2582-2160",
+        "position": [
+          6854,
+          6863
+        ],
+        "context": "al for Multidisciplinary Research (IJFMR)\nE-ISSN: 2582-2160 \u25cf Website: www.ijfmr.com \u25cf Email: editor",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2582-2160",
+        "start_year": 2582,
+        "end_year": 2160,
+        "year_range": "2582-2160",
+        "position": [
+          10091,
+          10100
+        ],
+        "context": "al for Multidisciplinary Research (IJFMR)\nE-ISSN: 2582-2160 \u25cf Website: www.ijfmr.com \u25cf Email: editor",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2020-21",
+        "start_year": 2020,
+        "end_year": 2021,
+        "year_range": "2020-2021",
+        "position": [
+          12298,
+          12306
+        ],
+        "context": "(In Lakhs)\nScheme Start 2020 6,139.00 40,93,011.00\n2020-21 6,349.00 42,33,098.00\n2021-22 6,421.00 42",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          12328,
+          12336
+        ],
+        "context": ",139.00 40,93,011.00\n2020-21 6,349.00 42,33,098.00\n2021-22 6,421.00 42,81,094.00\n2022-23 6,424.00 42",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2022-23",
+        "start_year": 2022,
+        "end_year": 2023,
+        "year_range": "2022-2023",
+        "position": [
+          12358,
+          12366
+        ],
+        "context": ",349.00 42,33,098.00\n2021-22 6,421.00 42,81,094.00\n2022-23 6,424.00 42,83,057.00\n2023-24 6,447.00 42",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2023-24",
+        "start_year": 2023,
+        "end_year": 2024,
+        "year_range": "2023-2024",
+        "position": [
+          12388,
+          12396
+        ],
+        "context": ",421.00 42,81,094.00\n2022-23 6,424.00 42,83,057.00\n2023-24 6,447.00 42,98,152.00\nSource: AP Budget V",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2019-20",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          12955,
+          12962
+        ],
+        "context": "ars.\nYear Enrollment Rate (%) Attendance Rate (%)\n2019-20 Covid - 19 Covid - 19\n2020-21 Online Class",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2020-21",
+        "start_year": 2020,
+        "end_year": 2021,
+        "year_range": "2020-2021",
+        "position": [
+          12984,
+          12992
+        ],
+        "context": "Attendance Rate (%)\n2019-20 Covid - 19 Covid - 19\n2020-21 Online Class Online Class\nIJFMR240216175",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2020-21",
+        "start_year": 2020,
+        "end_year": 2021,
+        "year_range": "2020-2021",
+        "position": [
+          13191,
+          13199
+        ],
+        "context": "Lakhs)\nScheme Start 2020 | 6,139.00 | 40,93,011.00\n2020-21 | 6,349.00 | 42,33,098.00\n2021-22 | 6,421",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          13225,
+          13233
+        ],
+        "context": "0 | 40,93,011.00\n2020-21 | 6,349.00 | 42,33,098.00\n2021-22 | 6,421.00 | 42,81,094.00\n2022-23 | 6,424",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2022-23",
+        "start_year": 2022,
+        "end_year": 2023,
+        "year_range": "2022-2023",
+        "position": [
+          13259,
+          13267
+        ],
+        "context": "0 | 42,33,098.00\n2021-22 | 6,421.00 | 42,81,094.00\n2022-23 | 6,424.00 | 42,83,057.00\n2023-24 | 6,447",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2023-24",
+        "start_year": 2023,
+        "end_year": 2024,
+        "year_range": "2023-2024",
+        "position": [
+          13293,
+          13301
+        ],
+        "context": "0 | 42,81,094.00\n2022-23 | 6,424.00 | 42,83,057.00\n2023-24 | 6,447.00 | 42,98,152.00\n\n[Table 2 on Pa",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2019-20",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          13560,
+          13567
+        ],
+        "context": "Year | Enrollment Rate (%) | Attendance Rate (%)\n2019-20 | Covid - 19 | Covid - 19\n2020-21 | Online",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2020-21",
+        "start_year": 2020,
+        "end_year": 2021,
+        "year_range": "2020-2021",
+        "position": [
+          13593,
+          13601
+        ],
+        "context": "endance Rate (%)\n2019-20 | Covid - 19 | Covid - 19\n2020-21 | Online Class | Online Class\n\n--- Page 5",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2582-2160",
+        "start_year": 2582,
+        "end_year": 2160,
+        "year_range": "2582-2160",
+        "position": [
+          13715,
+          13724
+        ],
+        "context": "al for Multidisciplinary Research (IJFMR)\nE-ISSN: 2582-2160 \u25cf Website: www.ijfmr.com \u25cf Email: editor",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          13775,
+          13783
+        ],
+        "context": "\u25cf Website: www.ijfmr.com \u25cf Email: editor@ijfmr.com\n2021-22 84.6 80.2\n2022-23 90.7 90.5\n2023-24 95.9",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2022-23",
+        "start_year": 2022,
+        "end_year": 2023,
+        "year_range": "2022-2023",
+        "position": [
+          13793,
+          13801
+        ],
+        "context": "mr.com \u25cf Email: editor@ijfmr.com\n2021-22 84.6 80.2\n2022-23 90.7 90.5\n2023-24 95.9 96.8\nSource: Schoo",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2023-24",
+        "start_year": 2023,
+        "end_year": 2024,
+        "year_range": "2023-2024",
+        "position": [
+          13811,
+          13819
+        ],
+        "context": "itor@ijfmr.com\n2021-22 84.6 80.2\n2022-23 90.7 90.5\n2023-24 95.9 96.8\nSource: School Education Dept.",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "academic year 2019-20",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          13871,
+          13892
+        ],
+        "context": "5.9 96.8\nSource: School Education Dept. AP\nIn the academic year 2019-20, the enrollment and attendan",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2020-21",
+        "start_year": 2020,
+        "end_year": 2021,
+        "year_range": "2020-2021",
+        "position": [
+          14029,
+          14037
+        ],
+        "context": "andemic, resulting in data not being available and 2020-21 online classes, from 2021-22 there\nwas a",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          14058,
+          14066
+        ],
+        "context": "t being available and 2020-21 online classes, from 2021-22 there\nwas a noticeable increase in both e",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          17141,
+          17148
+        ],
+        "context": "Issue 2, March-April 2024 5\n\n[Table 1 on Page 5]\n2021-22 | 84.6 | 80.2\n2022-23 | 90.7 | 90.5\n2023-2",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2022-23",
+        "start_year": 2022,
+        "end_year": 2023,
+        "year_range": "2022-2023",
+        "position": [
+          17162,
+          17170
+        ],
+        "context": "2024 5\n\n[Table 1 on Page 5]\n2021-22 | 84.6 | 80.2\n2022-23 | 90.7 | 90.5\n2023-24 | 95.9 | 96.8\n\n[Tab",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "\n2023-24",
+        "start_year": 2023,
+        "end_year": 2024,
+        "year_range": "2023-2024",
+        "position": [
+          17184,
+          17192
+        ],
+        "context": "age 5]\n2021-22 | 84.6 | 80.2\n2022-23 | 90.7 | 90.5\n2023-24 | 95.9 | 96.8\n\n[Table 2 on Page 5]\nPre-Sc",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2582-2160",
+        "start_year": 2582,
+        "end_year": 2160,
+        "year_range": "2582-2160",
+        "position": [
+          17577,
+          17586
+        ],
+        "context": "al for Multidisciplinary Research (IJFMR)\nE-ISSN: 2582-2160 \u25cf Website: www.ijfmr.com \u25cf Email: editor",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2582-2160",
+        "start_year": 2582,
+        "end_year": 2160,
+        "year_range": "2582-2160",
+        "position": [
+          19743,
+          19752
+        ],
+        "context": "al for Multidisciplinary Research (IJFMR)\nE-ISSN: 2582-2160 \u25cf Website: www.ijfmr.com \u25cf Email: editor",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2582-2160",
+        "start_year": 2582,
+        "end_year": 2160,
+        "year_range": "2582-2160",
+        "position": [
+          21179,
+          21188
+        ],
+        "context": "al for Multidisciplinary Research (IJFMR)\nE-ISSN: 2582-2160 \u25cf Website: www.ijfmr.com \u25cf Email: editor",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2582-2160",
+        "start_year": 2582,
+        "end_year": 2160,
+        "year_range": "2582-2160",
+        "position": [
+          24106,
+          24115
+        ],
+        "context": "al for Multidisciplinary Research (IJFMR)\nE-ISSN: 2582-2160 \u25cf Website: www.ijfmr.com \u25cf Email: editor",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2582-2160",
+        "start_year": 2582,
+        "end_year": 2160,
+        "year_range": "2582-2160",
+        "position": [
+          27800,
+          27809
+        ],
+        "context": "al for Multidisciplinary Research (IJFMR)\nE-ISSN: 2582-2160 \u25cf Website: www.ijfmr.com \u25cf Email: editor",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2020-21",
+        "start_year": 2020,
+        "end_year": 2021,
+        "year_range": "2020-2021",
+        "position": [
+          29769,
+          29776
+        ],
+        "context": "educationforallinindia.com/school-dropout-between-2020-21-and-2021-22-udise/\n2. School dropout rate",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          29781,
+          29788
+        ],
+        "context": "allinindia.com/school-dropout-between-2020-21-and-2021-22-udise/\n2. School dropout rate at secondary",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          29837,
+          29845
+        ],
+        "context": "2-udise/\n2. School dropout rate at secondary level 2021-22: These seven states' numbers higher than",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          29950,
+          29958
+        ],
+        "context": "age - India TV (indiatvnews.com)\n3. Education | In 2021-22, school dropout rate at secondary level w",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2021-22",
+        "start_year": 2021,
+        "end_year": 2022,
+        "year_range": "2021-2022",
+        "position": [
+          30071,
+          30079
+        ],
+        "context": "al average in\nseven states - Telegraph India\n4. In 2021-22, school dropout rate at secondary level h",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2582-2160",
+        "start_year": 2582,
+        "end_year": 2160,
+        "year_range": "2582-2160",
+        "position": [
+          30877,
+          30886
+        ],
+        "context": "al for Multidisciplinary Research (IJFMR)\nE-ISSN: 2582-2160 \u25cf Website: www.ijfmr.com \u25cf Email: editor",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "academic year 2019-20",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          1965,
+          1986
+        ],
+        "context": "tial\nbudget allocation of \u20b96,455.80 crore for the academic year 2019-20, the Jagananna Amma Vodi sch",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "academic year 2019-20",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          13871,
+          13892
+        ],
+        "context": "5.9 96.8\nSource: School Education Dept. AP\nIn the academic year 2019-20, the enrollment and attendan",
+        "confidence": 0.9
+      }
+    ],
+    "date_ranges": [
+      {
+        "type": "date_range",
+        "raw_text": "From 2014 to 2018,",
+        "start_date": "2014-10-30",
+        "end_date": "2018-10-30",
+        "position": [
+          7315,
+          7333
+        ],
+        "context": "ble 98.4% in 2022.\nGovemment School Enrollment:\n\u2022 From 2014 to 2018, there was a gradual decline in",
+        "confidence": 0.85
+      },
+      {
+        "type": "date_range",
+        "raw_text": "from 2018 to 2022,",
+        "start_date": "2018-10-30",
+        "end_date": "2022-10-30",
+        "position": [
+          7539,
+          7557
+        ],
+        "context": "ues.\n\u2022 However, a notable positive shift occurred from 2018 to 2022, witnessing govemment school\nenr",
+        "confidence": 0.85
+      },
+      {
+        "type": "date_range",
+        "raw_text": "between 2006 and 2014 in the proportion of students (age 16-18)\nenrolled in govemment colleges for Class 11th and 12th,",
+        "start_date": "2006-10-30",
+        "end_date": "2014-01-01",
+        "position": [
+          8829,
+          8948
+        ],
+        "context": "d 12th Enrollment:\n\u2022 While a decline was observed between 2006 and 2014 in the proportion of student",
+        "confidence": 0.85
+      },
+      {
+        "type": "date_range",
+        "raw_text": "from 2018\nto 2022.",
+        "start_date": "2018-10-30",
+        "end_date": "2022-10-30",
+        "position": [
+          8982,
+          9000
+        ],
+        "context": "s 11th and 12th, a remarkable resurgence occurred from 2018\nto 2022.\n\u2022 The proportion of students op",
+        "confidence": 0.85
+      }
+    ],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 48,
+      "total_dates": 4,
+      "total_academic_years": 40,
+      "total_ranges": 4,
+      "total_periods": 0,
+      "earliest_date": "2020-01-01",
+      "latest_date": "2021-01-11",
+      "year_span": [
+        2019,
+        2582
+      ],
+      "primary_years": [
+        2582,
+        2160,
+        2024,
+        2023,
+        2022
+      ]
+    }
+  },
+  "academic_year": "2582-2160",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

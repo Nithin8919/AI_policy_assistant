@@ -1,0 +1,24 @@
+{
+  "corpus_overview": {
+    "total_documents": 4,
+    "successful_documents": 4,
+    "failed_documents": 0,
+    "success_rate": 1.0
+  },
+  "content_statistics": {
+    "total_chunks": 44,
+    "total_entities": 0,
+    "total_relations": 0,
+    "total_topics_matched": 13,
+    "avg_chunks_per_doc": 11.0,
+    "avg_entities_per_doc": 0.0
+  },
+  "quality_distribution": {
+    "excellent": 0,
+    "good": 0,
+    "acceptable": 4,
+    "poor": 0,
+    "critical": 0
+  },
+  "processing_timestamp": "2025-10-30T16:05:01.728885"
+}

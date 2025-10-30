@@ -1,0 +1,634 @@
+{
+  "doc_id": "government_orders_2025se_36315_ms15_e_dt.19.04.2025",
+  "title": "2025Se 36315 Ms15 E Dt.19.04.2025",
+  "file_path": "data/organized_documents/Government_Orders/2025SE_36315_MS15_E-Dt.19.04.2025.pdf",
+  "file_name": "2025SE_36315_MS15_E-Dt.19.04.2025.pdf",
+  "file_format": ".pdf",
+  "doc_type": "data_report",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Government_Orders"
+  ],
+  "year": 2025,
+  "creation_timestamp": "2025-10-30T15:59:39.999849",
+  "modification_timestamp": "2025-10-30T15:59:39.999605",
+  "processing_timestamp": "2025-10-30T16:01:35.086396",
+  "file_size": 823610,
+  "go_info": {
+    "number": 15,
+    "year": 2025,
+    "department": "MS"
+  },
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "data_report",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.3706896551724138,
+      "rule": 0.15517241379310345,
+      "government_order": 0.9827586206896551,
+      "judicial": 0.0,
+      "data_report": 1.0,
+      "budget_finance": 0.1724137931034483,
+      "framework": 0.4224137931034483,
+      "circular": 0.06896551724137931
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": true,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": true,
+      "has_financial_terms": true,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": false,
+      "word_count": 16064,
+      "avg_sentence_length": 13.025841816758026,
+      "title_length": 1
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "19/04/2025",
+        "normalized_date": "2025-04-19",
+        "position": [
+          902,
+          912
+        ],
+        "context": "CATION (Services-I) DEPARTMENT\nG.0.Ms.No:15 Dated:19/04/2025\nRead the following:-\n1. G.0.Ms.77, GA (",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "02/08/2023",
+        "normalized_date": "2023-08-02",
+        "position": [
+          969,
+          979
+        ],
+        "context": "he following:-\n1. G.0.Ms.77, GA (Ser.D) Dept., Dt:02/08/2023.\n2. G.0.Ms.No:03, GA (Ser.D) Dept., Dt:",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/01/2024",
+        "normalized_date": "2024-01-17",
+        "position": [
+          1019,
+          1029
+        ],
+        "context": "02/08/2023.\n2. G.0.Ms.No:03, GA (Ser.D) Dept., Dt:17/01/2024.\n3. G.0.Rt.No:56, School Education (Ser",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "09/02/2024",
+        "normalized_date": "2024-02-09",
+        "position": [
+          1091,
+          1101
+        ],
+        "context": "No:56, School Education (Services-1) Dept.,\nDated:09/02/2024.\n4. G.0.Ms.No:11&12, School Education (",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "12/02/2024",
+        "normalized_date": "2024-02-12",
+        "position": [
+          1166,
+          1176
+        ],
+        "context": "11&12, School Education (Services-1)\nDept., Dated:12/02/2024.\n5. G.0.Ms.No:27, School Education (Ser",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "13/06/2024",
+        "normalized_date": "2024-06-13",
+        "position": [
+          1238,
+          1248
+        ],
+        "context": "No:27, School Education (Services-1) Dept.,\nDated:13/06/2024.\n6. G.0.Rt.No:256, School Education (Se",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/06/2024",
+        "normalized_date": "2024-06-30",
+        "position": [
+          1311,
+          1321
+        ],
+        "context": "o:256, School Education (Services-1) Dept.,\nDated:30/06/2024.\n7. G.0.Ms.No:12, School Education (Ser",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "15/04/2025",
+        "normalized_date": "2025-04-15",
+        "position": [
+          1383,
+          1393
+        ],
+        "context": "No:12, School Education (Services-1) Dept.,\nDated:15/04/2025.\n8. G.0.Ms.No:14, School Education (Ser",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/04/2025",
+        "normalized_date": "2025-04-17",
+        "position": [
+          1455,
+          1465
+        ],
+        "context": "No:14, School Education (Services-1) Dept.,\nDated:17/04/2025.\n9. G.0.Ms.No.7, Social Welfare (CV) De",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/04/2025",
+        "normalized_date": "2025-04-19",
+        "position": [
+          1612,
+          1622
+        ],
+        "context": "cement, Tourism and\nCulture (Sports) Dept., Dated:19/04/2025.\n11. G.0.Ms.No:46, GA (Ser.D) Dept., Dt",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/04/2025",
+        "normalized_date": "2025-04-19",
+        "position": [
+          1663,
+          1673
+        ],
+        "context": "9/04/2025.\n11. G.0.Ms.No:46, GA (Ser.D) Dept., Dt:19/04/2025.\n12. G.0.Ms.No:47, GA (Ser.D) Dept., Dt",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/04/2025",
+        "normalized_date": "2025-04-19",
+        "position": [
+          1714,
+          1724
+        ],
+        "context": "9/04/2025.\n12. G.0.Ms.No:47, GA (Ser.D) Dept., Dt:19/04/2025.\n1\n\n--- Page 2 ---\n13. From the Directo",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/04/2025",
+        "normalized_date": "2025-04-19",
+        "position": [
+          1845,
+          1855
+        ],
+        "context": "radesh, Lr.Rc.No.ESE02-20021/9/2024-RECTMTCSE, Dt:19/04/2025.\n****\nORDER:\nThe following notification",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "02/08/2023",
+        "normalized_date": "2023-08-02",
+        "position": [
+          9381,
+          9391
+        ],
+        "context": "radesh vide G.0.Ms.No.77, G.A. (Ser-D) Dept., Dt:\n02/08/2023 and subsequent G.0.Ms.No:12, S.E (Servi",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "15/04/2025",
+        "normalized_date": "2025-04-15",
+        "position": [
+          9448,
+          9458
+        ],
+        "context": "bsequent G.0.Ms.No:12, S.E (Services-I) Dept.,\nDt:15/04/2025, G.0.Ms.No.46, G.A. (Ser-D) Dept., Dt:",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/04/2025",
+        "normalized_date": "2025-04-19",
+        "position": [
+          9498,
+          9508
+        ],
+        "context": "15/04/2025, G.0.Ms.No.46, G.A. (Ser-D) Dept., Dt: 19/04/2025,\nand G.0.Ms.No.47, G.A (Ser-D) Dept., D",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/04/2025",
+        "normalized_date": "2025-04-19",
+        "position": [
+          9551,
+          9561
+        ],
+        "context": "04/2025,\nand G.0.Ms.No.47, G.A (Ser-D) Dept., Dt: 19/04/2025.\n4. QUALIFICATIONS AND ELIGIBILITY:\nA c",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "27-1/2012",
+        "normalized_date": "2012-01-27",
+        "position": [
+          10976,
+          10985
+        ],
+        "context": "tional Qualification vide its Public\nNotice No. F.27-1/2012 (CPP-II), Dt. 27/06/2013. (A university",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "27/06/2013",
+        "normalized_date": "2013-06-27",
+        "position": [
+          11000,
+          11010
+        ],
+        "context": "e its Public\nNotice No. F.27-1/2012 (CPP-II), Dt. 27/06/2013. (A university\nestablished or incorpora",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "22/7/1970",
+        "normalized_date": "1970-07-22",
+        "position": [
+          24120,
+          24129
+        ],
+        "context": "an G.0.Ms No.1415 Edn,\n(Visarada) Alahabad Dated: 22/7/1970\n2. Ratna Rashtra Bhasha Prachar -doSamit",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "22/7/1970",
+        "normalized_date": "1970-07-22",
+        "position": [
+          25057,
+          25066
+        ],
+        "context": "(Visarada) Alahabad | G.0.Ms No.1415 Edn,\nDated: 22/7/1970\n2. | Ratna | Rashtra Bhasha Prachar\nSami",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "13/11/2002",
+        "normalized_date": "2002-11-13",
+        "position": [
+          36400,
+          36410
+        ],
+        "context": "regulations 2002 notified on\n18\n\n--- Page 19 ---\n13/11/2002 and NCTE (Recognition norms and procedu",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "10/12/2007",
+        "normalized_date": "2007-12-10",
+        "position": [
+          36484,
+          36494
+        ],
+        "context": "orms and procedures)\nRegulations 2007 notified on 10/12/2007.\nNote 2.\nTET Qualification:\nThe candida",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "22/07/1970",
+        "normalized_date": "1970-07-22",
+        "position": [
+          44380,
+          44390
+        ],
+        "context": "n G.0.Ms.No.1415\n(1) (Visarada) Allahabad Edn.\nDt:22/07/1970.\nRashtra bhasha Prachar\n(2)\nRatna Samit",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "22/07/1970",
+        "normalized_date": "1970-07-22",
+        "position": [
+          45064,
+          45074
+        ],
+        "context": "lan\n(Visarada) Allahabad | G.0.Ms.No.1415\nEdn.\nDt:22/07/1970.\n(2) | Ratna | Rashtra bhasha Prachar\nS",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "13/11/2002",
+        "normalized_date": "2002-11-13",
+        "position": [
+          57533,
+          57543
+        ],
+        "context": "course or training) regulations 2002 notified on\n13/11/2002, and NCTE (Recognition norms and proced",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "10/12/2007",
+        "normalized_date": "2007-12-10",
+        "position": [
+          57618,
+          57628
+        ],
+        "context": "orms and procedures)\nRegulations 2007 notified on 10/12/2007.\nNote 2:\nTET Qualification: The candida",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/07/2024",
+        "normalized_date": "2024-07-01",
+        "position": [
+          76836,
+          76846
+        ],
+        "context": "re than 44 years of age as on\n38\n\n--- Page 39 ---\n01/07/2024. However, in case of SC/ST/BC/EWS candi",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/04/2025",
+        "normalized_date": "2025-04-17",
+        "position": [
+          77084,
+          77094
+        ],
+        "context": "r\nG.0.Ms.No:14, School Education (Services-I), Dt:17/04/2025 .\nUpper age limit for Ex-service Men:\nA",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "02/08/2023",
+        "normalized_date": "2023-08-02",
+        "position": [
+          92501,
+          92511
+        ],
+        "context": "les 1996 as amended vide\nG.0.Ms.No.77, GAD, Dated:02/08/2023, G.0.Ms.No.3, GAD,\nDated:17/01/2024, G.",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/01/2024",
+        "normalized_date": "2024-01-17",
+        "position": [
+          92537,
+          92547
+        ],
+        "context": "7, GAD, Dated:02/08/2023, G.0.Ms.No.3, GAD,\nDated:17/01/2024, G.0.Ms.No. 46 & 47, GAD,\nDated:19/04/2",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/04/2025",
+        "normalized_date": "2025-04-19",
+        "position": [
+          92580,
+          92590
+        ],
+        "context": "Dated:17/01/2024, G.0.Ms.No. 46 & 47, GAD,\nDated:19/04/2025 and G.0.Ms. No. 4, YAT&C (Sports & Yout",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/04/2025",
+        "normalized_date": "2025-04-19",
+        "position": [
+          92653,
+          92663
+        ],
+        "context": "No. 4, YAT&C (Sports & Youth\nServices) Dept., dt. 19/04/2025 as amended from time to time.\nc) The ru",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "02/08/2023",
+        "normalized_date": "2023-08-02",
+        "position": [
+          93034,
+          93044
+        ],
+        "context": "PBD) as per G.0.Ms.No.77, G.A. (Ser-D) Dept., Dt:\n02/08/2023 and G.0.Ms.No.03, G.A. (Ser-D) Dept., D",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/01/2024",
+        "normalized_date": "2024-01-17",
+        "position": [
+          93087,
+          93097
+        ],
+        "context": "08/2023 and G.0.Ms.No.03, G.A. (Ser-D) Dept., Dt:\n17/01/2024:\na) Blindness and low vision.\nb) Deaf a",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "23/08/2023",
+        "normalized_date": "2023-08-23",
+        "position": [
+          93704,
+          93714
+        ],
+        "context": "ifferently Abled & Senior\nCitizens (Prog.II), Dt: 23/08/2023.\nd) No Persons with Benchmark Disabilit",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/04/2008",
+        "normalized_date": "2008-04-01",
+        "position": [
+          94191,
+          94201
+        ],
+        "context": "the Govemment\nMemo.No.1351/Ser.VI/2008-2, dated. 01/04/2008.\nNote:1 The Person with Benchmark Disab",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "15/06/2017",
+        "normalized_date": "2017-06-15",
+        "position": [
+          94775,
+          94785
+        ],
+        "context": "hts of\nPersons with Disabilities Rules, 2017, dt: 15/06/2017 as per\nG.0.Ms.No.36, Dept. for Women, C",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "23/08/2023",
+        "normalized_date": "2023-08-23",
+        "position": [
+          94885,
+          94895
+        ],
+        "context": "ifferently Abled &\nSenior Citizens (Prog.II), Dt: 23/08/2023.\nNote:2 With respect to Benchmark Disab",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "15/04/2025",
+        "normalized_date": "2025-04-15",
+        "position": [
+          95157,
+          95167
+        ],
+        "context": "s.No.12, School Department\n(Services.I) Dept., Dt:15/04/2025.\ne) With regard to reservation of Merit",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/04/2025",
+        "normalized_date": "2025-04-19",
+        "position": [
+          95320,
+          95330
+        ],
+        "context": "Advancement, Tourism\nand Culture (Sports), Dated:19/04/2025, read with G.0.Ms. No.\n47, GA (Ser.D) D",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/04/2025",
+        "normalized_date": "2025-04-19",
+        "position": [
+          95380,
+          95390
+        ],
+        "context": ", read with G.0.Ms. No.\n47, GA (Ser.D) Dept., dt. 19/04/2025 will be followed.\niii. List so prepared",
+        "confidence": 0.9
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on\n38\n\n--- Page 39 ---\n01/07/2024.",
+        "normalized_date": "2024-07-01",
+        "position": [
+          76810,
+          76847
+        ],
+        "context": "of age and if he/she is more than 44 years of age as on\n38\n\n--- Page 39 ---\n01/07/2024. However, in",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "Dt. 27/06/2013.",
+        "normalized_date": "2013-06-27",
+        "position": [
+          10996,
+          11011
+        ],
+        "context": "vide its Public\nNotice No. F.27-1/2012 (CPP-II), Dt. 27/06/2013. (A university\nestablished or incor",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "dt. 19/04/2025 as amended from time to time.",
+        "normalized_date": "2025-04-19",
+        "position": [
+          92649,
+          92693
+        ],
+        "context": "Ms. No. 4, YAT&C (Sports & Youth\nServices) Dept., dt. 19/04/2025 as amended from time to time.\nc) Th",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "dt. 19/04/2025 will be followed.",
+        "normalized_date": "2025-04-19",
+        "position": [
+          95376,
+          95408
+        ],
+        "context": "2025, read with G.0.Ms. No.\n47, GA (Ser.D) Dept., dt. 19/04/2025 will be followed.\niii. List so prep",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [
+      {
+        "type": "academic_year",
+        "raw_text": "Academic Year 2017-18",
+        "start_year": 2017,
+        "end_year": 2018,
+        "year_range": "2017-2018",
+        "position": [
+          77966,
+          77987
+        ],
+        "context": "Common Entrance Tests (CETs) is adopted\nfrom the Academic Year 2017-18 onwards.\nCOMPUTER BASED TEST",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "Academic Year 2017-18",
+        "start_year": 2017,
+        "end_year": 2018,
+        "year_range": "2017-2018",
+        "position": [
+          77966,
+          77987
+        ],
+        "context": "Common Entrance Tests (CETs) is adopted\nfrom the Academic Year 2017-18 onwards.\nCOMPUTER BASED TEST",
+        "confidence": 0.9
+      }
+    ],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 48,
+      "total_dates": 46,
+      "total_academic_years": 2,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "1970-07-22",
+      "latest_date": "2025-04-19",
+      "year_span": [
+        1970,
+        2025
+      ],
+      "primary_years": [
+        2025,
+        2024,
+        2023,
+        2018,
+        2017
+      ]
+    }
+  },
+  "academic_year": "2017-2018",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "doc_id": "government_orders_go_ms_129_dt.15.07.2022",
+  "title": "GO MS 129 Dt.15.07.2022",
+  "file_path": "data/organized_documents/Government_Orders/GO-MS-129-Dt.15.07.2022.pdf",
+  "file_name": "GO-MS-129-Dt.15.07.2022.pdf",
+  "file_format": ".pdf",
+  "doc_type": "act",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Government_Orders"
+  ],
+  "year": 2025,
+  "creation_timestamp": "2025-10-30T15:59:40.006091",
+  "modification_timestamp": "2025-10-30T15:59:40.005868",
+  "processing_timestamp": "2025-10-30T16:01:35.860929",
+  "file_size": 2677046,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "act",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 1.0,
+      "rule": 0.6923076923076923,
+      "government_order": 0.4945054945054945,
+      "judicial": 0.0,
+      "data_report": 0.0989010989010989,
+      "budget_finance": 0.03296703296703297,
+      "framework": 0.27472527472527475,
+      "circular": 0.06593406593406594
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": true,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": false,
+      "has_financial_terms": false,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": false,
+      "word_count": 2632,
+      "avg_sentence_length": 12.70754716981132,
+      "title_length": 1
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "15/07/2022",
+        "normalized_date": "2022-07-15",
+        "position": [
+          259,
+          269
+        ],
+        "context": "UCATION (PROG.11) DEPARTMENT\nG.0.Ms.No.129 Dated: 15/07/2022.\nRead the following:\n1. G.0.Ms.No.20, S",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "03/03/2011",
+        "normalized_date": "2011-03-03",
+        "position": [
+          350,
+          360
+        ],
+        "context": ".No.20, School Education (PE- Progs.I)Dept., dtd:\n03/03/2011.\n2. G.0.Ms.No.130, School Education (PE",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "09/09/2011",
+        "normalized_date": "2011-09-09",
+        "position": [
+          421,
+          431
+        ],
+        "context": ".No.130, School Education (PE- Prog.I)Dept., dtd:\n09/09/2011.\n3. G.0.Ms.No.41, School Education (PE-",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "19/06/2013",
+        "normalized_date": "2013-06-19",
+        "position": [
+          487,
+          497
+        ],
+        "context": ".0.Ms.No.41, School Education (PE-SSA)Dept., dtd:\n19/06/2013.\n4. G.0.Ms.No50, School Education (Prog",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/10/2020",
+        "normalized_date": "2020-10-01",
+        "position": [
+          552,
+          562
+        ],
+        "context": "G.0.Ms.No50, School Education (Prog.Il)Dept., dtd:01/10/2020.\n5. G.0.Ms.No.85, School Education (Pro",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "24/12/2021",
+        "normalized_date": "2021-12-24",
+        "position": [
+          618,
+          628
+        ],
+        "context": ".0.Ms.No.85, School Education (Prog.II)Dept., dtd:24/12/2021.\n6. From the Chairperson, NCPCR, New De",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "23/08/2021",
+        "normalized_date": "2021-08-23",
+        "position": [
+          720,
+          730
+        ],
+        "context": "i, F.No.25015/21/201718/NCPCR/218182-218183, dtd: 23/08/2021.\n7. From the CSE, AP, e-File No. SS-180",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "22/05/2022",
+        "normalized_date": "2022-05-22",
+        "position": [
+          819,
+          829
+        ],
+        "context": "021/6/2022-LEGAL-SSA\n(Computer No. 1672349 ), dtd:22/05/2022.\n---xxx---\nIn the G.0. first read above",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "05/03/2011",
+        "normalized_date": "2011-03-05",
+        "position": [
+          1182,
+          1192
+        ],
+        "context": "inary issue of the Andhra Pradesh Gazette, dated:\n05/03/2011.\n2. In the letter sixth read above, the",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "03/03/2011",
+        "normalized_date": "2011-03-03",
+        "position": [
+          2273,
+          2283
+        ],
+        "context": "School Education (PE\nProgs.I) Department, dated: 03/03/2011 suitably.\n5. Accordingly, the following",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "15/07/2022",
+        "normalized_date": "2022-07-15",
+        "position": [
+          2418,
+          2428
+        ],
+        "context": "dinary issue of the Andhra Pradesh Gazette dated: 15/07/2022.\n(P.T.0.)\n\n--- Page 2 ---\n:2:\nNOTIFICAT",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "03/03/2011",
+        "normalized_date": "2011-03-03",
+        "position": [
+          2855,
+          2865
+        ],
+        "context": "0, School\nEducation (PE-Progs.I)Department, dated:03/03/2011, as subsequently\namended from time to t",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "28/12/2020",
+        "normalized_date": "2020-12-28",
+        "position": [
+          3843,
+          3853
+        ],
+        "context": ".No.63, School\nEducation (Prag.II) Department, dt.28/12/2020.\n( c) Registration of Child:\ni. In orde",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "15/07/2022",
+        "normalized_date": "2022-07-15",
+        "position": [
+          15834,
+          15844
+        ],
+        "context": "he G.0 in the A.P. Gazette (Extraordinary)\ndated: 15/07/2022. (for supply 200 copies to the Govemmen",
+        "confidence": 0.9
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the start of the admission process of the concemed\nacademic session or giving effect to above mentioned at least 25%\nadmission at the entry level.",
+        "normalized_date": "2025-10-25",
+        "position": [
+          3126,
+          3279
+        ],
+        "context": "a notice (Form- I) accessible to the public,\nwell before the start of the admission process of the c",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 15,
+      "total_dates": 15,
+      "total_academic_years": 0,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "2011-03-03",
+      "latest_date": "2025-10-25",
+      "year_span": [
+        2011,
+        2025
+      ],
+      "primary_years": [
+        2025,
+        2022,
+        2021,
+        2020,
+        2013
+      ]
+    }
+  },
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

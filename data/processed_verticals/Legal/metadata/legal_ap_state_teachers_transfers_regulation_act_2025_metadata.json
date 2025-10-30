@@ -1,0 +1,136 @@
+{
+  "doc_id": "legal_ap_state_teachers_transfers_regulation_act_2025",
+  "title": "AP State Teachers Transfers Regulation Act 2025",
+  "file_path": "data/organized_documents/Legal/AP State Teachers Transfers Regulation Act 2025.pdf",
+  "file_name": "AP State Teachers Transfers Regulation Act 2025.pdf",
+  "file_format": ".pdf",
+  "doc_type": "framework",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Legal"
+  ],
+  "year": 2025,
+  "creation_timestamp": "2025-10-30T15:45:08.005723",
+  "modification_timestamp": "2025-10-30T15:45:08.005408",
+  "processing_timestamp": "2025-10-30T15:48:00.545272",
+  "file_size": 809916,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "framework",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.5087719298245614,
+      "rule": 0.05263157894736842,
+      "government_order": 0.5263157894736842,
+      "judicial": 0.0,
+      "data_report": 0.0,
+      "budget_finance": 0.0,
+      "framework": 1.0,
+      "circular": 0.0
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": false,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": false,
+      "has_financial_terms": false,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 4177,
+      "avg_sentence_length": 17.385245901639344,
+      "title_length": 7
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "reference_date",
+        "raw_text": "as on May 31st of that year and working in Girls High School\nshall be transferred mandatorily.",
+        "normalized_date": "2025-05-31",
+        "position": [
+          9327,
+          9421
+        ],
+        "context": "ale Headmaster Gr.II/ Teacher aged below 50 years\nas on May 31st of that year and working in Girls H",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on May 31st of\nthat year shall be considered for posting to such schools.",
+        "normalized_date": "2025-05-31",
+        "position": [
+          9576,
+          9652
+        ],
+        "context": "master Gr.II/\nTeacher who crossed 50 years of age as on May 31st of\nthat year shall be considered fo",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as of May 31st of that year.",
+        "normalized_date": "2025-05-31",
+        "position": [
+          13015,
+          13043
+        ],
+        "context": "cher for completed year of service in all\ncadres, as of May 31st of that year.\n10. (1) Special point",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date as the Govemment\nmay,",
+        "normalized_date": "2025-05-30",
+        "position": [
+          2170,
+          2196
+        ],
+        "context": "hra Pradesh.\n(3) It shall come into force on such date as the Govemment\nmay, by notification in the",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 4,
+      "total_dates": 4,
+      "total_academic_years": 0,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "2025-05-30",
+      "latest_date": "2025-05-31",
+      "year_span": [
+        2025,
+        2025
+      ],
+      "primary_years": [
+        2025
+      ]
+    }
+  },
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

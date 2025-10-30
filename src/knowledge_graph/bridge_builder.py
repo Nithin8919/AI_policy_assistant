@@ -462,3 +462,5 @@ class BridgeTableBuilder:
             "total_relations": len(self.bridge_table["relations"]),
             "last_updated": datetime.now().isoformat()
         }
+
+

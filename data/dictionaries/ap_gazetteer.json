@@ -1,12 +1,57 @@
 {
   "districts": [
-    "Visakhapatnam", "Vijayawada", "Guntur", "Tirupati", "Rajahmundry"
+    "Visakhapatnam", "Vijayawada", "Guntur", "Tirupati", "Rajahmundry",
+    "Anantapur", "Chittoor", "Kurnool", "Nellore", "Kadapa",
+    "Prakasam", "Srikakulam", "Vizianagaram"
   ],
   "schemes": [
+    "Nadu-Nedu",
+    "Jagananna Amma Vodi",
+    "Jagananna Gorumudda",
+    "Vidya Deevena",
+    "Vasathi Deevena",
     "Mid-Day Meal Scheme",
     "Sarva Shiksha Abhiyan",
-    "Rashtriya Madhyamik Shiksha Abhiyan"
+    "Rashtriya Madhyamik Shiksha Abhiyan",
+    "Jagananna Vidya Kanuka",
+    "YSR Vidya Volunteers",
+    "Netanna Nestham",
+    "Kalyana Lakshmi",
+    "Shaadi Mubarak"
+  ],
+  "metrics": [
+    "enrollment",
+    "dropout rate",
+    "PTR",
+    "GER",
+    "NER", 
+    "infrastructure",
+    "budget allocation",
+    "teacher strength",
+    "student strength",
+    "literacy rate",
+    "completion rate",
+    "transition rate",
+    "repetition rate",
+    "learning outcomes"
+  ],
+  "institutions": [
+    "primary school",
+    "upper primary school", 
+    "high school",
+    "higher secondary school",
+    "junior college",
+    "degree college",
+    "university",
+    "polytechnic",
+    "ITI",
+    "residential school",
+    "model school",
+    "Kasturba Gandhi Balika Vidyalaya",
+    "Eklavya Model Residential School"
   ]
 }
+
+
 
 

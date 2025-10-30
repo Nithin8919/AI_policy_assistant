@@ -1,0 +1,295 @@
+{
+  "doc_id": "legal_ap_teachers_transfer_regulations",
+  "title": "AP Teachers Transfer Regulations",
+  "file_path": "data/organized_documents/Legal/AP Teachers Transfer Regulations.pdf",
+  "file_name": "AP Teachers Transfer Regulations.pdf",
+  "file_format": ".pdf",
+  "doc_type": "government_order",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Legal"
+  ],
+  "year": 2025,
+  "creation_timestamp": "2025-10-30T15:45:08.010737",
+  "modification_timestamp": "2025-10-30T15:45:08.010575",
+  "processing_timestamp": "2025-10-30T15:48:36.656606",
+  "file_size": 96671,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "government_order",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.16101694915254236,
+      "rule": 0.3559322033898305,
+      "government_order": 1.0,
+      "judicial": 0.0,
+      "data_report": 0.07627118644067797,
+      "budget_finance": 0.0,
+      "framework": 0.4491525423728814,
+      "circular": 0.06779661016949153
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": true,
+      "has_go_number": true,
+      "has_case_citation": true,
+      "has_tables": false,
+      "has_financial_terms": false,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 5865,
+      "avg_sentence_length": 17.5,
+      "title_length": 4
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "04/06/2017",
+        "normalized_date": "2017-06-04",
+        "position": [
+          315,
+          325
+        ],
+        "context": "EDUCATION (Ser.II) DEPARTMENT\nG.0.Ms.No.32 Dated 04/06/2017.\nRead the following:-\n1. G.0.Ms.No.63,",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "31/08/2015",
+        "normalized_date": "2015-08-31",
+        "position": [
+          402,
+          412
+        ],
+        "context": ".0.Ms.No.63, Education (Ser.II) Department, Dated:31/08/2015.\n2. The CSE Lr.No.4102/Est -III/2015 da",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "23/3/2017",
+        "normalized_date": "2017-03-23",
+        "position": [
+          456,
+          465
+        ],
+        "context": "8/2015.\n2. The CSE Lr.No.4102/Est -III/2015 dated 23/3/2017.\n3. The CSE Lr.Rc.No.190/Est-III/2017, D",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "10/04/2017",
+        "normalized_date": "2017-04-10",
+        "position": [
+          512,
+          522
+        ],
+        "context": "017.\n3. The CSE Lr.Rc.No.190/Est-III/2017, Dated: 10/04/2017.\n4. G.0.Ms.No.31, School Edn.(Ser.II) D",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "31/05/2017",
+        "normalized_date": "2017-05-31",
+        "position": [
+          571,
+          581
+        ],
+        "context": "7.\n4. G.0.Ms.No.31, School Edn.(Ser.II) Dept., dt.31/05/2017.\n0 R D E R:-\nIn order to facilitate and",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "24/05/2017",
+        "normalized_date": "2017-05-24",
+        "position": [
+          3418,
+          3428
+        ],
+        "context": "de their\nU.0.No.FIN-30024/70/2017-SO(HR.I), dated 24/05/2017.\n1\n\n--- Page 2 ---\n9. In exercise of th",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "31/05/2017",
+        "normalized_date": "2017-05-31",
+        "position": [
+          3793,
+          3803
+        ],
+        "context": "School Education (Services.II)\nDepartment, dated 31/05/2017, the Govemment of Andhra Pradesh hereby",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "10/01/2000",
+        "normalized_date": "2000-01-10",
+        "position": [
+          8226,
+          8236
+        ],
+        "context": "per G.0.Ms.No.3 Tribal Welfare Department, Dated:10/01/2000,\nHeadmasters/ Teachers belonging to loc",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "10/01/2000",
+        "normalized_date": "2000-01-10",
+        "position": [
+          8485,
+          8495
+        ],
+        "context": "ain area.\n(f) Normally as per G.0.Ms.No.3, Dated: 10/01/2000, teachers working in\nPlain areas may no",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "02/08/2016",
+        "normalized_date": "2016-08-02",
+        "position": [
+          21256,
+          21266
+        ],
+        "context": "n) as\nper GO.MS.No.144, Finance Department, Dated:02/08/2016 and also posts of\nGr.II Head Master due",
+        "confidence": 0.9
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on 30th\nApril of the year (in which transfers are to be taken up),",
+        "normalized_date": "2025-04-30",
+        "position": [
+          5579,
+          5648
+        ],
+        "context": "le Headmaster Gr.II / Teacher aged below 50 years as on 30th\nApril of the year (in which transfers a",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on 30th April of the year,",
+        "normalized_date": "2025-04-30",
+        "position": [
+          6043,
+          6072
+        ],
+        "context": "a minimum period of two\nyears-service in a School as on 30th April of the year, in which transfers a",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on 30th April of the\nyear in which transfers are to be taken up.",
+        "normalized_date": "2025-04-30",
+        "position": [
+          11664,
+          11731
+        ],
+        "context": "in the\nrendered: total service in all categories as on 30th April of the\nyear in which transfers ar",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on 31st December of the\n(Applicable to H.",
+        "normalized_date": "2025-12-31",
+        "position": [
+          14350,
+          14394
+        ],
+        "context": "t 2 years DISE enrolment data during last 2\nyears as on 31st December of the\n(Applicable to H.M & al",
+        "confidence": 0.85
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "Dated 04/06/2017.",
+        "normalized_date": "2017-06-04",
+        "position": [
+          309,
+          326
+        ],
+        "context": "SCHOOL EDUCATION (Ser.II) DEPARTMENT\nG.0.Ms.No.32 Dated 04/06/2017.\nRead the following:-\n1. G.0.Ms.N",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date as 31st December duly certified.",
+        "normalized_date": "2025-12-31",
+        "position": [
+          2501,
+          2538
+        ],
+        "context": "U-DISE of the previous academic year with cutoff\ndate as 31st December duly certified.\n5. The Commi",
+        "confidence": 0.85
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "dated 31/05/2017,",
+        "normalized_date": "2017-05-31",
+        "position": [
+          3787,
+          3804
+        ],
+        "context": "No.31, School Education (Services.II)\nDepartment, dated 31/05/2017, the Govemment of Andhra Pradesh",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "date as 31st December of preceding year and by taking into\nconsideration the teacher pupil ratio and as per the rationalization norms as\nnotified by Govemment from time to time.",
+        "normalized_date": "2025-12-31",
+        "position": [
+          22052,
+          22229
+        ],
+        "context": "be computed based on the UDISE\ndata with cut-off date as 31st December of preceding year and by tak",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 18,
+      "total_dates": 18,
+      "total_academic_years": 0,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "2000-01-10",
+      "latest_date": "2025-12-31",
+      "year_span": [
+        2000,
+        2025
+      ],
+      "primary_years": [
+        2025,
+        2017,
+        2016,
+        2015,
+        2000
+      ]
+    }
+  },
+  "issue_date": "2017-06-04",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

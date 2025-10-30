@@ -578,3 +578,5 @@ class RelationExtractor:
             'entity_type_distribution': entity_types,
             'relation_type_distribution': relation_types
         }
+
+

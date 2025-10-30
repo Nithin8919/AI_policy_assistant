@@ -1,0 +1,274 @@
+{
+  "doc_id": "government_orders_andhra_rte_rules2009",
+  "title": "Andhra RTE Rules2009",
+  "file_path": "data/organized_documents/Government_Orders/Andhra_rte_rules2009.pdf",
+  "file_name": "Andhra_rte_rules2009.pdf",
+  "file_format": ".pdf",
+  "doc_type": "act",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Government_Orders"
+  ],
+  "year": 2025,
+  "creation_timestamp": "2025-10-30T15:59:40.033036",
+  "modification_timestamp": "2025-10-30T15:59:40.032821",
+  "processing_timestamp": "2025-10-30T16:01:42.745231",
+  "file_size": 383693,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "act",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 1.0,
+      "rule": 0.2678062678062678,
+      "government_order": 0.20797720797720798,
+      "judicial": 0.0,
+      "data_report": 0.27635327635327633,
+      "budget_finance": 0.16809116809116809,
+      "framework": 0.2792022792022792,
+      "circular": 0.011396011396011397
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": true,
+      "has_go_number": true,
+      "has_case_citation": true,
+      "has_tables": true,
+      "has_financial_terms": false,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 15393,
+      "avg_sentence_length": 28.531365313653136,
+      "title_length": 1
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "26/8/2009",
+        "normalized_date": "2009-08-26",
+        "position": [
+          463,
+          472
+        ],
+        "context": "dren to Free and Compulsory Education Act,2009\ndt.26/8/2009\n2. From the Ministry of Human Resource D",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "16/2/2010",
+        "normalized_date": "2010-02-16",
+        "position": [
+          567,
+          576
+        ],
+        "context": "opment (Dept of S.E. & Literacy),\nNotification dt.16/2/2010.\n3. G.0.Rt.No.174, Education (PE.Prog.1)",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "31/03/2010",
+        "normalized_date": "2010-03-31",
+        "position": [
+          627,
+          637
+        ],
+        "context": "3. G.0.Rt.No.174, Education (PE.Prog.1) Dept. dt.31/03/2010\n4. From the State Project Director, Raj",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "4/09/2010",
+        "normalized_date": "2010-09-04",
+        "position": [
+          745,
+          754
+        ],
+        "context": "AP, Hyderabad\nLr.Rc.No.165/RVM (SSA) /B12/2009,dt.4/09/2010\n****\nORDER\nParliament enacted the Right",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "16/02/2010",
+        "normalized_date": "2010-02-16",
+        "position": [
+          1064,
+          1074
+        ],
+        "context": "azette notification\n(Extraordinary) No.359, dated 16/02/2010 under the Right of Children to Free and",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/04/2010",
+        "normalized_date": "2010-04-01",
+        "position": [
+          1160,
+          1170
+        ],
+        "context": "and\nCompulsory Education Act,2009 appointing the 01/04/2010 as the date on which the\nprovisions of",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/04/2010",
+        "normalized_date": "2010-04-01",
+        "position": [
+          1671,
+          1681
+        ],
+        "context": "aordinary issue of the Andhra Pradesh Gazette dt. 01/04/2010\n5. This order issues with the concurren",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "26/11/2010",
+        "normalized_date": "2010-11-26",
+        "position": [
+          1795,
+          1805
+        ],
+        "context": "vide their\nU.0.No. 29712/517/Expr.SE/2010, dated.26/11/2010\n6. The G.0. is available on Intemet and",
+        "confidence": 0.9
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "with effect from 1st\nApril\u20192010.",
+        "normalized_date": "2010-04-01",
+        "position": [
+          2336,
+          2368
+        ],
+        "context": ".\n2. They shall be deemed to have come into force with effect from 1st\nApril\u20192010.\n3. Definitions :-",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on 1st\nSeptember of the year of admission.",
+        "normalized_date": "2025-09-01",
+        "position": [
+          2832,
+          2877
+        ],
+        "context": "ludes a child who has completed five years of age as on 1st\nSeptember of the year of admission.\n(4)",
+        "confidence": 0.85
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on 30th September of each\nyear.",
+        "normalized_date": "2025-09-30",
+        "position": [
+          14505,
+          14539
+        ],
+        "context": "appointed date, and every year thereafter updated as on 30th September of each\nyear.\n(3) The Govemme",
+        "confidence": 0.85
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "dated 16/02/2010 under the Right of Children to Free and\nCompulsory Education Act,",
+        "normalized_date": "2010-02-16",
+        "position": [
+          1058,
+          1140
+        ],
+        "context": "ed a Gazette notification\n(Extraordinary) No.359, dated 16/02/2010 under the Right of Children to Fr",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "dt. 01/04/2010\n5.",
+        "normalized_date": "2010-04-01",
+        "position": [
+          1667,
+          1684
+        ],
+        "context": "Extraordinary issue of the Andhra Pradesh Gazette dt. 01/04/2010\n5. This order issues with the concu",
+        "confidence": 0.85
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "dated 2010 and to\nsupply 1000 copies to the Govemment in School Education Department\nThe Commissioner & Director of School Education,",
+        "normalized_date": "2010-01-01",
+        "position": [
+          56930,
+          57063
+        ],
+        "context": "notifications in the A.P.Gazette (Extraordinary) dated 2010 and to\nsupply 1000 copies to the Govemm",
+        "confidence": 0.85
+      },
+      {
+        "type": "relative_date",
+        "raw_text": "before the Collector of the district within 15 days from the date of receipt of\nthe order.",
+        "normalized_date": "2025-10-15",
+        "position": [
+          34612,
+          34702
+        ],
+        "context": "d under sub rule (5) or sub rule (8) may be\nfiled before the Collector of the district within 15 day",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [],
+    "date_ranges": [
+      {
+        "type": "date_range",
+        "raw_text": "from 12th June to 31st August of the academic year,",
+        "start_date": "2025-06-12",
+        "end_date": "2025-08-31",
+        "position": [
+          26551,
+          26602
+        ],
+        "context": "ny school, for the purposes of this Act, shall\nbe from 12th June to 31st August of the academic year",
+        "confidence": 0.85
+      }
+    ],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 16,
+      "total_dates": 15,
+      "total_academic_years": 0,
+      "total_ranges": 1,
+      "total_periods": 0,
+      "earliest_date": "2009-08-26",
+      "latest_date": "2025-10-15",
+      "year_span": [
+        2009,
+        2025
+      ],
+      "primary_years": [
+        2025,
+        2010,
+        2009
+      ]
+    }
+  },
+  "issue_date": "2010-02-16",
+  "effective_date": "2010-04-01",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

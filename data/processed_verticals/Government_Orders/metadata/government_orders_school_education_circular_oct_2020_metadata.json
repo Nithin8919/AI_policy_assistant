@@ -1,0 +1,423 @@
+{
+  "doc_id": "government_orders_school_education_circular_oct_2020",
+  "title": "School Education Circular Oct 2020",
+  "file_path": "data/organized_documents/Government_Orders/School Education Circular Oct 2020.pdf",
+  "file_name": "School Education Circular Oct 2020.pdf",
+  "file_format": ".pdf",
+  "doc_type": "framework",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Government_Orders"
+  ],
+  "year": 2021,
+  "creation_timestamp": "2025-10-30T15:59:39.980677",
+  "modification_timestamp": "2025-10-30T15:59:39.980455",
+  "processing_timestamp": "2025-10-30T16:01:43.522955",
+  "file_size": 2825451,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "framework",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.3870967741935484,
+      "rule": 0.3870967741935484,
+      "government_order": 0.0967741935483871,
+      "judicial": 0.0,
+      "data_report": 0.25806451612903225,
+      "budget_finance": 0.12903225806451613,
+      "framework": 1.0,
+      "circular": 0.7741935483870968
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": true,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": true,
+      "has_financial_terms": true,
+      "has_legal_language": false,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 1939,
+      "avg_sentence_length": 9.163636363636364,
+      "title_length": 5
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "01/10/2020",
+        "normalized_date": "2020-10-01",
+        "position": [
+          221,
+          231
+        ],
+        "context": "i R. Kantha Rao\nRc. No. 634/ APSERMC/2020, Dated: 01/10/2020\nSub: - School Education - APSERMC - UDI",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "01/01/1994",
+        "normalized_date": "1994-01-01",
+        "position": [
+          558,
+          568
+        ],
+        "context": "es, 1988\n2) G.0.Ms.No.1. Education (P.S-2), Dated:01/01/1994.\n3) UDISE plus 2019-20 user manual.\n4)",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "08/06/2020",
+        "normalized_date": "2020-06-08",
+        "position": [
+          651,
+          661
+        ],
+        "context": "al.\n4) PGI indicators review by MHRD, GoI, Dated: 08/06/2020\n5) Act 21 of 2019 (AP School Education",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "16/08/2019",
+        "normalized_date": "2019-08-16",
+        "position": [
+          745,
+          755
+        ],
+        "context": "ation Regulatory &\nMonitoring Commission), Dated: 16/08/2019.\n6) G.0. Ms. No.28, School Education (P",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "28/05/2020",
+        "normalized_date": "2020-05-28",
+        "position": [
+          817,
+          827
+        ],
+        "context": ". No.28, School Education (PS) Department,\nDated: 28/05/2020.\n7) This office Procgs.Rc.No.145/A&I/20",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "22/06/2020",
+        "normalized_date": "2020-06-22",
+        "position": [
+          874,
+          884
+        ],
+        "context": "020.\n7) This office Procgs.Rc.No.145/A&I/2020, Dt:22/06/2020.\n8) This Office Procgs. Rc.No.SpI/UDISE",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "03/07/2020",
+        "normalized_date": "2020-07-03",
+        "position": [
+          994,
+          1004
+        ],
+        "context": "20.\n9) This office Procgs.Rc.No.145/A&I/2020, Dt:03/07/2020.\n10) Instructions of the Principal Secr",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "24/09/2020",
+        "normalized_date": "2020-09-24",
+        "position": [
+          1089,
+          1099
+        ],
+        "context": "Secretary to Govemment,\nSchool Education, A.P on 24/09/2020.\n@@@@@\nORDER:\nThe attention of the Regi",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "02/11/2020",
+        "normalized_date": "2020-11-02",
+        "position": [
+          3614,
+          3624
+        ],
+        "context": "tentatively proposed to reopen the\nschools w.e.f 02/11/2020 for the Academic Year, 2020-21 and it i",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "02/11/2020",
+        "normalized_date": "2020-11-02",
+        "position": [
+          3930,
+          3940
+        ],
+        "context": "fied immediately\nbefore reopening of schools i.e. 02/11/2020.\n7. In the State of Andhra Pradesh, the",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "28/05/2020",
+        "normalized_date": "2020-05-28",
+        "position": [
+          4769,
+          4779
+        ],
+        "context": "Ms.No.28, School Education (PS) Department, Dated:28/05/2020\nand also in consultation with the Direc",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "05/10/2020",
+        "normalized_date": "2020-10-05",
+        "position": [
+          5390,
+          5400
+        ],
+        "context": "e Management Dates\nSchools\n1 I Private Aided 2591\n05/10/2020 to\n17/10/2020\n2 II Private Unaided 1504",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/10/2020",
+        "normalized_date": "2020-10-17",
+        "position": [
+          5404,
+          5414
+        ],
+        "context": "ates\nSchools\n1 I Private Aided 2591\n05/10/2020 to\n17/10/2020\n2 II Private Unaided 15044\n17/10/2020 t",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/10/2020",
+        "normalized_date": "2020-10-17",
+        "position": [
+          5442,
+          5452
+        ],
+        "context": "/10/2020 to\n17/10/2020\n2 II Private Unaided 15044\n17/10/2020 to\n3 III Govemment 44778\n31/10/2020\n624",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "31/10/2020",
+        "normalized_date": "2020-10-31",
+        "position": [
+          5478,
+          5488
+        ],
+        "context": "Unaided 15044\n17/10/2020 to\n3 III Govemment 44778\n31/10/2020\n62413\n10. Role of Verification Team:-\na",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "05/10/2020",
+        "normalized_date": "2020-10-05",
+        "position": [
+          6646,
+          6656
+        ],
+        "context": "of\nSchools | Dates\n1 | I | Private Aided | 2591 | 05/10/2020 to\n17/10/2020\n2 | II | Private Unaided",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/10/2020",
+        "normalized_date": "2020-10-17",
+        "position": [
+          6660,
+          6670
+        ],
+        "context": "ates\n1 | I | Private Aided | 2591 | 05/10/2020 to\n17/10/2020\n2 | II | Private Unaided | 15044 |\n3 |",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "17/10/2020",
+        "normalized_date": "2020-10-17",
+        "position": [
+          6736,
+          6746
+        ],
+        "context": "e Unaided | 15044 |\n3 | III | Govemment | 44778 | 17/10/2020 to\n31/10/2020\n| | | 62413 |\n\n--- Page 4",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "31/10/2020",
+        "normalized_date": "2020-10-31",
+        "position": [
+          6750,
+          6760
+        ],
+        "context": "044 |\n3 | III | Govemment | 44778 | 17/10/2020 to\n31/10/2020\n| | | 62413 |\n\n--- Page 4 ---\nf) Verifi",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/87/2020",
+        "normalized_date": "2020-87-30",
+        "position": [
+          9721,
+          9731
+        ],
+        "context": "ion, AP, Amaravati.\n\n--- Page 6 ---\nFile NO.ESE02-30/87/2020-A&1 -CSE\nGOVERNMENT OF ANDHRA PRADESH\nS",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "29/09/2020",
+        "normalized_date": "2020-09-29",
+        "position": [
+          10101,
+          10111
+        ],
+        "context": "_d_a._ ______ JI\n~\nLr.Rc;No.14s/A &I/2020, Dated: 29/09/2020.\n?ir,_ _ ____ .. ___. __. .. __________",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "16/08/2019",
+        "normalized_date": "2019-08-16",
+        "position": [
+          10572,
+          10582
+        ],
+        "context": "Regulatory & Monitoringl\n\" . !Commission), Dated: 16/08/2019. !\n'}...0 -,.--~ - ------ - ---- ------",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "28/05/2020",
+        "normalized_date": "2020-05-28",
+        "position": [
+          10723,
+          10733
+        ],
+        "context": "chool Education (PS) Department,I\nI ' ,\n. 'Dated: 28/05/2020. JI\n'I ~ ,.~ L,\" ,~, ~~_ '. \",. __ .,..",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "02/11/2020",
+        "normalized_date": "2020-11-02",
+        "position": [
+          11532,
+          11542
+        ],
+        "context": "etc. immediately before reopening of schools\ni.e.02/11/2020.\nIn this context, instructions may be i",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "30/87/2020",
+        "normalized_date": "2020-87-30",
+        "position": [
+          12225,
+          12235
+        ],
+        "context": ".\nYours faithfully,\n\n--- Page 7 ---\nFile NO.ESE02-30/87/2020-A&1 -CSE\nVADREVU CHINAVEERABHADRUDU\nDIR",
+        "confidence": 0.9
+      },
+      {
+        "type": "effective_date",
+        "raw_text": "w.e.f 02/11/2020 for the Academic Year,",
+        "normalized_date": "2020-11-02",
+        "position": [
+          3608,
+          3647
+        ],
+        "context": "t have tentatively proposed to reopen the\nschools w.e.f 02/11/2020 for the Academic Year, 2020-21 an",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [
+      {
+        "type": "academic_year",
+        "raw_text": " 2019-20",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          324,
+          332
+        ],
+        "context": "Data-20 19-20 -\nRequested to verify the UDISE data 2019-20 - Certain\ninstructions issued to the resp",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": " 2019-20",
+        "start_year": 2019,
+        "end_year": 2020,
+        "year_range": "2019-2020",
+        "position": [
+          583,
+          591
+        ],
+        "context": "Education (P.S-2), Dated:01/01/1994.\n3) UDISE plus 2019-20 user manual.\n4) PGI indicators review by",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "2020-21",
+        "start_year": 2020,
+        "end_year": 2021,
+        "year_range": "2020-2021",
+        "position": [
+          3648,
+          3655
+        ],
+        "context": "e\nschools w.e.f 02/11/2020 for the Academic Year, 2020-21 and it is\nrequired to ensure that all the",
+        "confidence": 0.9
+      }
+    ],
+    "date_ranges": [],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 29,
+      "total_dates": 26,
+      "total_academic_years": 3,
+      "total_ranges": 0,
+      "total_periods": 0,
+      "earliest_date": "1994-01-01",
+      "latest_date": "2020-87-30",
+      "year_span": [
+        1994,
+        2021
+      ],
+      "primary_years": [
+        2021,
+        2020,
+        2019,
+        1994
+      ]
+    }
+  },
+  "effective_date": "2020-11-02",
+  "academic_year": "2020-2021",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

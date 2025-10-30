@@ -1,0 +1,217 @@
+{
+  "doc_id": "legal_teacher_recruitment_dsc_notification_2018",
+  "title": "Teacher Recruitment Dsc Notification 2018",
+  "file_path": "data/organized_documents/Legal/Teacher Recruitment DSC Notification 2018.pdf",
+  "file_name": "Teacher Recruitment DSC Notification 2018.pdf",
+  "file_format": ".pdf",
+  "doc_type": "data_report",
+  "priority": "low",
+  "parent_folders": [
+    "data",
+    "organized_documents",
+    "Legal"
+  ],
+  "year": 2018,
+  "creation_timestamp": "2025-10-30T15:45:08.132734",
+  "modification_timestamp": "2025-10-30T15:45:08.132541",
+  "processing_timestamp": "2025-10-30T15:48:03.525315",
+  "file_size": 192839,
+  "go_info": null,
+  "status": "active",
+  "version": "1.0",
+  "classification": {
+    "predicted_type": "data_report",
+    "confidence": 1.0,
+    "confidence_level": "high",
+    "method": "content_based",
+    "scores": {
+      "act": 0.16363636363636364,
+      "rule": 0.35454545454545455,
+      "government_order": 0.6818181818181818,
+      "judicial": 0.0,
+      "data_report": 1.0,
+      "budget_finance": 0.07272727272727272,
+      "framework": 0.44545454545454544,
+      "circular": 0.03636363636363636
+    },
+    "structural_features": {
+      "has_sections": true,
+      "has_chapters": false,
+      "has_rules": true,
+      "has_go_number": false,
+      "has_case_citation": true,
+      "has_tables": true,
+      "has_financial_terms": true,
+      "has_legal_language": true,
+      "has_administrative_language": true,
+      "has_policy_language": true,
+      "word_count": 8368,
+      "avg_sentence_length": 17.59297520661157,
+      "title_length": 5
+    }
+  },
+  "temporal": {
+    "dates": [
+      {
+        "type": "absolute_date",
+        "raw_text": "26/10/2018",
+        "normalized_date": "2018-10-26",
+        "position": [
+          370,
+          380
+        ],
+        "context": "EDUCATION (EXAMS) DEPARTMENT\nG.0.MS.No. 68 Dated: 26/10/2018\nRead the following:-\n1. From the Commis",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "25/10/2018",
+        "normalized_date": "2018-10-25",
+        "position": [
+          515,
+          525
+        ],
+        "context": "etter Rc. No. ESE0220021/6/2018-RECTMT-CSE, dated 25/10/2018.\n-: oOo :-\nORDER:\nThe following notific",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "09/08/2012",
+        "normalized_date": "2012-08-09",
+        "position": [
+          44209,
+          44219
+        ],
+        "context": "Advancement, Tourism & Culture (Sports) Dept. Dt.09/08/2012 in the CSE website.\niv) After preparati",
+        "confidence": 0.9
+      },
+      {
+        "type": "absolute_date",
+        "raw_text": "09/08/2012",
+        "normalized_date": "2012-08-09",
+        "position": [
+          44761,
+          44771
+        ],
+        "context": "Advancement,\nTourism & Culture (Sports) Dept. Dt.09/08/2012 guidelines should be followed.\nvi) If t",
+        "confidence": 0.9
+      },
+      {
+        "type": "reference_date",
+        "raw_text": "as on 1st day of July of the year\n2018 in which the notification for selection to the relevant post,",
+        "normalized_date": "2018-07-01",
+        "position": [
+          29809,
+          29909
+        ],
+        "context": "18 years of age and not more than 44 years of age as on 1st day of July of the year\n2018 in which th",
+        "confidence": 0.85
+      },
+      {
+        "type": "issue_date",
+        "raw_text": "dated 25/10/2018.",
+        "normalized_date": "2018-10-25",
+        "position": [
+          509,
+          526
+        ],
+        "context": "esh, Letter Rc. No. ESE0220021/6/2018-RECTMT-CSE, dated 25/10/2018.\n-: oOo :-\nORDER:\nThe following n",
+        "confidence": 0.85
+      }
+    ],
+    "academic_years": [
+      {
+        "type": "academic_year",
+        "raw_text": "1003-95",
+        "start_year": 1003,
+        "end_year": 1095,
+        "year_range": "1003-1095",
+        "position": [
+          15251,
+          15258
+        ],
+        "context": "Hindi PracharShabha,\nHyderabad | G.0.Ms.No.68 Dt.1003-95.\n3 | Pracharak Degree and Bachelor of\nEduc",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "Academic Year 2017-18",
+        "start_year": 2017,
+        "end_year": 2018,
+        "year_range": "2017-2018",
+        "position": [
+          30961,
+          30982
+        ],
+        "context": "on Entrance Tests (CETs) to be conducted from the Academic Year 2017-18\nonwards.\nCOMPUTER BASED TEST",
+        "confidence": 0.9
+      },
+      {
+        "type": "academic_year",
+        "raw_text": "Academic Year 2017-18",
+        "start_year": 2017,
+        "end_year": 2018,
+        "year_range": "2017-2018",
+        "position": [
+          30961,
+          30982
+        ],
+        "context": "on Entrance Tests (CETs) to be conducted from the Academic Year 2017-18\nonwards.\nCOMPUTER BASED TEST",
+        "confidence": 0.9
+      }
+    ],
+    "date_ranges": [
+      {
+        "type": "date_range",
+        "raw_text": "from 2012 to 2018 shall be verified about\nthe eligibility conditions for the post applied for before preparation of the selection list.",
+        "start_date": "2012-10-30",
+        "end_date": "2018-10-30",
+        "position": [
+          47485,
+          47620
+        ],
+        "context": "he certificate/Marks Memo issued for earlier TETs from 2012 to 2018 shall be verified about\nthe elig",
+        "confidence": 0.85
+      }
+    ],
+    "periods": [],
+    "summary": {
+      "total_temporal_refs": 10,
+      "total_dates": 6,
+      "total_academic_years": 3,
+      "total_ranges": 1,
+      "total_periods": 0,
+      "earliest_date": "2012-08-09",
+      "latest_date": "2018-10-26",
+      "year_span": [
+        1003,
+        2018
+      ],
+      "primary_years": [
+        2018,
+        2017,
+        2012,
+        1095,
+        1003
+      ]
+    }
+  },
+  "issue_date": "2018-10-25",
+  "academic_year": "2017-2018",
+  "entities": {
+    "counts": {
+      "legal_refs": 0,
+      "go_refs": 0,
+      "schemes": 0,
+      "districts": 0,
+      "metrics": 0,
+      "social_categories": 0,
+      "school_types": 0,
+      "educational_levels": 0,
+      "spacy_entities": 0,
+      "keywords": 0
+    },
+    "total_entities": 0,
+    "entity_density": 0
+  }
+}

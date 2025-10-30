@@ -1,20 +1,368 @@
-"""Query normalization - spelling, acronym expansion"""
+<<<<<<< Current (Your changes)
 
+"""
+Query Normalization Module
+
+=======
+"""
+Query Normalization Module
+
+>>>>>>> Incoming (Background Agent changes)
+Handles spelling correction, acronym expansion, synonym normalization,
+district canonicalization, and text cleaning.
+"""
+
+import re
+import json
+from typing import Dict, List, Tuple, Optional
+from pathlib import Path
+import logging
+
+logger = logging.getLogger(__name__)
+
+
+class QueryNormalizer:
+    """
+    Comprehensive query normalization with spell correction,
+    acronym expansion, and canonicalization.
+    """
+    
+    def __init__(self, dictionaries_path: str = "data/dictionaries"):
+        """
+        Initialize normalizer with dictionaries.
+        
+        Args:
+            dictionaries_path: Path to dictionaries directory
+        """
+        self.dictionaries_path = Path(dictionaries_path)
+        self.acronyms = self._load_acronyms()
+        self.education_terms = self._load_education_terms()
+        self.gazetteer = self._load_gazetteer()
+        self.common_misspellings = self._load_misspellings()
+        
+        logger.info("QueryNormalizer initialized with dictionaries")
+    
+    def _load_acronyms(self) -> Dict[str, List[str]]:
+        """Load acronym dictionary"""
+        try:
+            path = self.dictionaries_path / "acronyms.json"
+            with open(path, 'r') as f:
+                return json.load(f)
+        except Exception as e:
+            logger.warning(f"Could not load acronyms: {e}")
+            return {}
+    
+    def _load_education_terms(self) -> Dict[str, List[str]]:
+        """Load education terms dictionary"""
+        try:
+            path = self.dictionaries_path / "education_terms.json"
+            with open(path, 'r') as f:
+                data = json.load(f)
+                return data.get("terms", {})
+        except Exception as e:
+            logger.warning(f"Could not load education terms: {e}")
+            return {}
+    
+    def _load_gazetteer(self) -> Dict[str, List[str]]:
+        """Load AP gazetteer"""
+        try:
+            path = self.dictionaries_path / "ap_gazetteer.json"
+            with open(path, 'r') as f:
+                return json.load(f)
+        except Exception as e:
+            logger.warning(f"Could not load gazetteer: {e}")
+            return {}
+    
+    def _load_misspellings(self) -> Dict[str, str]:
+        """Load common misspellings dictionary"""
+        # Common education domain misspellings
+        return {
+            "enrolment": "enrollment",
+            "enrolement": "enrollment",
+            "enrollment": "enrollment",
+            "sceme": "scheme",
+            "scheem": "scheme",
+            "guvernment": "government",
+            "goverment": "government",
+            "teachr": "teacher",
+            "techer": "teacher",
+            "studnt": "student",
+            "stuent": "student",
+            "educaton": "education",
+            "eduction": "education",
+            "sarva": "sarva",  # Keep Hindi/Telugu terms
+            "vidya": "vidya",
+            "nadu": "nadu",
+            "ammavodi": "amma vodi",
+            "nadunedu": "nadu-nedu",
+        }
+    
+    def normalize(self, query: str, expand_acronyms: bool = True,
+                  correct_spelling: bool = True,
+                  canonicalize: bool = True) -> Dict[str, any]:
+        """
+        Main normalization function.
+        
+        Args:
+            query: Raw query string
+            expand_acronyms: Whether to expand acronyms
+            correct_spelling: Whether to correct spelling
+            canonicalize: Whether to canonicalize district names
+            
+        Returns:
+            Dictionary with normalized query and metadata
+        """
+        original = query
+        
+        # Clean whitespace
+        query = self._clean_whitespace(query)
+        
+        # Correct spelling
+        if correct_spelling:
+            query = self.correct_spelling(query)
+        
+        # Expand acronyms
+        acronym_expansions = {}
+        if expand_acronyms:
+            query, acronym_expansions = self.expand_acronyms(query)
+        
+        # Canonicalize district names
+        district_mappings = {}
+        if canonicalize:
+            query, district_mappings = self.canonicalize_districts(query)
+        
+        # Normalize education terms
+        query = self.normalize_education_terms(query)
+        
+        # Extract GO numbers and preserve them
+        go_numbers = self._extract_go_numbers(query)
+        
+        # Extract legal references
+        legal_refs = self._extract_legal_references(query)
+        
+        result = {
+            "original": original,
+            "normalized": query,
+            "transformations": {
+                "acronyms": acronym_expansions,
+                "districts": district_mappings,
+                "go_numbers": go_numbers,
+                "legal_references": legal_refs
+            },
+            "cleaned": self._is_substantially_different(original, query)
+        }
+        
+        logger.debug(f"Normalized: '{original}' -> '{query}'")
+        return result
+    
+    def _clean_whitespace(self, text: str) -> str:
+        """Clean and normalize whitespace"""
+        # Remove extra spaces
+        text = re.sub(r'\s+', ' ', text)
+        # Trim
+        text = text.strip()
+        return text
+    
+    def correct_spelling(self, text: str) -> str:
+        """
+        Correct common spelling mistakes.
+        Uses simple dictionary-based approach for common education terms.
+        """
+        words = text.split()
+        corrected = []
+        
+        for word in words:
+            word_lower = word.lower()
+            
+            # Check if word needs correction
+            if word_lower in self.common_misspellings:
+                correction = self.common_misspellings[word_lower]
+                # Preserve case
+                if word.isupper():
+                    corrected.append(correction.upper())
+                elif word[0].isupper():
+                    corrected.append(correction.capitalize())
+                else:
+                    corrected.append(correction)
+            else:
+                corrected.append(word)
+        
+        return ' '.join(corrected)
+    
+    def expand_acronyms(self, text: str) -> Tuple[str, Dict[str, str]]:
+        """
+        Expand acronyms in text.
+        
+        Returns:
+            Tuple of (expanded_text, mapping of acronyms found)
+        """
+        expansions = {}
+        expanded_text = text
+        
+        # Sort by length (longest first) to handle nested acronyms
+        sorted_acronyms = sorted(self.acronyms.keys(), key=len, reverse=True)
+        
+        for acronym in sorted_acronyms:
+            # Word boundary matching (case-insensitive)
+            pattern = r'\b' + re.escape(acronym) + r'\b'
+            
+            if re.search(pattern, expanded_text, re.IGNORECASE):
+                expansion = self.acronyms[acronym][0]  # Take first expansion
+                expansions[acronym] = expansion
+                
+                # Replace with expansion (preserve case)
+                def replace_func(match):
+                    original = match.group(0)
+                    if original.isupper():
+                        return f"{original} ({expansion})"
+                    else:
+                        return f"{original} ({expansion})"
+                
+                expanded_text = re.sub(pattern, replace_func, expanded_text, flags=re.IGNORECASE)
+        
+        return expanded_text, expansions
+    
+    def canonicalize_districts(self, text: str) -> Tuple[str, Dict[str, str]]:
+        """
+        Canonicalize district names to standard forms.
+        
+        Returns:
+            Tuple of (canonicalized_text, mapping of districts found)
+        """
+        mappings = {}
+        canonical_text = text
+        
+        # District aliases
+        district_aliases = {
+            "vizag": "Visakhapatnam",
+            "visakhapatnam": "Visakhapatnam",
+            "vishakhapatnam": "Visakhapatnam",
+            "vijayawada": "Vijayawada",
+            "bezawada": "Vijayawada",
+            "guntur": "Guntur",
+            "tirupati": "Tirupati",
+            "tirupathi": "Tirupati",
+            "rajahmundry": "Rajahmundry",
+            "rajahmundri": "Rajahmundry",
+            "rajamahendravaram": "Rajahmundry",
+        }
+        
+        for alias, canonical in district_aliases.items():
+            pattern = r'\b' + re.escape(alias) + r'\b'
+            if re.search(pattern, canonical_text, re.IGNORECASE):
+                mappings[alias] = canonical
+                canonical_text = re.sub(pattern, canonical, canonical_text, flags=re.IGNORECASE)
+        
+        return canonical_text, mappings
+    
+    def normalize_education_terms(self, text: str) -> str:
+        """
+        Normalize education-specific terminology.
+        """
+        normalized = text
+        
+        # Common term variations
+        term_variations = {
+            "student": ["pupil", "learner"],
+            "teacher": ["educator", "instructor"],
+            "school": ["institution", "educational institution"],
+        }
+        
+        # Keep primary term, but recognize variations
+        # (This is more for recognition than replacement)
+        
+        return normalized
+    
+    def _extract_go_numbers(self, text: str) -> List[str]:
+        """
+        Extract Government Order numbers.
+        
+        Patterns:
+        - G.O.Ms.No. 123
+        - G.O.Rt.No. 456
+        - GO MS No 789
+        """
+        patterns = [
+            r'G\.O\.(?:Ms|Rt|MS|RT)\.?\s*No\.?\s*(\d+)',
+            r'GO\s+(?:MS|RT|Ms|Rt)\s+(?:No\.?)?\s*(\d+)',
+        ]
+        
+        go_numbers = []
+        for pattern in patterns:
+            matches = re.finditer(pattern, text, re.IGNORECASE)
+            for match in matches:
+                go_numbers.append(match.group(0))
+        
+        return list(set(go_numbers))  # Deduplicate
+    
+    def _extract_legal_references(self, text: str) -> List[str]:
+        """
+        Extract legal references (sections, acts, rules).
+        
+        Patterns:
+        - Section 12(1)(c)
+        - Rule 5
+        - AP Education Act 1982
+        """
+        patterns = [
+            r'Section\s+\d+(?:\([a-z0-9]+\))*',
+            r'Rule\s+\d+(?:\([a-z0-9]+\))*',
+            r'(?:AP|Andhra Pradesh)\s+\w+\s+Act\s+\d{4}',
+        ]
+        
+        references = []
+        for pattern in patterns:
+            matches = re.finditer(pattern, text, re.IGNORECASE)
+            for match in matches:
+                references.append(match.group(0))
+        
+        return references
+    
+    def _is_substantially_different(self, original: str, normalized: str) -> bool:
+        """Check if normalization made substantial changes"""
+        return original.lower().strip() != normalized.lower().strip()
+
+
+# Convenience functions for backwards compatibility
 def normalize_spelling(text: str) -> str:
     """Correct common spelling errors"""
-    # Implementation for spell checking
-    return text
+    normalizer = QueryNormalizer()
+    return normalizer.correct_spelling(text)
+
 
 def expand_acronyms(text: str, acronyms_dict: dict) -> str:
     """Expand acronyms in text"""
-    for acronym, expansions in acronyms_dict.items():
-        text = text.replace(acronym, f"{acronym} ({expansions[0]})")
-    return text
-
-def normalize_query(query: str, dictionaries: dict) -> str:
-    """Main normalization function"""
-    normalized = normalize_spelling(query)
-    normalized = expand_acronyms(normalized, dictionaries.get("acronyms", {}))
-    return normalized
+    normalizer = QueryNormalizer()
+    normalizer.acronyms = acronyms_dict
+    expanded, _ = normalizer.expand_acronyms(text)
+    return expanded
 
 
+def normalize_query(query: str, dictionaries: dict = None) -> str:
+    """Main normalization function (backwards compatible)"""
+    normalizer = QueryNormalizer()
+    result = normalizer.normalize(query)
+    return result["normalized"]
+
+
+# Main API function
+def process_query_normalization(query: str, 
+                                expand_acronyms: bool = True,
+                                correct_spelling: bool = True) -> Dict[str, Any]:
+    """
+    Process query through full normalization pipeline.
+    
+    Args:
+        query: Raw query string
+        expand_acronyms: Whether to expand acronyms
+        correct_spelling: Whether to correct spelling
+        
+    Returns:
+        Normalization result dictionary
+    """
+    normalizer = QueryNormalizer()
+    return normalizer.normalize(
+        query,
+        expand_acronyms=expand_acronyms,
+        correct_spelling=correct_spelling
+    )
