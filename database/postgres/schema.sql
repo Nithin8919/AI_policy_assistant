@@ -27,3 +27,5 @@ CREATE INDEX idx_bridge_topic ON bridge_table(topic);
 
 
 
+
+

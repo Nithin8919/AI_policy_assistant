@@ -479,3 +479,5 @@ def test_benchmark_suite(tmpdir):
         json.dump(results, f, indent=2)
     
     print(f"\n✅ Benchmark results saved to: {results_file}")
+
+

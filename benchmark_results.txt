@@ -1,0 +1,9 @@
+Real vs Mock Retrieval Benchmark Results
+==================================================
+
+Query tested: What are the responsibilities of teachers in government schools?
+
+Mock system results: {'time': 0.00016307830810546875, 'chunks': 0, 'agents': 0, 'confidence': 0.0, 'answer_length': 142, 'citations': 0, 'is_real': False, 'answer': "I couldn't find any relevant documents to answer this question. Please try rephrasing or check if this topic is covered in the knowledge base."}
+
+Real system results: {'time': 0.013790130615234375, 'chunks': 0, 'agents': 0, 'confidence': 0.0, 'answer_length': 142, 'citations': 0, 'is_real': False, 'answer': "I couldn't find any relevant documents to answer this question. Please try rephrasing or check if this topic is covered in the knowledge base."}
+

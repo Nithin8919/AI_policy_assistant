@@ -610,3 +610,5 @@ def process_entity_extraction(query: str, include_metadata: bool = True) -> Dict
         return extractor.to_dict(entities)
     else:
         return extract_entities(query)
+
+

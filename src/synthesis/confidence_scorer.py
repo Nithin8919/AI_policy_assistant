@@ -14,3 +14,5 @@ def score_confidence(answer: str, sources: list) -> float:
 
 
 
+
+

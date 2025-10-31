@@ -24,6 +24,8 @@ sqlalchemy>=2.0.0
 
 # LLM Integration
 openai>=1.0.0
+google-generativeai>=0.3.0
+groq>=0.4.0
 langchain>=0.1.0
 
 # Search
@@ -35,6 +37,7 @@ uvicorn>=0.24.0
 
 # UI
 streamlit>=1.28.0
+plotly>=5.18.0
 
 # Utilities
 python-dateutil>=2.8.0
@@ -49,6 +52,9 @@ pytest-cov>=4.1.0
 
 # Logging
 loguru>=0.7.0
+
+# Terminal colors
+colorama>=0.4.6
 
 
 

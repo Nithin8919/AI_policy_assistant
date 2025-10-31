@@ -191,7 +191,7 @@ class EnhancedRouter:
                 base_confidence
             )
             
-            if confidence > 0.3:  # Threshold for agent selection
+            if confidence > 0.1:  # Lowered threshold for agent selection
                 selections.append(AgentSelection(
                     agent_name=agent_name,
                     doc_type=config['doc_type'],
@@ -212,14 +212,32 @@ class EnhancedRouter:
         else:  # COMPLEX
             # Select all relevant agents + general agent
             selected = selections[:4]
-            # Always include general agent for complex queries
-            if not any(s.agent_name == 'general_agent' for s in selected):
-                general_selection = next(
-                    (s for s in selections if s.agent_name == 'general_agent'), 
-                    None
-                )
-                if general_selection:
-                    selected.append(general_selection)
+        
+        # Fallback: If no agents selected, always include general agent
+        if not selected:
+            general_selection = next(
+                (s for s in selections if s.agent_name == 'general_agent'), 
+                None
+            )
+            if general_selection:
+                selected.append(general_selection)
+            else:
+                # Create a fallback general agent selection
+                selected.append(AgentSelection(
+                    agent_name='general_agent',
+                    doc_type=self.agent_configs['general_agent']['doc_type'],
+                    confidence=0.1,
+                    reasoning="Fallback selection"
+                ))
+        
+        # Always include general agent for complex queries
+        if complexity == QueryComplexity.COMPLEX and not any(s.agent_name == 'general_agent' for s in selected):
+            general_selection = next(
+                (s for s in selections if s.agent_name == 'general_agent'), 
+                None
+            )
+            if general_selection:
+                selected.append(general_selection)
         
         logger.info(f"Selected {len(selected)} agents: {[s.agent_name for s in selected]}")
         
@@ -306,10 +324,15 @@ class EnhancedRouter:
             embedding_result = self.embedder.embed_single(query)
             query_embedding = embedding_result.embedding
             
-            # Search in the agent's collection
+            # Get the full collection name with prefix from vector store
+            collection_name = self.vector_store.get_collection_name(agent_selection.doc_type)
+            
+            logger.info(f"Searching collection '{collection_name}' for agent '{agent_selection.agent_name}'")
+            
+            # Search in the agent's collection - FIXED: using collection_names list (plural)
             search_results = self.vector_store.search(
-                query_embedding=query_embedding,
-                doc_type=agent_selection.doc_type,
+                query_vector=query_embedding,
+                collection_names=[collection_name],  # ✅ Pass list of collection names
                 limit=top_k
             )
             
@@ -331,6 +354,8 @@ class EnhancedRouter:
             # Calculate confidence score based on results
             confidence_score = self._calculate_retrieval_confidence(search_results, agent_selection.confidence)
             
+            logger.info(f"Agent '{agent_selection.agent_name}' retrieved {len(chunks)} chunks in {processing_time:.3f}s")
+            
             return RetrievalResult(
                 agent_name=agent_selection.agent_name,
                 doc_type=agent_selection.doc_type.value,
@@ -341,7 +366,7 @@ class EnhancedRouter:
             )
             
         except Exception as e:
-            logger.error(f"Error in {agent_selection.agent_name} retrieval: {str(e)}")
+            logger.error(f"Error in {agent_selection.agent_name} retrieval: {str(e)}", exc_info=True)
             return None
     
     def _calculate_retrieval_confidence(self, search_results: List, selection_confidence: float) -> float:

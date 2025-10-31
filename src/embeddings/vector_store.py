@@ -58,15 +58,37 @@ class VectorStore:
     
     # Document type mapping
     DOC_TYPE_MAPPING = {
+        # Legal documents (plural and singular)
         "acts": DocumentType.LEGAL_DOCUMENTS,
+        "act": DocumentType.LEGAL_DOCUMENTS,
         "rules": DocumentType.LEGAL_DOCUMENTS,
+        "rule": DocumentType.LEGAL_DOCUMENTS,
+        "legal": DocumentType.LEGAL_DOCUMENTS,
+        
+        # Government orders (plural and singular)
         "government_orders": DocumentType.GOVERNMENT_ORDERS,
+        "government_order": DocumentType.GOVERNMENT_ORDERS,
         "go": DocumentType.GOVERNMENT_ORDERS,
+        
+        # Judicial
         "judicial": DocumentType.JUDICIAL_DOCUMENTS,
+        "judicial_documents": DocumentType.JUDICIAL_DOCUMENTS,
+        
+        # Data & reports
         "data_reports": DocumentType.DATA_REPORTS,
-        "external_sources": DocumentType.EXTERNAL_SOURCES,
+        "data_report": DocumentType.DATA_REPORTS,
+        
+        # Budget/finance
         "budget_finance": DocumentType.DATA_REPORTS,
-        "frameworks": DocumentType.EXTERNAL_SOURCES
+        "budget": DocumentType.DATA_REPORTS,
+        "finance": DocumentType.DATA_REPORTS,
+        
+        # Frameworks & external
+        "frameworks": DocumentType.EXTERNAL_SOURCES,
+        "framework": DocumentType.EXTERNAL_SOURCES,
+        "external_sources": DocumentType.EXTERNAL_SOURCES,
+        "external": DocumentType.EXTERNAL_SOURCES,
+        "circular": DocumentType.EXTERNAL_SOURCES
     }
     
     def __init__(self, config: VectorStoreConfig):
