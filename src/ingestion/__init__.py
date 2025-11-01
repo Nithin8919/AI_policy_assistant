@@ -22,7 +22,7 @@ Provides comprehensive document processing capabilities including:
 from .pdf_extractor import PDFExtractor, extract_pdf_batch
 from .text_cleaner import TextCleaner
 from .section_parser import SectionParser
-from .chunker import SmartChunker
+from .semantic_chunker import SemanticChunker
 
 # Enhanced analysis modules  
 from .entity_extractor import EntityExtractor
@@ -60,7 +60,7 @@ __all__ = [
     "extract_pdf_batch",
     "TextCleaner", 
     "SectionParser",
-    "SmartChunker",
+    "SemanticChunker",
     
     # Entity and relation extraction
     "EntityExtractor",

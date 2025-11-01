@@ -496,3 +496,4 @@ if __name__ == "__main__":
     print(f"\nProcessing time: {response.processing_time:.2f}s")
     """
     print("QA Pipeline module loaded successfully")
+    

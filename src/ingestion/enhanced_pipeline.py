@@ -28,7 +28,7 @@ from src.utils.logger import get_logger
 from .pdf_extractor import PDFExtractor
 from .text_cleaner import TextCleaner
 from .section_parser import SectionParser
-from .chunker import SmartChunker
+from .semantic_chunker import SemanticChunker
 from .enhanced_metadata_builder import MetadataBuilder
 from .entity_extractor import EntityExtractor
 from .relation_extractor import RelationExtractor
@@ -96,7 +96,7 @@ class EnhancedIngestionPipeline:
             self.pdf_extractor = PDFExtractor()
             self.text_cleaner = TextCleaner()
             self.section_parser = SectionParser()
-            self.chunker = SmartChunker(chunk_size=700, chunk_overlap=100)
+            self.chunker = SemanticChunker()
             self.metadata_builder = MetadataBuilder()
             self.entity_extractor = EntityExtractor(str(self.data_dir))
             self.relation_extractor = RelationExtractor()

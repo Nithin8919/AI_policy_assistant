@@ -1,0 +1,218 @@
+{
+  "entities": {
+    "legal_section_14": {
+      "id": "legal_section_14",
+      "type": "legal_section",
+      "value": "14",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "1",
+        "match_context": "on (Forty-fourth Amendment) Act, 1978, s. 8, for “article 14, article\n19 or article 31” (w.e.f. 20/6/1979).\n6.",
+        "position": 191
+      }
+    },
+    "legal_section_19": {
+      "id": "legal_section_19",
+      "type": "legal_section",
+      "value": "19",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "1",
+        "match_context": "urth Amendment) Act, 1978, s. 8, for “article 14, article\n19 or article 31” (w.e.f. 20/6/1979).\n6. The words i",
+        "position": 203
+      }
+    },
+    "legal_section_31": {
+      "id": "legal_section_31",
+      "type": "legal_section",
+      "value": "31",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "1",
+        "match_context": ") Act, 1978, s. 8, for “article 14, article\n19 or article 31” (w.e.f. 20/6/1979).\n6. The words in italics stru",
+        "position": 217
+      }
+    },
+    "date_20/6/1979": {
+      "id": "date_20/6/1979",
+      "type": "date",
+      "value": "20/6/1979",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "1",
+        "match_context": "or “article 14, article\n19 or article 31” (w.e.f. 20/6/1979).\n6. The words in italics struck down by the Supr",
+        "position": 237
+      }
+    },
+    "date_03/01/1977": {
+      "id": "date_03/01/1977",
+      "type": "date",
+      "value": "03/01/1977",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "1",
+        "match_context": "n (Forty-second Amendment) Act, 1976, s. 5(w.e.f. 03/01/1977). --- Page 50 ---\n19 THE CONSTITUTION OF INDIA\n(P",
+        "position": 442
+      }
+    },
+    "date_wef_20/6/1979": {
+      "id": "date_wef_20/6/1979",
+      "type": "date",
+      "value": "w.e.f. 20/6/1979",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "1",
+        "match_context": "s. 8, for “article 14, article\n19 or article 31” (w.e.f. 20/6/1979).\n6. The words in italics struck down by the Supr",
+        "position": 230
+      }
+    },
+    "date_wef_03/01/1977": {
+      "id": "date_wef_03/01/1977",
+      "type": "date",
+      "value": "w.e.f. 03/01/1977",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "1",
+        "match_context": "titution (Forty-second Amendment) Act, 1976, s. 5(w.e.f. 03/01/1977). --- Page 50 ---\n19 THE CONSTITUTION OF INDIA\n(P",
+        "position": 435
+      }
+    },
+    "legal_section_32": {
+      "id": "legal_section_32",
+      "type": "legal_section",
+      "value": "32",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "3",
+        "match_context": "te laws not to be considered in\nproceedings under article 32.].-Omitted by the Constitution (Forty-third\nAmend",
+        "position": 472
+      }
+    },
+    "date_13/4/1978": {
+      "id": "date_13/4/1978",
+      "type": "date",
+      "value": "13/4/1978",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "3",
+        "match_context": "tution (Forty-third\nAmendment)Act, 1977,s 3(w.e.f.13/4/1978) 2[33",
+        "position": 557
+      }
+    },
+    "date_1/2/1977": {
+      "id": "date_1/2/1977",
+      "type": "date",
+      "value": "1/2/1977",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "5",
+        "match_context": "on (Forty-second Amendment) Act, 1976, s 6 (w.e.f 1/2/1977) 2 Subs by the Constitution (Fiftieth Amendment) ",
+        "position": 71
+      }
+    },
+    "date_11/9/1984": {
+      "id": "date_11/9/1984",
+      "type": "date",
+      "value": "11/9/1984",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "5",
+        "match_context": "ieth Amendment) Act, 1984, s 2, for art 33\n(w.e.f 11/9/1984). --- Page 51 ---\n20 THE CONSTITUTION OF INDIA\n(P",
+        "position": 163
+      }
+    },
+    "date_wef_1/2/1977": {
+      "id": "date_wef_1/2/1977",
+      "type": "date",
+      "value": "w.e.f 1/2/1977",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "5",
+        "match_context": "titution (Forty-second Amendment) Act, 1976, s 6 (w.e.f 1/2/1977) 2 Subs by the Constitution (Fiftieth Amendment) ",
+        "position": 65
+      }
+    },
+    "date_wef_11/9/1984": {
+      "id": "date_wef_11/9/1984",
+      "type": "date",
+      "value": "w.e.f 11/9/1984",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "5",
+        "match_context": " (Fiftieth Amendment) Act, 1984, s 2, for art 33\n(w.e.f 11/9/1984). --- Page 51 ---\n20 THE CONSTITUTION OF INDIA\n(P",
+        "position": 157
+      }
+    },
+    "legal_section_16": {
+      "id": "legal_section_16",
+      "type": "legal_section",
+      "value": "16",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "7",
+        "match_context": "t to any of the matters which under clause (3) of\narticle 16, clause (3) of article 32, article 33 and article",
+        "position": 267
+      }
+    },
+    "legal_section_33": {
+      "id": "legal_section_33",
+      "type": "legal_section",
+      "value": "33",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "7",
+        "match_context": "ause (3) of\narticle 16, clause (3) of article 32, article 33 and article 34 may be\nprovided for by law made by",
+        "position": 305
+      }
+    },
+    "legal_section_34": {
+      "id": "legal_section_34",
+      "type": "legal_section",
+      "value": "34",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.8,
+      "metadata": {
+        "chunk_id": "7",
+        "match_context": "icle 16, clause (3) of article 32, article 33 and article 34 may be\nprovided for by law made by Parliament; an",
+        "position": 320
+      }
+    },
+    "legal_section_372": {
+      "id": "legal_section_372",
+      "type": "legal_section",
+      "value": "372",
+      "source_doc_id": "legal_constitutionofindia",
+      "confidence": 0.7000000000000001,
+      "metadata": {
+        "chunk_id": "7",
+        "match_context": " and modifications that may be made\ntherein under article 372, continue in force until altered or repealed or\na",
+        "position": 1024
+      }
+    }
+  },
+  "relationships": {},
+  "stats": {
+    "total_entities": 17,
+    "total_relationships": 0,
+    "entity_types": {
+      "legal_section": 8,
+      "date": 9
+    },
+    "relationship_types": {}
+  }
+}
